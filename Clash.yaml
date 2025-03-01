@@ -5,121 +5,117 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: BR_1, server: 167.234.240.15, port: 44000, type: hysteria2, password: 4a068903-1a04-414e-beb1-d8dffee5ab2b, auth: 4a068903-1a04-414e-beb1-d8dffee5ab2b, skip-cert-verify: true, udp: true}
-  - {name: CA_1, server: cdncdncdn.aikunapp.com, port: 443, type: vless, uuid: 96cad374-7573-4463-8804-4665c2c3d932, tls: true, tfo: false, skip-cert-verify: true, servername: r-oALiFeitToUZZvGs.sm-node.com, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws/smjc/index?ed=8192", headers: {Host: cdn-us.sm-node.com}}, udp: true}
-  - {name: CA_2, server: cdncdncdn.aikunapp.com, port: 443, type: vless, uuid: 96cad374-7573-4463-8804-4665c2c3d932, tls: true, tfo: false, skip-cert-verify: true, servername: r-seKE7K93yob9dteD.sm-node.com, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws/smjc/index?ed=8192", headers: {Host: cdn-ca.sm-node.com}}, udp: true}
-  - {name: CA_3, server: cdncdncdn.aikunapp.com, port: 443, type: vless, uuid: 96cad374-7573-4463-8804-4665c2c3d932, tls: true, tfo: false, skip-cert-verify: true, servername: r-1Nj0M0DU3jYG2Ik3.sm-node.com, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws/smjc/index?ed=8192", headers: {Host: cdn-ca.sm-node.com}}, udp: true}
-  - {name: DE_1, server: 37.202.237.107, port: 23297, type: vless, uuid: 0bb073fc-34e8-44ac-9f22-dad03dc65d34, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: DE_2, server: 87.248.150.133, port: 1394, type: vless, uuid: 78aad001-54da-409b-b181-8f025f2a8f17, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: http, http-opts: {method: GET, path: [/telegram:@pistachiovpn:@pistachiovpn@pistachiovpn@pistachiovpn@pistachiovpn@pistachiovpn@pistachiovpn@pistachiovpn@pistachiovpn@pistachiovpn@pistachiovpn]}, udp: true}
-  - {name: DE_3, server: 23.158.56.73, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: DE_4, server: 23.158.56.241, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: DE_5, server: 185.121.134.12, port: 20333, type: vmess, uuid: fceff025-b4ea-4fd2-9093-151b3bd503cd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: GB_1, server: 188.114.96.107, port: 2083, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: HK_1, server: atmvs-g06.hk09-vm5.entry.v50307shvkaa.art, port: 15269, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK_2, server: hk.xn--2vxn29amga.com, port: 21177, type: hysteria2, password: 3872213f-a346-48a6-b670-db83a774af7d, auth: 3872213f-a346-48a6-b670-db83a774af7d, skip-cert-verify: true, udp: true}
-  - {name: HK_3, server: 50.114.153.243, port: 44001, type: hysteria2, password: 4a068903-1a04-414e-beb1-d8dffee5ab2b, auth: 4a068903-1a04-414e-beb1-d8dffee5ab2b, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: HK_4, server: y0ujr-g06.hk10-vm5.entry.v50307shvkaa.art, port: 13487, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bgp-01-10.entry-0.chinasnow.net}}, udp: true}
-  - {name: HK_5, server: 141.101.114.238, port: 2053, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: HK_6, server: hk.xn--2vxn29amga.com, port: 21181, type: hysteria2, password: 3f2bf782-4911-4cc2-ba38-e988d2cd4747, auth: 3f2bf782-4911-4cc2-ba38-e988d2cd4747, skip-cert-verify: true, udp: true}
-  - {name: HK_7, server: 47.236.251.178, port: 443, type: vless, uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197, tls: true, tfo: false, skip-cert-verify: true, servername: agedi.ambercc.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: agedi.ambercc.filegear-sg.me}}, udp: true}
-  - {name: HK_8, server: gxyc6-g06.hk11-vm5.entry.v50307shvkaa.art, port: 579, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tutorial/iphone13.m3u8, headers: {Host: bgp-01-11.entry-0.chinasnow.net}}, udp: true}
-  - {name: HK_9, server: 141.101.115.119, port: 8443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: IL_1, server: lshh9.c6tu5uwk9.buzz, port: 80, type: vmess, uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp02.bdcb12a2-e0f2-63ae.buzz}}, udp: true}
-  - {name: JP_1, server: 162.159.137.137, port: 2087, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: JP_10, server: fsgbw-g06.jp06-7c5a-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: JP_11, server: b56me-g06.jp06-7c5a-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: JP_12, server: fdhe0-g06.jp01-0986-vm0.entry.fr0307a.art, port: 21586, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: JP_13, server: 150.230.61.110, port: 23451, type: vmess, uuid: b5dd2cca-96b9-44de-b642-fe2ca57bfcad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1-osaka-p.aboutanime.eu.org}}, udp: true}
-  - {name: JP_14, server: tku7o-g06.jp05-6786-vm0.entry.fr0307a.art, port: 46487, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_15, server: 0eqob-g06.jp06-vm5.entry.rtysjur.quest, port: 667, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_16, server: fblrl-g06.jp05-vm5.entry.rtysjur.quest, port: 64659, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_17, server: rfioi-g06.jp06-vm5.entry.rtysjur.quest, port: 667, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_18, server: aoy7i-g06.jp07-1f28-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_19, server: cmcz4-g06.jp01-0986-vm0.entry.fr0307a.art, port: 21586, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: JP_2, server: jr256-g06.jp05-6786-vm0.entry.fr0307a.art, port: 46487, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_3, server: q81aq-g06.jp05-6786-vm0.entry.fr0307a.art, port: 46487, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_4, server: 13lit-g06.jp05-6786-vm0.entry.fr0307a.art, port: 46487, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_5, server: b2ks1-g06.jp03-7d22-vm0.entry.fr0307a.art, port: 21586, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: JP_6, server: gissx-g06.jp05-6786-vm0.entry.fr0307a.art, port: 46487, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_7, server: os135-g06.jp03-7d22-vm0.entry.fr0307a.art, port: 21586, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: JP_8, server: 54oko-g06.jp06-7c5a-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: JP_9, server: h9f4y-g06.jp05-6786-vm0.entry.fr0307a.art, port: 46487, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR_1, server: 175.206.13.151, port: 16992, type: vless, uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197, tls: true, tfo: false, skip-cert-verify: true, servername: agedi.ambercc.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: agedi.ambercc.filegear-sg.me}}, udp: true}
-  - {name: LU_1, server: lu.xn--2vxn29amga.com, port: 21132, type: hysteria2, password: 3872213f-a346-48a6-b670-db83a774af7d, auth: 3872213f-a346-48a6-b670-db83a774af7d, skip-cert-verify: true, udp: true}
-  - {name: LU_2, server: lu.xn--2vxn29amga.com, port: 21185, type: hysteria2, password: 3872213f-a346-48a6-b670-db83a774af7d, auth: 3872213f-a346-48a6-b670-db83a774af7d, skip-cert-verify: true, udp: true}
-  - {name: NL_1, server: 95.179.153.250, port: 47221, type: vless, uuid: 3373fe14-47b8-42e5-8a18-7ab3e0dd02b3, tls: true, tfo: false, skip-cert-verify: true, reality-opts: {public-key: iwsj4xiBztuBQ3I1YsrBBUhnlu7mhhPFozP7bkgaal0, short-id: "47ff9b6c" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: PL_1, server: 3.113.64.82, port: 443, type: vless, uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197, tls: true, tfo: false, skip-cert-verify: true, servername: agedi.ambercc.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: agedi.ambercc.filegear-sg.me}}, udp: true}
-  - {name: RS_1, server: 104.17.147.22, port: 2052, type: vless, uuid: 92d3593f-1b8e-51c2-8709-9995028fb1ee, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless#@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL", headers: {Host: sPeedtest2.sbs.rs1.vless.sitespeedtest.net}}, udp: true}
-  - {name: SA_1, server: 38.54.38.167, port: 53653, type: vmess, uuid: f0a56437-ba58-443c-a449-02a16e9534e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: SG_1, server: doxjp.hssl8088.icu, port: 50000, type: hysteria2, password: a92716f0-ea87-436d-9296-3fab1248250d, auth: a92716f0-ea87-436d-9296-3fab1248250d, sni: doxjp.hssl8088.icu, skip-cert-verify: true, udp: true}
-  - {name: SG_2, server: p4qj6.qumc8qr7.buzz, port: 80, type: vmess, uuid: 59aefa2d-968a-472b-bbe0-905bb3ae492e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sg04.342a-5b50-7f9d.cfd}}, udp: true}
-  - {name: SG_3, server: x1.xiaomi-api.xyz, port: 11042, type: trojan, password: d16d869d-d65d-4167-a2cc-5a4f336b9c16, skip-cert-verify: true, udp: true}
-  - {name: SG_4, server: 8.222.165.104, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, tfo: false, skip-cert-verify: true, servername: s5.ylkszy.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: s5.ylkszy.eu.org}}, udp: true}
-  - {name: TW_1, server: 104.18.15.19, port: 2052, type: vless, uuid: bf09ef80-aae7-42b7-ab37-a29cd310a9a4, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: 0121.v69a2770.workers.dev}}, udp: true}
-  - {name: TW_10, server: 104.25.72.21, port: 443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_11, server: 104.20.18.181, port: 2087, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_12, server: 172.67.77.253, port: 2053, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_13, server: 185.174.138.37, port: 443, type: vless, uuid: fa659470-ca91-43c1-a966-2349531fb6a8, tls: true, tfo: false, skip-cert-verify: true, servername: xxx.66500-280b-471c-b2b8-d68b7f9960001.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: xxx.66500-280b-471c-b2b8-d68b7f9960001.workers.dev}}, udp: true}
-  - {name: TW_14, server: 104.20.26.202, port: 2083, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_15, server: 162.159.135.197, port: 2053, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_16, server: 104.24.205.224, port: 8443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_17, server: 162.159.21.212, port: 2083, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_18, server: 162.159.134.143, port: 2096, type: vless, uuid: 4b2e1ee8-a987-496b-8ca9-62317b566197, tls: true, tfo: false, skip-cert-verify: true, servername: agedi.ambercc.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: agedi.ambercc.filegear-sg.me}}, udp: true}
-  - {name: TW_19, server: 104.20.22.153, port: 2053, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_2, server: 198.41.209.231, port: 443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_20, server: 104.17.219.172, port: 2096, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_21, server: 104.27.11.115, port: 2083, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_22, server: 104.27.200.96, port: 2053, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_3, server: 190.93.244.156, port: 8443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_4, server: 162.159.12.240, port: 443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_5, server: 162.159.130.169, port: 443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_6, server: 162.159.239.70, port: 443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_7, server: 104.19.100.251, port: 443, type: vless, uuid: fa659470-ca91-43c1-a966-2349531fb6a8, tls: true, tfo: false, skip-cert-verify: true, servername: xxx.66500-280b-471c-b2b8-d68b7f9960002.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: xxx.66500-280b-471c-b2b8-d68b7f9960002.workers.dev}}, udp: true}
-  - {name: TW_8, server: 104.20.23.69, port: 2096, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: TW_9, server: 108.162.198.50, port: 443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: UN_1, server: 45.76.0.86, port: 443, type: hysteria2, password: 1f17cdf0578a2860, auth: 1f17cdf0578a2860, skip-cert-verify: true, obfs: salamander, obfs-password: 4b817757, udp: true}
-  - {name: UN_2, server: 185.121.134.12, port: 31651, type: hysteria2, password: d116e5f9-0aae-45fc-89f9-07668f88b839, auth: d116e5f9-0aae-45fc-89f9-07668f88b839, skip-cert-verify: true, obfs: salamander, obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==, udp: true}
-  - {name: US_1, server: 104.25.254.149, port: 2087, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: US_10, server: 107.174.34.111, port: 44001, type: hysteria2, password: 6a56184b-e6bb-4682-93f9-d0771aaee324, auth: 6a56184b-e6bb-4682-93f9-d0771aaee324, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: US_11, server: 190.93.244.211, port: 8443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: US_12, server: 107.175.185.55, port: 44001, type: hysteria2, password: a5010b26-6aad-442e-b15d-57d3c25d6080, auth: a5010b26-6aad-442e-b15d-57d3c25d6080, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: US_13, server: 172.67.73.163, port: 80, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560/telegram8/?ed=2560", headers: {Host: a.xn--i-sx6a60i.us.kg.}}, udp: true}
-  - {name: US_14, server: 104.25.172.7, port: 2053, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: US_15, server: 104.27.12.188, port: 8443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: US_16, server: 104.16.132.207, port: 443, type: vless, uuid: 42f36835-730c-4ecc-9daf-20121ae7ba47, tls: true, tfo: false, skip-cert-verify: true, servername: gozargah.validbv7996.ir, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: gozargah.validbv7996.ir}}, udp: true}
-  - {name: US_17, server: 141.101.115.185, port: 2096, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: US_18, server: 135.148.97.101, port: 443, type: vless, uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c, tls: true, tfo: false, skip-cert-verify: true, servername: 147135011033.sec21org.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: US_19, server: 45.159.218.15, port: 80, type: vless, uuid: 64d39d67-62dc-470c-a592-1d5a6ee87cb5, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048fp=chrome", headers: {Host: worker-flat-disk-100d.b9563f65aef681.workers.dev}}, udp: true}
-  - {name: US_2, server: 104.16.155.10, port: 2082, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in104.18.42.172, headers: {Host: 100-38-62-25.s5.db-link02.top}}, udp: true}
-  - {name: US_20, server: 172.67.36.124, port: 443, type: vless, uuid: 26beb50a-bc24-44e1-8321-1ae1be79d052, tls: true, tfo: false, skip-cert-verify: true, servername: inputbugwildcard.cloudproxyip.my.id.winner.cloudproxyip.my.id, client-fingerprint: chrome, network: ws, ws-opts: {path: /Free-CF-Proxy-LV1, headers: {Host: inputbugwildcard.cloudproxyip.my.id.winner.cloudproxyip.my.id}}, udp: true}
-  - {name: US_21, server: 104.16.112.132, port: 80, type: vless, uuid: 813ee048-13d6-4e7c-9074-e619e239af48, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: dawn-river-ff16.liqinglei6688.workers.dev}}, udp: true}
-  - {name: US_22, server: 38.14.107.228, port: 38003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: 38.14.107.228, network: ws, ws-opts: {path: /path/181721272114}, udp: true}
-  - {name: US_23, server: 45.131.7.7, port: 8080, type: vless, uuid: f47fb03f-7f15-41e0-bd7e-2371dc710e32, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: Telegram@WangCai2/, headers: {Host: c00021he.ab7db0ab17.workers.dev}}, udp: true}
-  - {name: US_24, server: 141.101.114.134, port: 443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: US_25, server: 107.174.34.6, port: 443, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, network: ws, ws-opts: {path: /dabai.in104.20.143.141}, udp: true}
-  - {name: US_26, server: 104.16.155.10, port: 2095, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in172.67.93.174, headers: {Host: 100-206-104-218.s1.db-link01.top}}, udp: true}
-  - {name: US_3, server: 172.67.172.63, port: 2087, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: ts.onjim.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560&proxyip=proxyip.classelivre.eu.org:15661", headers: {Host: ts.onjim.us.kg}}, udp: true}
-  - {name: US_4, server: 104.27.31.95, port: 2087, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: US_5, server: 45.149.12.183, port: 2052, type: vless, uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: "/TABRIZ.NET@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed", headers: {Host: redw.pooriam.ir}}, udp: true}
-  - {name: US_6, server: 162.159.141.49, port: 8443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
-  - {name: US_7, server: 104.20.43.197, port: 80, type: vless, uuid: e497da22-d020-40fb-a1fa-bc294066a2d2, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1, headers: {Host: pormang.webhost99.workers.dev}}, udp: true}
-  - {name: US_8, server: 104.18.15.19, port: 8880, type: vless, uuid: 131387aa-4b2a-43aa-bf7c-d94306ba55fb, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: 13tg.jpl8xmqb.workers.dev}}, udp: true}
-  - {name: US_9, server: 172.67.75.224, port: 443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: CA_1, server: cdncdncdn.aikunapp.com, port: 443, type: vmess, uuid: 96cad374-7573-4463-8804-4665c2c3d932, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: r-0LEf8zI6kfKRGYM5.sm-node.com, network: ws, ws-opts: {path: "/vmess_ws/smjc/index?ed=8192", headers: {Host: cdn-us.sm-node.com}}, udp: true}
+  - {name: CA_2, server: cdncdncdn.aikunapp.com, port: 443, type: vmess, uuid: 96cad374-7573-4463-8804-4665c2c3d932, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: r-JiVQzPj5MEXmKoxf.sm-node.com, network: ws, ws-opts: {path: "/vmess_ws/smjc/index?ed=8192", headers: {Host: cdn-us.sm-node.com}}, udp: true}
+  - {name: CA_3, server: cdncdncdn.aikunapp.com, port: 443, type: vless, uuid: 96cad374-7573-4463-8804-4665c2c3d932, tls: true, tfo: false, skip-cert-verify: true, servername: r-idqkWujYHCs3KPpA.sm-node.com, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws/smjc/index?ed=8192", headers: {Host: cdn-ca.sm-node.com}}, udp: true}
+  - {name: CA_4, server: cdncdncdn.aikunapp.com, port: 443, type: vless, uuid: 96cad374-7573-4463-8804-4665c2c3d932, tls: true, tfo: false, skip-cert-verify: true, servername: r-njwBQMbAjJYm8S70.sm-node.com, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws/smjc/index?ed=8192", headers: {Host: cdn-ca.sm-node.com}}, udp: true}
+  - {name: CA_5, server: cdncdncdn.aikunapp.com, port: 443, type: vmess, uuid: 96cad374-7573-4463-8804-4665c2c3d932, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: r-za9rYTXyZcUN7keV.sm-node.com, network: ws, ws-opts: {path: "/vmess_ws/smjc/index?ed=8192", headers: {Host: cdn-ca.sm-node.com}}, udp: true}
+  - {name: GB_1, server: chloe.ns.cloudflare.com, port: 443, type: vless, uuid: 95815ee1-e153-49c3-b090-a6ac7dee265d, tls: true, tfo: false, skip-cert-verify: true, servername: 7umpnv.gamvpn.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /wss, headers: {Host: 7umpnv.gamvpn.com}}, udp: true}
+  - {name: HK_1, server: dm29i-g06.hk11-vm5.entry.v50307shvkaa.art, port: 579, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tutorial/iphone13.m3u8, headers: {Host: bgp-01-11.entry-0.chinasnow.net}}, udp: true}
+  - {name: HK_2, server: b6ctm-g06.hk11-vm5.entry.v50307shvkaa.art, port: 579, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tutorial/iphone13.m3u8, headers: {Host: bgp-01-11.entry-0.chinasnow.net}}, udp: true}
+  - {name: HK_3, server: slwke-g06.hk09-vm5.entry.v50307shvkaa.art, port: 15269, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_4, server: 198.41.209.222, port: 8443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: HK_5, server: dinma-g06.hk09-vm5.entry.v50307shvkaa.art, port: 15269, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: HK_6, server: 198.41.208.246, port: 8443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: HK_7, server: xvjew-g06.hk10-vm5.entry.v50307shvkaa.art, port: 13487, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bgp-01-10.entry-0.chinasnow.net}}, udp: true}
+  - {name: JP_1, server: ioxfq-g06.jp07-1f28-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_10, server: 5h21l-g06.jp06-vm5.entry.rtysjur.quest, port: 667, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_11, server: lycjj-g06.jp03-7d22-vm0.entry.fr0307a.art, port: 21586, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: JP_12, server: mt0w9-g06.jp02-9a99-vm0.entry.fr0307a.art, port: 11778, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_13, server: a2nw0-g06.jp01-0986-vm0.entry.fr0307a.art, port: 21586, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: JP_14, server: sj947-g06.jp01-0986-vm0.entry.fr0307a.art, port: 21586, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: JP_15, server: 162.159.141.19, port: 2087, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: JP_16, server: hbo93-g06.jp07-1f28-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_17, server: io930-g06.jp06-7c5a-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: JP_18, server: rq97m-g06.jp04-3771-vm0.entry.fr0307a.art, port: 449, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_19, server: 2m453-g06.jp01-0986-vm0.entry.fr0307a.art, port: 21586, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: JP_2, server: 8mnia-g06.jp06-vm5.entry.rtysjur.quest, port: 667, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_20, server: jgow4-g06.jp04-3771-vm0.entry.fr0307a.art, port: 449, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_21, server: t7uup-g06.jp05-vm5.entry.rtysjur.quest, port: 64659, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_22, server: n0rov-g06.jp02-9a99-vm0.entry.fr0307a.art, port: 11778, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_23, server: xwqtz-g06.jp05-6786-vm0.entry.fr0307a.art, port: 46487, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_24, server: s2bli-g06.jp06-vm5.entry.rtysjur.quest, port: 667, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_25, server: jscah-g06.jp02-9a99-vm0.entry.fr0307a.art, port: 11778, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_3, server: 162.159.134.200, port: 2083, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: JP_4, server: 45.149.12.183, port: 2052, type: vless, uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: /TABRIZ.NET@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1, headers: {Host: redw.pooriam.ir}}, udp: true}
+  - {name: JP_5, server: nenxt-g06.jp06-7c5a-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: JP_6, server: jp.xn--2vxn29amga.com, port: 21177, type: hysteria2, password: 3f2bf782-4911-4cc2-ba38-e988d2cd4747, auth: 3f2bf782-4911-4cc2-ba38-e988d2cd4747, skip-cert-verify: true, udp: true}
+  - {name: JP_7, server: aoy7i-g06.jp07-1f28-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_8, server: otlvt-g06.jp06-7c5a-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: JP_9, server: oyq05-g06.jp05-6786-vm0.entry.fr0307a.art, port: 46487, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: KR_1, server: 45.131.209.24, port: 80, type: vless, uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram@WangCai2/?ed=2048", headers: {Host: feng4.l1ut8bi9.workers.dev}}, udp: true}
+  - {name: LU_1, server: lu.xn--2vxn29amga.com, port: 21174, type: hysteria2, password: 3872213f-a346-48a6-b670-db83a774af7d, auth: 3872213f-a346-48a6-b670-db83a774af7d, skip-cert-verify: true, udp: true}
+  - {name: RU_1, server: 195.58.49.42, port: 28155, type: hysteria2, password: 44887fd1-1562-4963-b6fd-25e0d8a8106d, auth: 44887fd1-1562-4963-b6fd-25e0d8a8106d, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==, udp: true}
+  - {name: RU_2, server: v2-els.netcar.live, port: 27115, type: vmess, uuid: 77f2759f-6ca6-4fbf-8b21-d38691ac0974, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: RU_3, server: 104.21.16.1, port: 8443, type: vless, uuid: 90765624-6fb5-49d6-ce81-2b1c10645319, tls: true, tfo: false, skip-cert-verify: true, servername: esna.twn24.ir, client-fingerprint: chrome, network: ws, ws-opts: {path: /mehdi, headers: {Host: esna.twn24.ir}}, udp: true}
+  - {name: SG_1, server: sg008.421421.xyz, port: 20230, type: trojan, password: a124e41a-0fb8-4543-a0ab-a127c7b515a9, sni: 421421.xyz, skip-cert-verify: true, udp: true}
+  - {name: SG_2, server: sg.xn--2vxn29amga.com, port: 21184, type: hysteria2, password: 3872213f-a346-48a6-b670-db83a774af7d, auth: 3872213f-a346-48a6-b670-db83a774af7d, skip-cert-verify: true, udp: true}
+  - {name: SG_3, server: sg.xn--2vxn29amga.com, port: 21194, type: hysteria2, password: 531042c3-ec0b-4545-ba97-3f2b595e2bf6, auth: 531042c3-ec0b-4545-ba97-3f2b595e2bf6, skip-cert-verify: true, udp: true}
+  - {name: SG_4, server: 152.32.255.24, port: 587, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: true, servername: a.mifeng.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: a.mifeng.us.kg}}, udp: true}
+  - {name: SG_5, server: cdncdncdn.aikunapp.com, port: 443, type: vmess, uuid: 96cad374-7573-4463-8804-4665c2c3d932, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: r-zlHN007ukwBr1OX6.sm-node.com, network: ws, ws-opts: {path: "/vmess_ws/smjc/index?ed=8192", headers: {Host: cdn-sg.sm-node.com}}, udp: true}
+  - {name: SG_6, server: 50012.baidu-cdn.top, port: 50012, type: vmess, uuid: bc589f18-9455-422f-907a-480f79b9130a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: SG_7, server: cdncdncdn.aikunapp.com, port: 443, type: vless, uuid: 96cad374-7573-4463-8804-4665c2c3d932, tls: true, tfo: false, skip-cert-verify: true, servername: r-KQvc4cExZQMIpYnH.sm-node.com, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws/smjc/index?ed=8192", headers: {Host: cdn-sg.sm-node.com}}, udp: true}
+  - {name: TW_1, server: 104.26.6.47, port: 2083, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: TW_2, server: 172.67.77.212, port: 8443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: TW_3, server: 162.159.140.15, port: 2096, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: TW_4, server: 172.67.72.243, port: 8443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: TW_5, server: 104.21.228.225, port: 2083, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: TW_6, server: 172.67.77.207, port: 2096, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: TW_7, server: 104.25.219.186, port: 2096, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: TW_8, server: 172.67.66.28, port: 2087, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: UN_1, server: 31.186.87.211, port: 4029, type: hysteria2, password: be758973-186d-46fe-8aa4-e017134fa291, auth: be758973-186d-46fe-8aa4-e017134fa291, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: UN_2, server: 45.144.174.12, port: 31651, type: hysteria2, password: a92e470d-f2ab-4417-9151-d79f154e46aa, auth: a92e470d-f2ab-4417-9151-d79f154e46aa, skip-cert-verify: true, obfs: salamander, obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==, udp: true}
+  - {name: US_1, server: 104.26.12.101, port: 2052, type: vless, uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt}}, udp: true}
+  - {name: US_10, server: 198.41.219.135, port: 2087, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_11, server: 104.27.80.43, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: true, servername: a.xn--i-sx6a60i.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/TELEGRAM-PROXY_MTM-TELEGRAM-PROXY_MTM-TELEGRAM-PROXY_MTM?ed=2560", headers: {Host: a.xn--i-sx6a60i.us.kg}}, udp: true}
+  - {name: US_12, server: 147.135.125.119, port: 443, type: vless, uuid: 3b9bc773-05eb-4d5f-8c1f-57342c0c4f40, tls: true, tfo: false, skip-cert-verify: true, servername: 147135010103.sec19org.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: US_13, server: 108.165.152.207, port: 443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: ts.onjim.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.onjim.us.kg}}, udp: true}
+  - {name: US_14, server: 162.159.133.41, port: 2087, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_15, server: 172.67.207.57, port: 443, type: trojan, password: yaml777, sni: yaml7.ggff.net, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: yaml7.ggff.net}}, udp: true}
+  - {name: US_16, server: 172.67.165.43, port: 2095, type: vless, uuid: 2737560d-1867-47fa-aa80-351c36d771c7, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: 0118.kznyoum2.workers.dev}}, udp: true}
+  - {name: US_17, server: 104.19.48.236, port: 8880, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in172.64.0.32, headers: {Host: 100-14-147-154.s2.db-link01.top}}, udp: true}
+  - {name: US_18, server: 172.67.76.66, port: 8443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_19, server: 45.159.218.9, port: 80, type: vless, uuid: 64d39d67-62dc-470c-a592-1d5a6ee87cb5, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048fp=chrome", headers: {Host: worker-flat-disk-100d.b9563f65aef681.workers.dev}}, udp: true}
+  - {name: US_2, server: 172.64.145.217, port: 443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_20, server: 107.174.34.6, port: 443, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 100-149-191-2.s5.db-link02.top, network: ws, ws-opts: {path: /dabai.in104.20.16.209, headers: {Host: 100-149-191-2.s5.db-link02.top}}, udp: true}
+  - {name: US_21, server: 162.159.134.195, port: 2096, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_22, server: 172.67.78.118, port: 443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_23, server: 188.114.96.223, port: 443, type: vless, uuid: eb201923-0e39-4425-bd0f-6244cd24ef2a, tls: true, tfo: false, skip-cert-verify: true, servername: zaq11000d.b835a8094d.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: zaq11000d.b835a8094d.workers.dev}}, udp: true}
+  - {name: US_24, server: 104.25.250.226, port: 2053, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_25, server: 103.116.7.133, port: 2083, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: ts.onjim.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560&proxyip=proxyip.classelivre.eu.org:15661", headers: {Host: ts.onjim.us.kg}}, udp: true}
+  - {name: US_26, server: 104.19.48.236, port: 8880, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in172.67.95.35, headers: {Host: 100-250-32-53.s1.db-link01.top}}, udp: true}
+  - {name: US_27, server: 172.67.73.132, port: 443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_28, server: 45.131.7.157, port: 80, type: vless, uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram@WangCai2/?ed=2048", headers: {Host: feng4.l1ut8bi9.workers.dev}}, udp: true}
+  - {name: US_29, server: 104.26.9.181, port: 2083, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_3, server: 66.235.200.30, port: 80, type: vless, uuid: e497da22-d020-40fb-a1fa-bc294066a2d2, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1, headers: {Host: pormang.webhost99.workers.dev}}, udp: true}
+  - {name: US_30, server: 107.174.34.6, port: 443, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, network: ws, ws-opts: {path: /dabai.in104.20.143.141}, udp: true}
+  - {name: US_31, server: 162.159.129.135, port: 2083, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_32, server: ccc.cn1.xiaomi-api.xyz, port: 11062, type: trojan, password: d16d869d-d65d-4167-a2cc-5a4f336b9c16, skip-cert-verify: true, udp: true}
+  - {name: US_33, server: 172.67.69.224, port: 443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_34, server: 172.67.75.139, port: 2096, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_35, server: 15.204.145.84, port: 443, type: vless, uuid: ea286109-d20f-415e-849e-4af20ab04b65, tls: true, tfo: false, skip-cert-verify: true, servername: 147135001195.sec22org.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: US_36, server: 195.85.59.161, port: 2082, type: vless, uuid: dbf403f4-b871-4446-8712-675562dbbb7b, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: 0221.enedrehd.workers.dev}}, udp: true}
+  - {name: US_37, server: 172.67.68.78, port: 2087, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_38, server: 172.67.147.79, port: 8880, type: vless, uuid: 21187b47-d3dc-44d0-9b72-5f5feaa41ecd, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: falcunargo.311588e604.workers.dev}}, udp: true}
+  - {name: US_39, server: 172.67.58.141, port: 2096, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_4, server: 190.93.245.173, port: 2087, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_40, server: 172.67.65.226, port: 2083, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_5, server: 45.131.6.193, port: 80, type: vless, uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram@WangCai2/?ed=2048", headers: {Host: feng4.l1ut8bi9.workers.dev}}, udp: true}
+  - {name: US_6, server: 172.67.161.104, port: 2095, type: vless, uuid: 8169cd18-e824-47a4-a4d4-96433b1a519d, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: testdvpnhub69.95f425b718.workers.dev}}, udp: true}
+  - {name: US_7, server: us.xn--2vxn29amga.com, port: 21122, type: hysteria2, password: 3872213f-a346-48a6-b670-db83a774af7d, auth: 3872213f-a346-48a6-b670-db83a774af7d, skip-cert-verify: true, udp: true}
+  - {name: US_8, server: 172.67.66.168, port: 2053, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
+  - {name: US_9, server: 104.20.27.40, port: 443, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: aa.txtxt.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: aa.txtxt.us.kg}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
-      - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
+      - CA_4
+      - CA_5
       - GB_1
       - HK_1
       - HK_2
@@ -128,9 +124,6 @@ proxy-groups:
       - HK_5
       - HK_6
       - HK_7
-      - HK_8
-      - HK_9
-      - IL_1
       - JP_1
       - JP_10
       - JP_11
@@ -143,6 +136,12 @@ proxy-groups:
       - JP_18
       - JP_19
       - JP_2
+      - JP_20
+      - JP_21
+      - JP_22
+      - JP_23
+      - JP_24
+      - JP_25
       - JP_3
       - JP_4
       - JP_5
@@ -152,37 +151,24 @@ proxy-groups:
       - JP_9
       - KR_1
       - LU_1
-      - LU_2
-      - NL_1
-      - PL_1
-      - RS_1
-      - SA_1
+      - RU_1
+      - RU_2
+      - RU_3
       - SG_1
       - SG_2
       - SG_3
       - SG_4
+      - SG_5
+      - SG_6
+      - SG_7
       - TW_1
-      - TW_10
-      - TW_11
-      - TW_12
-      - TW_13
-      - TW_14
-      - TW_15
-      - TW_16
-      - TW_17
-      - TW_18
-      - TW_19
       - TW_2
-      - TW_20
-      - TW_21
-      - TW_22
       - TW_3
       - TW_4
       - TW_5
       - TW_6
       - TW_7
       - TW_8
-      - TW_9
       - UN_1
       - UN_2
       - US_1
@@ -204,8 +190,22 @@ proxy-groups:
       - US_24
       - US_25
       - US_26
+      - US_27
+      - US_28
+      - US_29
       - US_3
+      - US_30
+      - US_31
+      - US_32
+      - US_33
+      - US_34
+      - US_35
+      - US_36
+      - US_37
+      - US_38
+      - US_39
       - US_4
+      - US_40
       - US_5
       - US_6
       - US_7
@@ -216,15 +216,11 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
-      - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
+      - CA_4
+      - CA_5
       - GB_1
       - HK_1
       - HK_2
@@ -233,9 +229,6 @@ proxy-groups:
       - HK_5
       - HK_6
       - HK_7
-      - HK_8
-      - HK_9
-      - IL_1
       - JP_1
       - JP_10
       - JP_11
@@ -248,6 +241,12 @@ proxy-groups:
       - JP_18
       - JP_19
       - JP_2
+      - JP_20
+      - JP_21
+      - JP_22
+      - JP_23
+      - JP_24
+      - JP_25
       - JP_3
       - JP_4
       - JP_5
@@ -257,37 +256,24 @@ proxy-groups:
       - JP_9
       - KR_1
       - LU_1
-      - LU_2
-      - NL_1
-      - PL_1
-      - RS_1
-      - SA_1
+      - RU_1
+      - RU_2
+      - RU_3
       - SG_1
       - SG_2
       - SG_3
       - SG_4
+      - SG_5
+      - SG_6
+      - SG_7
       - TW_1
-      - TW_10
-      - TW_11
-      - TW_12
-      - TW_13
-      - TW_14
-      - TW_15
-      - TW_16
-      - TW_17
-      - TW_18
-      - TW_19
       - TW_2
-      - TW_20
-      - TW_21
-      - TW_22
       - TW_3
       - TW_4
       - TW_5
       - TW_6
       - TW_7
       - TW_8
-      - TW_9
       - UN_1
       - UN_2
       - US_1
@@ -309,8 +295,22 @@ proxy-groups:
       - US_24
       - US_25
       - US_26
+      - US_27
+      - US_28
+      - US_29
       - US_3
+      - US_30
+      - US_31
+      - US_32
+      - US_33
+      - US_34
+      - US_35
+      - US_36
+      - US_37
+      - US_38
+      - US_39
       - US_4
+      - US_40
       - US_5
       - US_6
       - US_7
@@ -322,15 +322,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
-      - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
+      - CA_4
+      - CA_5
       - GB_1
       - HK_1
       - HK_2
@@ -339,9 +335,6 @@ proxy-groups:
       - HK_5
       - HK_6
       - HK_7
-      - HK_8
-      - HK_9
-      - IL_1
       - JP_1
       - JP_10
       - JP_11
@@ -354,6 +347,12 @@ proxy-groups:
       - JP_18
       - JP_19
       - JP_2
+      - JP_20
+      - JP_21
+      - JP_22
+      - JP_23
+      - JP_24
+      - JP_25
       - JP_3
       - JP_4
       - JP_5
@@ -363,37 +362,24 @@ proxy-groups:
       - JP_9
       - KR_1
       - LU_1
-      - LU_2
-      - NL_1
-      - PL_1
-      - RS_1
-      - SA_1
+      - RU_1
+      - RU_2
+      - RU_3
       - SG_1
       - SG_2
       - SG_3
       - SG_4
+      - SG_5
+      - SG_6
+      - SG_7
       - TW_1
-      - TW_10
-      - TW_11
-      - TW_12
-      - TW_13
-      - TW_14
-      - TW_15
-      - TW_16
-      - TW_17
-      - TW_18
-      - TW_19
       - TW_2
-      - TW_20
-      - TW_21
-      - TW_22
       - TW_3
       - TW_4
       - TW_5
       - TW_6
       - TW_7
       - TW_8
-      - TW_9
       - UN_1
       - UN_2
       - US_1
@@ -415,8 +401,22 @@ proxy-groups:
       - US_24
       - US_25
       - US_26
+      - US_27
+      - US_28
+      - US_29
       - US_3
+      - US_30
+      - US_31
+      - US_32
+      - US_33
+      - US_34
+      - US_35
+      - US_36
+      - US_37
+      - US_38
+      - US_39
       - US_4
+      - US_40
       - US_5
       - US_6
       - US_7
@@ -440,15 +440,11 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
-      - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
+      - CA_4
+      - CA_5
       - GB_1
       - HK_1
       - HK_2
@@ -457,9 +453,6 @@ proxy-groups:
       - HK_5
       - HK_6
       - HK_7
-      - HK_8
-      - HK_9
-      - IL_1
       - JP_1
       - JP_10
       - JP_11
@@ -472,6 +465,12 @@ proxy-groups:
       - JP_18
       - JP_19
       - JP_2
+      - JP_20
+      - JP_21
+      - JP_22
+      - JP_23
+      - JP_24
+      - JP_25
       - JP_3
       - JP_4
       - JP_5
@@ -481,37 +480,24 @@ proxy-groups:
       - JP_9
       - KR_1
       - LU_1
-      - LU_2
-      - NL_1
-      - PL_1
-      - RS_1
-      - SA_1
+      - RU_1
+      - RU_2
+      - RU_3
       - SG_1
       - SG_2
       - SG_3
       - SG_4
+      - SG_5
+      - SG_6
+      - SG_7
       - TW_1
-      - TW_10
-      - TW_11
-      - TW_12
-      - TW_13
-      - TW_14
-      - TW_15
-      - TW_16
-      - TW_17
-      - TW_18
-      - TW_19
       - TW_2
-      - TW_20
-      - TW_21
-      - TW_22
       - TW_3
       - TW_4
       - TW_5
       - TW_6
       - TW_7
       - TW_8
-      - TW_9
       - UN_1
       - UN_2
       - US_1
@@ -533,8 +519,22 @@ proxy-groups:
       - US_24
       - US_25
       - US_26
+      - US_27
+      - US_28
+      - US_29
       - US_3
+      - US_30
+      - US_31
+      - US_32
+      - US_33
+      - US_34
+      - US_35
+      - US_36
+      - US_37
+      - US_38
+      - US_39
       - US_4
+      - US_40
       - US_5
       - US_6
       - US_7
@@ -550,15 +550,11 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
-      - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
+      - CA_4
+      - CA_5
       - GB_1
       - HK_1
       - HK_2
@@ -567,9 +563,6 @@ proxy-groups:
       - HK_5
       - HK_6
       - HK_7
-      - HK_8
-      - HK_9
-      - IL_1
       - JP_1
       - JP_10
       - JP_11
@@ -582,6 +575,12 @@ proxy-groups:
       - JP_18
       - JP_19
       - JP_2
+      - JP_20
+      - JP_21
+      - JP_22
+      - JP_23
+      - JP_24
+      - JP_25
       - JP_3
       - JP_4
       - JP_5
@@ -591,37 +590,24 @@ proxy-groups:
       - JP_9
       - KR_1
       - LU_1
-      - LU_2
-      - NL_1
-      - PL_1
-      - RS_1
-      - SA_1
+      - RU_1
+      - RU_2
+      - RU_3
       - SG_1
       - SG_2
       - SG_3
       - SG_4
+      - SG_5
+      - SG_6
+      - SG_7
       - TW_1
-      - TW_10
-      - TW_11
-      - TW_12
-      - TW_13
-      - TW_14
-      - TW_15
-      - TW_16
-      - TW_17
-      - TW_18
-      - TW_19
       - TW_2
-      - TW_20
-      - TW_21
-      - TW_22
       - TW_3
       - TW_4
       - TW_5
       - TW_6
       - TW_7
       - TW_8
-      - TW_9
       - UN_1
       - UN_2
       - US_1
@@ -643,8 +629,22 @@ proxy-groups:
       - US_24
       - US_25
       - US_26
+      - US_27
+      - US_28
+      - US_29
       - US_3
+      - US_30
+      - US_31
+      - US_32
+      - US_33
+      - US_34
+      - US_35
+      - US_36
+      - US_37
+      - US_38
+      - US_39
       - US_4
+      - US_40
       - US_5
       - US_6
       - US_7
@@ -655,15 +655,11 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
-      - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
+      - CA_4
+      - CA_5
       - GB_1
       - HK_1
       - HK_2
@@ -672,9 +668,6 @@ proxy-groups:
       - HK_5
       - HK_6
       - HK_7
-      - HK_8
-      - HK_9
-      - IL_1
       - JP_1
       - JP_10
       - JP_11
@@ -687,6 +680,12 @@ proxy-groups:
       - JP_18
       - JP_19
       - JP_2
+      - JP_20
+      - JP_21
+      - JP_22
+      - JP_23
+      - JP_24
+      - JP_25
       - JP_3
       - JP_4
       - JP_5
@@ -696,37 +695,24 @@ proxy-groups:
       - JP_9
       - KR_1
       - LU_1
-      - LU_2
-      - NL_1
-      - PL_1
-      - RS_1
-      - SA_1
+      - RU_1
+      - RU_2
+      - RU_3
       - SG_1
       - SG_2
       - SG_3
       - SG_4
+      - SG_5
+      - SG_6
+      - SG_7
       - TW_1
-      - TW_10
-      - TW_11
-      - TW_12
-      - TW_13
-      - TW_14
-      - TW_15
-      - TW_16
-      - TW_17
-      - TW_18
-      - TW_19
       - TW_2
-      - TW_20
-      - TW_21
-      - TW_22
       - TW_3
       - TW_4
       - TW_5
       - TW_6
       - TW_7
       - TW_8
-      - TW_9
       - UN_1
       - UN_2
       - US_1
@@ -748,8 +734,22 @@ proxy-groups:
       - US_24
       - US_25
       - US_26
+      - US_27
+      - US_28
+      - US_29
       - US_3
+      - US_30
+      - US_31
+      - US_32
+      - US_33
+      - US_34
+      - US_35
+      - US_36
+      - US_37
+      - US_38
+      - US_39
       - US_4
+      - US_40
       - US_5
       - US_6
       - US_7
@@ -761,15 +761,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
-      - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
+      - CA_4
+      - CA_5
       - GB_1
       - HK_1
       - HK_2
@@ -778,9 +774,6 @@ proxy-groups:
       - HK_5
       - HK_6
       - HK_7
-      - HK_8
-      - HK_9
-      - IL_1
       - JP_1
       - JP_10
       - JP_11
@@ -793,6 +786,12 @@ proxy-groups:
       - JP_18
       - JP_19
       - JP_2
+      - JP_20
+      - JP_21
+      - JP_22
+      - JP_23
+      - JP_24
+      - JP_25
       - JP_3
       - JP_4
       - JP_5
@@ -802,37 +801,24 @@ proxy-groups:
       - JP_9
       - KR_1
       - LU_1
-      - LU_2
-      - NL_1
-      - PL_1
-      - RS_1
-      - SA_1
+      - RU_1
+      - RU_2
+      - RU_3
       - SG_1
       - SG_2
       - SG_3
       - SG_4
+      - SG_5
+      - SG_6
+      - SG_7
       - TW_1
-      - TW_10
-      - TW_11
-      - TW_12
-      - TW_13
-      - TW_14
-      - TW_15
-      - TW_16
-      - TW_17
-      - TW_18
-      - TW_19
       - TW_2
-      - TW_20
-      - TW_21
-      - TW_22
       - TW_3
       - TW_4
       - TW_5
       - TW_6
       - TW_7
       - TW_8
-      - TW_9
       - UN_1
       - UN_2
       - US_1
@@ -854,8 +840,22 @@ proxy-groups:
       - US_24
       - US_25
       - US_26
+      - US_27
+      - US_28
+      - US_29
       - US_3
+      - US_30
+      - US_31
+      - US_32
+      - US_33
+      - US_34
+      - US_35
+      - US_36
+      - US_37
+      - US_38
+      - US_39
       - US_4
+      - US_40
       - US_5
       - US_6
       - US_7
@@ -876,15 +876,11 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
-      - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
+      - CA_4
+      - CA_5
       - GB_1
       - HK_1
       - HK_2
@@ -893,9 +889,6 @@ proxy-groups:
       - HK_5
       - HK_6
       - HK_7
-      - HK_8
-      - HK_9
-      - IL_1
       - JP_1
       - JP_10
       - JP_11
@@ -908,6 +901,12 @@ proxy-groups:
       - JP_18
       - JP_19
       - JP_2
+      - JP_20
+      - JP_21
+      - JP_22
+      - JP_23
+      - JP_24
+      - JP_25
       - JP_3
       - JP_4
       - JP_5
@@ -917,37 +916,24 @@ proxy-groups:
       - JP_9
       - KR_1
       - LU_1
-      - LU_2
-      - NL_1
-      - PL_1
-      - RS_1
-      - SA_1
+      - RU_1
+      - RU_2
+      - RU_3
       - SG_1
       - SG_2
       - SG_3
       - SG_4
+      - SG_5
+      - SG_6
+      - SG_7
       - TW_1
-      - TW_10
-      - TW_11
-      - TW_12
-      - TW_13
-      - TW_14
-      - TW_15
-      - TW_16
-      - TW_17
-      - TW_18
-      - TW_19
       - TW_2
-      - TW_20
-      - TW_21
-      - TW_22
       - TW_3
       - TW_4
       - TW_5
       - TW_6
       - TW_7
       - TW_8
-      - TW_9
       - UN_1
       - UN_2
       - US_1
@@ -969,8 +955,22 @@ proxy-groups:
       - US_24
       - US_25
       - US_26
+      - US_27
+      - US_28
+      - US_29
       - US_3
+      - US_30
+      - US_31
+      - US_32
+      - US_33
+      - US_34
+      - US_35
+      - US_36
+      - US_37
+      - US_38
+      - US_39
       - US_4
+      - US_40
       - US_5
       - US_6
       - US_7
