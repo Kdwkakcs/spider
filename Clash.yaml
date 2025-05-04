@@ -5,124 +5,118 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: BG_1, server: bgp-xdd.blue-bgp.xyz, port: 26221, type: vmess, uuid: ff758cd7-dd79-4dbb-9978-409ca47729c9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: BR_1, server: 719aa601-sufc00-sut0td-8caj.b.fosant.com, port: 3688, type: vmess, uuid: a67a6c18-3f6d-11ef-ab9c-f23c9313b177, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CA_1, server: 35.183.177.32, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: CA_2, server: 35.182.218.198, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: CA_3, server: 99.79.33.5, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: CA_4, server: 15.223.64.193, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: DE_1, server: 104.16.209.110, port: 443, type: vless, uuid: 10d9df89-9a20-4110-9711-bca119490ee9, tls: true, tfo: false, skip-cert-verify: true, servername: masaleini.mahsaamini.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/sinavm/?ed=2560", headers: {Host: masaleini.mahsaamini.dpdns.org}}, udp: true}
-  - {name: DE_2, server: 57.129.41.216, port: 2083, type: vmess, uuid: 3967c059-865d-40af-ba3c-8abc9ba5c7f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: ov-germany1.09vpn.com, network: ws, ws-opts: {path: /vmess/, headers: {Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc}}, udp: true}
-  - {name: FR_1, server: 35.181.61.85, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FR_2, server: 13.37.232.111, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: FR_3, server: aafrtpfxr.frl01i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 43498, type: trojan, password: 5a6f6a02-6fe4-4508-b4e9-7051161c64ab, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: FR_4, server: 13.38.28.144, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_1, server: 185.148.105.169, port: 443, type: vless, uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6, tls: true, tfo: false, skip-cert-verify: true, servername: UoIrHqRs.cAfUnEaR.InFo, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: UoIrHqRs.cAfUnEaR.InFo}}, udp: true}
-  - {name: GB_10, server: 35.178.119.81, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_11, server: 18.171.176.68, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_12, server: 18.169.18.235, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_13, server: 35.178.207.190, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_14, server: 13.42.57.244, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_15, server: 18.132.12.254, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_16, server: 13.42.101.129, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_17, server: 3.9.12.214, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_18, server: 18.175.199.122, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_19, server: 35.178.185.233, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_2, server: 35.178.160.75, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_20, server: 13.40.156.99, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_21, server: 3.10.227.119, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_22, server: 185.208.77.113, port: 14040, type: vless, uuid: a2691bdd-7989-4e7e-9c44-302e360c021f, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: GB_23, server: 18.170.106.80, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_24, server: 35.178.156.7, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_25, server: 13.40.187.154, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_3, server: 18.175.253.6, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_4, server: 3.8.156.222, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_5, server: 13.42.31.96, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_6, server: 18.135.99.144, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_7, server: 13.40.143.165, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_8, server: 35.177.107.103, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: GB_9, server: 18.171.145.135, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: HK_1, server: 183.240.116.252, port: 27103, type: trojan, password: 07f31a0d-849a-4280-b831-c932598fc2cd, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: HK_2, server: 125.94.45.119, port: 27101, type: trojan, password: b433ef57-908c-476f-bea9-eb8df7362f60, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: HK_3, server: 45.146.232.171, port: 27103, type: trojan, password: 8eb199ac-156f-435c-be6c-57e9110dc29b, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: HK_4, server: 183.240.116.252, port: 27102, type: trojan, password: 53dd6efd-6b73-4236-859f-839ee7c95558, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: HK_5, server: 205.198.64.79, port: 10081, type: vmess, uuid: c6143077-11da-4fe9-85e0-88adf896e78b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess-ws}, udp: true}
-  - {name: HK_6, server: 45.146.232.171, port: 27102, type: trojan, password: e14f1350-a1b5-49b2-ba56-2fda4db06028, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: IE_1, server: 54.194.163.172, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_10, server: 34.245.91.14, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_11, server: 54.246.191.79, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_12, server: 34.243.0.115, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_13, server: 54.194.157.130, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_14, server: 18.202.232.42, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_15, server: 3.249.158.68, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_16, server: 18.202.35.232, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_17, server: 52.210.209.195, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_18, server: 34.244.200.80, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_19, server: 34.245.175.246, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_2, server: 54.75.59.184, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_20, server: 34.243.62.218, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_21, server: 3.250.27.99, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_3, server: 18.203.82.55, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_4, server: 54.229.251.50, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_5, server: 18.201.118.12, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_6, server: 3.252.93.4, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_7, server: 54.74.12.102, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_8, server: 34.242.218.157, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: IE_9, server: 3.254.231.160, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: JP_1, server: 183.240.116.224, port: 27002, type: trojan, password: 51d4dd03-5e4d-4f54-9af0-36ae58b7f831, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: JP_2, server: 45.146.232.171, port: 22269, type: trojan, password: 99025723-31a3-4287-8660-1b4ecc9035f1, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: JP_3, server: 61o99-g06.jp02-9a99-vm0.entry.fr0307a.art, port: 11778, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_4, server: 45.146.232.171, port: 27002, type: trojan, password: 172f5b82-7902-425c-acc9-900b38316f1a, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: JP_5, server: 183.2.150.98, port: 27001, type: trojan, password: dbdd922f-bd18-4d31-be3b-7ea5f1330136, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: JP_6, server: 162.159.128.239, port: 80, type: vless, uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: /flow=-udp443, headers: {Host: 23-lsjfjwiposkfls.hc2021.cfd}}, udp: true}
-  - {name: JP_7, server: 66te7-g06.jp04-3771-vm0.entry.fr0307a.art, port: 449, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_8, server: g0bdy-g06.jp05-6786-vm0.entry.fr0307a.art, port: 46487, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: JP_9, server: 46emk-g06.jp06-7c5a-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
-  - {name: KR_1, server: 172.67.118.237, port: 443, type: vless, uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5, tls: true, tfo: false, skip-cert-verify: true, servername: 23-lsjfjwiposkfls.hc2021.cfd, client-fingerprint: chrome, network: ws, ws-opts: {path: /flow=-udp443, headers: {Host: 23-lsjfjwiposkfls.hc2021.cfd}}, udp: true}
-  - {name: KR_2, server: 104.18.1.9, port: 2053, type: vless, uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5, tls: true, tfo: false, skip-cert-verify: true, servername: 23-lsjfjwiposkfls.hc2021.cfd, client-fingerprint: chrome, network: ws, ws-opts: {path: /flow=-udp443, headers: {Host: 23-lsjfjwiposkfls.hc2021.cfd}}, udp: true}
-  - {name: NL_1, server: 45.131.4.173, port: 8443, type: vless, uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc, tls: true, tfo: false, skip-cert-verify: true, servername: QtRkJtLt27.pRiMeXaD.OrG, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: QtRkJtLt27.pRiMeXaD.OrG}}, udp: true}
-  - {name: NL_2, server: 168.100.6.11, port: 8443, type: vless, uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc, tls: true, tfo: false, skip-cert-verify: true, servername: QtRkJtLt27.pRiMeXaD.OrG, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: QtRkJtLt27.pRiMeXaD.OrG}}, udp: true}
-  - {name: SE_1, server: 104.21.54.208, port: 2053, type: trojan, password: wZcm2QD64Ift, sni: tasnim.andishehnegariran.ir, skip-cert-verify: true, network: ws, ws-opts: {path: /🆔@M3HDIO1, headers: {Host: tasnim.andishehnegariran.ir}}, udp: true}
-  - {name: SG_1, server: aafrtpfxr.sgl02i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 42881, type: trojan, password: 8ceca6ee-d2c6-476a-b438-8c85b67a9e71, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: SG_2, server: c229620a61d7abf42173939a3433e3cc.v1.cac.node-is.green, port: 47556, type: trojan, password: 0d9ccc89-59cc-4600-a24d-26dd3a72b003, sni: sg1.bilibili.com, skip-cert-verify: true, udp: true}
-  - {name: SG_3, server: 183.240.116.235, port: 27401, type: trojan, password: 1f3d7e00-6fed-4420-b9e9-c73a2b966ea5, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: SG_4, server: 47.236.119.64, port: 30167, type: vmess, uuid: 9d4add7e-7904-4dee-a14d-f6745110f008, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 47.236.119.64}}, udp: true}
-  - {name: TW_1, server: 45.146.232.171, port: 27202, type: trojan, password: a76e08c2-8951-4bfe-b580-1bc9452170f9, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: TW_2, server: 45.146.232.171, port: 27202, type: trojan, password: a8b6d637-ecaf-49b1-a3c2-e2f7ce54e500, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: TW_3, server: 183.240.116.224, port: 27201, type: trojan, password: 61590264-2612-4c8e-8951-f233587937e6, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: TW_4, server: tw2.ddns-link-b5.uk, port: 3654, type: hysteria2, password: D9BE3463-2E55-4694-9212-D4B3D7F9ED67, auth: D9BE3463-2E55-4694-9212-D4B3D7F9ED67, sni: tw2.ddns-link-b5.uk, skip-cert-verify: true, udp: true}
-  - {name: UN_1, server: 141.147.48.166, port: 55113, type: hysteria2, password: e823e0d4-934e-486a-bd9e-b8ad22235138, auth: e823e0d4-934e-486a-bd9e-b8ad22235138, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: US_1, server: 58.254.186.222, port: 33506, type: trojan, password: 2ab4a73a-20ec-4322-87fc-d8b623d34c28, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: US_10, server: 104.24.199.72, port: 443, type: vless, uuid: 4fa4277d-e895-4a2e-a893-1f00bccb98b1, tls: true, tfo: false, skip-cert-verify: true, servername: welean.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: welean.top}}, udp: true}
-  - {name: US_11, server: 58.254.186.231, port: 27301, type: trojan, password: 7809fdff-79d2-44f4-ac9f-bc25920fa254, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: US_12, server: 103.116.7.248, port: 443, type: vless, uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2, tls: true, tfo: false, skip-cert-verify: true, servername: edcch.ambercc.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: edcch.ambercc.filegear-sg.me}}, udp: true}
-  - {name: US_13, server: 103.116.7.248, port: 443, type: vless, uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2, tls: true, tfo: false, skip-cert-verify: true, servername: edcch.ambercc.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed", headers: {Host: edcch.ambercc.filegear-sg.me}}, udp: true}
-  - {name: US_2, server: 35.93.18.74, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: US_3, server: 104.18.0.0, port: 443, type: vless, uuid: bc2a2e87-e34b-4126-91ce-e7bccdafc4d4, tls: true, tfo: false, skip-cert-verify: true, servername: us.4056860.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws, headers: {Host: us.4056860.xyz}}, udp: true}
-  - {name: US_4, server: 104.21.35.247, port: 80, type: vmess, uuid: 53249200-30ff-436f-a032-0bb00605f8f9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /KxzNX8UeejU5JqXZxjQ5ILc, headers: {Host: 3errfff.huangshang2030.dpdns.org}}, udp: true}
-  - {name: US_5, server: 104.18.0.0, port: 443, type: vless, uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5, tls: true, tfo: false, skip-cert-verify: true, servername: 23-lsjfjwiposkfls.hc2021.cfd, client-fingerprint: chrome, network: ws, ws-opts: {path: /flow=-udp443, headers: {Host: 23-lsjfjwiposkfls.hc2021.cfd}}, udp: true}
-  - {name: US_6, server: 192.227.175.225, port: 80, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in172.64.8.26}, udp: true}
-  - {name: US_7, server: 103.116.7.220, port: 2096, type: trojan, password: Aimer, sni: epcch.ambercc.filegear-sg.me, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: epcch.ambercc.filegear-sg.me}}, udp: true}
-  - {name: US_8, server: 163.177.47.36, port: 27301, type: trojan, password: 0d322f16-8cc9-4665-93d5-b913ff4bc1be, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: US_9, server: 27.50.48.126, port: 2083, type: trojan, password: Aimer, sni: tyep.esslh.filegear-sg.me, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: tyep.esslh.filegear-sg.me}}, udp: true}
+  - {name: CA_1, server: 14.102.228.75, port: 80, type: vless, uuid: b49d8a13-12f6-4613-bb0d-3e2f6244f29c, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: /vless/, headers: {Host: ov-canada1.09vpn.com}}, udp: true}
+  - {name: CA_2, server: 15.222.240.205, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: CA_3, server: 3.96.175.5, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: CA_4, server: 15.223.174.199, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: FR_1, server: 13.36.235.138, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: FR_2, server: 35.180.231.193, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_1, server: 18.134.156.58, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_10, server: 13.42.30.150, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_11, server: 35.177.227.211, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_12, server: 35.178.193.55, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_13, server: 18.170.223.228, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_14, server: 18.175.135.245, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_15, server: 18.175.152.139, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_16, server: 35.179.94.41, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_17, server: 13.40.30.132, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_2, server: 18.175.238.49, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_3, server: 13.40.200.185, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_4, server: 3.10.54.170, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_5, server: 18.132.14.146, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_6, server: 3.8.157.76, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_7, server: 18.170.46.131, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_8, server: 13.41.188.0, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: GB_9, server: 3.10.211.147, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: HK_1, server: 183.2.150.90, port: 27101, type: trojan, password: a8f27cc3-9f19-4479-82eb-dc99be022601, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: HK_2, server: yx1.niaoba.top, port: 2052, type: vmess, uuid: 3732d101-6d08-4882-9bd8-3a5746f4163e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 1176597580251.vmhk3.taobao.yyds.niaoba.top}}, udp: true}
+  - {name: HK_3, server: 183.240.116.235, port: 27101, type: trojan, password: 2ec5cdc2-f05f-4b02-b532-46cfd9cc04ba, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: HK_4, server: 45.146.232.171, port: 27103, type: trojan, password: b3955769-8572-400f-9f7a-24d34d86dd4c, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: HK_5, server: 58.254.186.231, port: 10465, type: trojan, password: b0c16013-32ae-4bf2-acd7-8b5d353c241b, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: HK_6, server: 183.2.150.90, port: 27102, type: trojan, password: 96673630-a478-4149-b525-28be5f107243, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: HK_7, server: 125.94.45.119, port: 27101, type: trojan, password: 42f9a2df-2cb1-4a17-8e10-ddacc83a2801, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: HK_8, server: 183.240.116.252, port: 27103, type: trojan, password: 40a0e616-ee4e-4712-89dd-3c1acbad0eb9, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: IE_1, server: 34.250.152.226, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_10, server: 108.129.251.255, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_11, server: 54.247.19.64, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_12, server: 3.254.92.178, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_13, server: 34.243.226.125, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_14, server: 34.242.48.165, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_15, server: 34.241.180.201, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_16, server: 34.244.182.182, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_17, server: 108.129.250.61, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_18, server: 35.178.249.101, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_19, server: 34.242.157.25, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_2, server: 3.252.139.223, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_20, server: 54.217.49.42, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_21, server: 54.72.176.57, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_22, server: 3.251.76.164, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_23, server: 54.73.147.21, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_24, server: 52.214.173.115, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_25, server: 34.245.80.134, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_26, server: 3.248.205.30, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_3, server: 54.75.108.164, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_4, server: 3.252.249.144, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_5, server: 54.246.134.192, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_6, server: 13.43.218.143, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_7, server: 34.244.114.130, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_8, server: 54.247.31.76, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: IE_9, server: 18.175.221.85, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: JP_1, server: 5wcvw-g06.jp01-0986-vm0.entry.fr0307a.art, port: 21586, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: JP_10, server: u12mt-g06.jp07-1f28-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_11, server: 02c32b60-sudhc0-sva30v-au6.d.volczijie.com, port: 3684, type: vmess, uuid: 1b609740-eec2-11ef-8543-f23c93136cb3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_12, server: 06w3y-g06.jp02-9a99-vm0.entry.fr0307a.art, port: 11778, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_13, server: 3cmm9-g06.jp03-7d22-vm0.entry.fr0307a.art, port: 21586, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: JP_14, server: 45.146.232.171, port: 22269, type: trojan, password: 4ccf0449-cf2e-49b1-b916-e1be78b40cd7, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: JP_15, server: 183.240.116.252, port: 22269, type: trojan, password: e97a3433-48cb-4c9d-973f-c3b84e2419d1, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: JP_16, server: yx1.niaoba.top, port: 2052, type: vmess, uuid: 4a068903-1a04-414e-beb1-d8dffee5ab2b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 117658256.vmjp.taobao.pdd.niaoba.top}}, udp: true}
+  - {name: JP_17, server: 8e1f0-g06.jp05-vm5.entry.rtysjur.quest, port: 64659, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_18, server: 45.146.232.171, port: 22269, type: trojan, password: 2829a9b4-1af4-47e5-8bc7-a2d2bc544730, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: JP_19, server: 45.146.232.171, port: 22271, type: trojan, password: d5e188c9-330b-4ef9-bb3d-e0c2f8666b5a, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: JP_2, server: jp5.dexlos.com, port: 9831, type: hysteria2, password: D9BE3463-2E55-4694-9212-D4B3D7F9ED67, auth: D9BE3463-2E55-4694-9212-D4B3D7F9ED67, sni: jp5.dexlos.com, skip-cert-verify: true, udp: true}
+  - {name: JP_3, server: 45.146.232.171, port: 27001, type: trojan, password: b1e97879-1fc0-47a3-8669-c3c1ded8f407, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: JP_4, server: 163.177.47.36, port: 22269, type: trojan, password: c5647c08-121d-4506-a2de-8ac2c18c0ccb, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: JP_5, server: 183.240.116.252, port: 22269, type: trojan, password: 0d322f16-8cc9-4665-93d5-b913ff4bc1be, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: JP_6, server: 183.240.116.224, port: 27001, type: trojan, password: 4bdafbfc-01a8-4195-b4ea-b82a224f0bce, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: JP_7, server: 39d60-g06.jp02-9a99-vm0.entry.fr0307a.art, port: 11778, type: vmess, uuid: 5fbe8e7d-b365-3da4-a706-230295ef4720, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_8, server: d2g63-g06.jp07-1f28-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: JP_9, server: x403u-g06.jp06-7c5a-vm0.entry.fr0307a.art, port: 28788, type: vmess, uuid: f276a3e8-b5ea-3f01-95ba-acf0a5ac6503, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: NL_1, server: 104.17.148.22, port: 443, type: vless, uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6, tls: true, tfo: false, skip-cert-verify: true, servername: TsJwJbBe.rOmAnYaE.InFo, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: TsJwJbBe.rOmAnYaE.InFo}}, udp: true}
+  - {name: PH_1, server: aafrtpfxr.phl01i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 27408, type: trojan, password: 454857e5-5a7b-41c8-859c-e9523e584cf4, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: SG_1, server: sg007.421421.xyz, port: 20230, type: trojan, password: fdd1d613-f234-40f6-b63d-97517e0fc4b3, sni: www.alibaba.com, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.alibaba.com}}, udp: true}
+  - {name: SG_2, server: 45.146.232.171, port: 27401, type: trojan, password: 5f1f3925-d426-43ed-b380-a425e435fe1c, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: TW_1, server: tw4.ddns-link-b5.uk, port: 7476, type: hysteria2, password: D9BE3463-2E55-4694-9212-D4B3D7F9ED67, auth: D9BE3463-2E55-4694-9212-D4B3D7F9ED67, sni: tw4.ddns-link-b5.uk, skip-cert-verify: true, udp: true}
+  - {name: TW_2, server: 45.146.232.171, port: 27201, type: trojan, password: 7f423915-edc9-41c6-9d24-96593208c60a, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: TW_3, server: 58.254.186.233, port: 27201, type: trojan, password: 973c6ae3-b016-413b-91d1-365ffd735970, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: UN_1, server: 146.235.225.95, port: 44005, type: hysteria2, password: 86e8020f-7024-4dae-86d2-afac9af504ed, auth: 86e8020f-7024-4dae-86d2-afac9af504ed, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: US_1, server: 104.26.13.54, port: 443, type: vless, uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5, tls: true, tfo: false, skip-cert-verify: true, servername: 5-55sfjslf.ifenxiang.cfd, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: 5-55sfjslf.ifenxiang.cfd}}, udp: true}
+  - {name: US_10, server: 172.66.47.63, port: 80, type: vless, uuid: 10d9df89-9a20-4110-9711-bca119490ee9, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: /TM@AZAFBAYJAB1flow=-udp443, headers: {Host: masaleini.mahsaamini.dpdns.org}}, udp: true}
+  - {name: US_11, server: 104.17.65.161, port: 443, type: vless, uuid: 49d4b99d-7d99-416a-9778-2c75d79100bb, tls: true, tfo: false, skip-cert-verify: true, servername: Work-YUU00.pageS.dEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: Work-YUU00.pageS.dEv}}, udp: true}
+  - {name: US_12, server: 172.64.157.124, port: 80, type: vless, uuid: 1ae17c7d-6074-41e2-894b-478c9fcf5715, tls: false, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: "/V2ray_Alpha/?ed=2560", headers: {Host: rough-hill-2959-ppal03.fawik58803.workers.dev}}, udp: true}
+  - {name: US_13, server: 104.21.12.158, port: 443, type: vless, uuid: acff92c5-701c-41e9-b905-c1e18fdd6b77, tls: true, tfo: false, skip-cert-verify: true, servername: 628b90e7-BLaCk-TrUtH-5368bb.mOSimOsTAfA5544.worKERS.DEV, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: 628b90e7-black-truth-5368bb.mosimostafa5544.workers.dev}}, udp: true}
+  - {name: US_14, server: 104.21.96.1, port: 443, type: trojan, password: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0, sni: 7nnn.191262.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /wGgR8FyAGgRCKSiyxgvJgLl, headers: {Host: 7nnn.191262.xyz}}, udp: true}
+  - {name: US_15, server: 148.135.119.212, port: 43456, type: trojan, password: 74afe64d-a409-4cce-8e39-4c86b15edbd4, skip-cert-verify: true, udp: true}
+  - {name: US_2, server: 27.50.49.188, port: 2096, type: vless, uuid: 9b0faee3-b5d1-4fb0-9130-41b4eda3a896, tls: true, tfo: false, skip-cert-verify: true, servername: ts.onjim.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ts.onjim.us.kg}}, udp: true}
+  - {name: US_3, server: 188.114.97.3, port: 443, type: vless, uuid: f2e486f9-1697-4be6-be59-6c4fb42c7a24, tls: true, tfo: false, skip-cert-verify: true, servername: paS-kaLE-AGhA.pageS.deV, client-fingerprint: chrome, network: ws, ws-opts: {path: flow=-udp443, headers: {Host: pas-kale-agha.pages.dev}}, udp: true}
+  - {name: US_4, server: 172.82.67.36, port: 22201, type: vless, uuid: c0f83bea-407f-4d09-ad20-13a64ddc2fd0, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: ZNHJmV2373YQ-Ld4-gcscXoNQlrp4ipJW6mnqNz6FCs, short-id: "9c" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: US_5, server: 104.17.213.241, port: 2095, type: vmess, uuid: a1a607e6-a04c-3db6-a36f-c2a4312e2fe1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in104.24.253.15, headers: {Host: 100-147-248-105.s2.cn-db.top}}, udp: true}
+  - {name: US_6, server: 103.35.190.171, port: 8443, type: vless, uuid: de537efd-4d7c-4f3c-aea5-19d3f36c7b1b, tls: true, tfo: false, skip-cert-verify: true, servername: txmt.conetcdata.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed", headers: {Host: txmt.conetcdata.dpdns.org}}, udp: true}
+  - {name: US_7, server: 172.67.214.21, port: 443, type: trojan, password: fefba36d-5142-42f1-b14d-db5249511d93, sni: 5re.191268.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /BFBuPh4SuxTxCwkqKrjE, headers: {Host: 5re.191268.xyz}}, udp: true}
+  - {name: US_8, server: 163.177.47.36, port: 27301, type: trojan, password: e586f104-9e90-4005-b3be-c2adcfc73ff8, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: US_9, server: 45.146.232.171, port: 27301, type: trojan, password: 8183be84-0a2b-4081-b391-ac31ea0a1cd1, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
+  - {name: VN_1, server: aafrtpfxr.vnl01i9zjfegelp.5xfsur8v62.gosdk.xyz, port: 43396, type: trojan, password: b2eb1d69-f3ef-43fe-b23d-ee044d7cf42a, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - BG_1
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
       - CA_4
-      - DE_1
-      - DE_2
       - FR_1
       - FR_2
-      - FR_3
-      - FR_4
       - GB_1
       - GB_10
       - GB_11
@@ -132,15 +126,7 @@ proxy-groups:
       - GB_15
       - GB_16
       - GB_17
-      - GB_18
-      - GB_19
       - GB_2
-      - GB_20
-      - GB_21
-      - GB_22
-      - GB_23
-      - GB_24
-      - GB_25
       - GB_3
       - GB_4
       - GB_5
@@ -154,6 +140,8 @@ proxy-groups:
       - HK_4
       - HK_5
       - HK_6
+      - HK_7
+      - HK_8
       - IE_1
       - IE_10
       - IE_11
@@ -168,6 +156,11 @@ proxy-groups:
       - IE_2
       - IE_20
       - IE_21
+      - IE_22
+      - IE_23
+      - IE_24
+      - IE_25
+      - IE_26
       - IE_3
       - IE_4
       - IE_5
@@ -176,6 +169,16 @@ proxy-groups:
       - IE_8
       - IE_9
       - JP_1
+      - JP_10
+      - JP_11
+      - JP_12
+      - JP_13
+      - JP_14
+      - JP_15
+      - JP_16
+      - JP_17
+      - JP_18
+      - JP_19
       - JP_2
       - JP_3
       - JP_4
@@ -184,25 +187,21 @@ proxy-groups:
       - JP_7
       - JP_8
       - JP_9
-      - KR_1
-      - KR_2
       - NL_1
-      - NL_2
-      - SE_1
+      - PH_1
       - SG_1
       - SG_2
-      - SG_3
-      - SG_4
       - TW_1
       - TW_2
       - TW_3
-      - TW_4
       - UN_1
       - US_1
       - US_10
       - US_11
       - US_12
       - US_13
+      - US_14
+      - US_15
       - US_2
       - US_3
       - US_4
@@ -211,23 +210,18 @@ proxy-groups:
       - US_7
       - US_8
       - US_9
+      - VN_1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - BG_1
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
       - CA_4
-      - DE_1
-      - DE_2
       - FR_1
       - FR_2
-      - FR_3
-      - FR_4
       - GB_1
       - GB_10
       - GB_11
@@ -237,15 +231,7 @@ proxy-groups:
       - GB_15
       - GB_16
       - GB_17
-      - GB_18
-      - GB_19
       - GB_2
-      - GB_20
-      - GB_21
-      - GB_22
-      - GB_23
-      - GB_24
-      - GB_25
       - GB_3
       - GB_4
       - GB_5
@@ -259,6 +245,8 @@ proxy-groups:
       - HK_4
       - HK_5
       - HK_6
+      - HK_7
+      - HK_8
       - IE_1
       - IE_10
       - IE_11
@@ -273,6 +261,11 @@ proxy-groups:
       - IE_2
       - IE_20
       - IE_21
+      - IE_22
+      - IE_23
+      - IE_24
+      - IE_25
+      - IE_26
       - IE_3
       - IE_4
       - IE_5
@@ -281,6 +274,16 @@ proxy-groups:
       - IE_8
       - IE_9
       - JP_1
+      - JP_10
+      - JP_11
+      - JP_12
+      - JP_13
+      - JP_14
+      - JP_15
+      - JP_16
+      - JP_17
+      - JP_18
+      - JP_19
       - JP_2
       - JP_3
       - JP_4
@@ -289,25 +292,21 @@ proxy-groups:
       - JP_7
       - JP_8
       - JP_9
-      - KR_1
-      - KR_2
       - NL_1
-      - NL_2
-      - SE_1
+      - PH_1
       - SG_1
       - SG_2
-      - SG_3
-      - SG_4
       - TW_1
       - TW_2
       - TW_3
-      - TW_4
       - UN_1
       - US_1
       - US_10
       - US_11
       - US_12
       - US_13
+      - US_14
+      - US_15
       - US_2
       - US_3
       - US_4
@@ -316,24 +315,19 @@ proxy-groups:
       - US_7
       - US_8
       - US_9
+      - VN_1
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - BG_1
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
       - CA_4
-      - DE_1
-      - DE_2
       - FR_1
       - FR_2
-      - FR_3
-      - FR_4
       - GB_1
       - GB_10
       - GB_11
@@ -343,15 +337,7 @@ proxy-groups:
       - GB_15
       - GB_16
       - GB_17
-      - GB_18
-      - GB_19
       - GB_2
-      - GB_20
-      - GB_21
-      - GB_22
-      - GB_23
-      - GB_24
-      - GB_25
       - GB_3
       - GB_4
       - GB_5
@@ -365,6 +351,8 @@ proxy-groups:
       - HK_4
       - HK_5
       - HK_6
+      - HK_7
+      - HK_8
       - IE_1
       - IE_10
       - IE_11
@@ -379,6 +367,11 @@ proxy-groups:
       - IE_2
       - IE_20
       - IE_21
+      - IE_22
+      - IE_23
+      - IE_24
+      - IE_25
+      - IE_26
       - IE_3
       - IE_4
       - IE_5
@@ -387,6 +380,16 @@ proxy-groups:
       - IE_8
       - IE_9
       - JP_1
+      - JP_10
+      - JP_11
+      - JP_12
+      - JP_13
+      - JP_14
+      - JP_15
+      - JP_16
+      - JP_17
+      - JP_18
+      - JP_19
       - JP_2
       - JP_3
       - JP_4
@@ -395,25 +398,21 @@ proxy-groups:
       - JP_7
       - JP_8
       - JP_9
-      - KR_1
-      - KR_2
       - NL_1
-      - NL_2
-      - SE_1
+      - PH_1
       - SG_1
       - SG_2
-      - SG_3
-      - SG_4
       - TW_1
       - TW_2
       - TW_3
-      - TW_4
       - UN_1
       - US_1
       - US_10
       - US_11
       - US_12
       - US_13
+      - US_14
+      - US_15
       - US_2
       - US_3
       - US_4
@@ -422,6 +421,7 @@ proxy-groups:
       - US_7
       - US_8
       - US_9
+      - VN_1
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -440,18 +440,12 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - BG_1
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
       - CA_4
-      - DE_1
-      - DE_2
       - FR_1
       - FR_2
-      - FR_3
-      - FR_4
       - GB_1
       - GB_10
       - GB_11
@@ -461,15 +455,7 @@ proxy-groups:
       - GB_15
       - GB_16
       - GB_17
-      - GB_18
-      - GB_19
       - GB_2
-      - GB_20
-      - GB_21
-      - GB_22
-      - GB_23
-      - GB_24
-      - GB_25
       - GB_3
       - GB_4
       - GB_5
@@ -483,6 +469,8 @@ proxy-groups:
       - HK_4
       - HK_5
       - HK_6
+      - HK_7
+      - HK_8
       - IE_1
       - IE_10
       - IE_11
@@ -497,6 +485,11 @@ proxy-groups:
       - IE_2
       - IE_20
       - IE_21
+      - IE_22
+      - IE_23
+      - IE_24
+      - IE_25
+      - IE_26
       - IE_3
       - IE_4
       - IE_5
@@ -505,6 +498,16 @@ proxy-groups:
       - IE_8
       - IE_9
       - JP_1
+      - JP_10
+      - JP_11
+      - JP_12
+      - JP_13
+      - JP_14
+      - JP_15
+      - JP_16
+      - JP_17
+      - JP_18
+      - JP_19
       - JP_2
       - JP_3
       - JP_4
@@ -513,25 +516,21 @@ proxy-groups:
       - JP_7
       - JP_8
       - JP_9
-      - KR_1
-      - KR_2
       - NL_1
-      - NL_2
-      - SE_1
+      - PH_1
       - SG_1
       - SG_2
-      - SG_3
-      - SG_4
       - TW_1
       - TW_2
       - TW_3
-      - TW_4
       - UN_1
       - US_1
       - US_10
       - US_11
       - US_12
       - US_13
+      - US_14
+      - US_15
       - US_2
       - US_3
       - US_4
@@ -540,6 +539,7 @@ proxy-groups:
       - US_7
       - US_8
       - US_9
+      - VN_1
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -550,18 +550,12 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - BG_1
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
       - CA_4
-      - DE_1
-      - DE_2
       - FR_1
       - FR_2
-      - FR_3
-      - FR_4
       - GB_1
       - GB_10
       - GB_11
@@ -571,15 +565,7 @@ proxy-groups:
       - GB_15
       - GB_16
       - GB_17
-      - GB_18
-      - GB_19
       - GB_2
-      - GB_20
-      - GB_21
-      - GB_22
-      - GB_23
-      - GB_24
-      - GB_25
       - GB_3
       - GB_4
       - GB_5
@@ -593,6 +579,8 @@ proxy-groups:
       - HK_4
       - HK_5
       - HK_6
+      - HK_7
+      - HK_8
       - IE_1
       - IE_10
       - IE_11
@@ -607,6 +595,11 @@ proxy-groups:
       - IE_2
       - IE_20
       - IE_21
+      - IE_22
+      - IE_23
+      - IE_24
+      - IE_25
+      - IE_26
       - IE_3
       - IE_4
       - IE_5
@@ -615,6 +608,16 @@ proxy-groups:
       - IE_8
       - IE_9
       - JP_1
+      - JP_10
+      - JP_11
+      - JP_12
+      - JP_13
+      - JP_14
+      - JP_15
+      - JP_16
+      - JP_17
+      - JP_18
+      - JP_19
       - JP_2
       - JP_3
       - JP_4
@@ -623,25 +626,21 @@ proxy-groups:
       - JP_7
       - JP_8
       - JP_9
-      - KR_1
-      - KR_2
       - NL_1
-      - NL_2
-      - SE_1
+      - PH_1
       - SG_1
       - SG_2
-      - SG_3
-      - SG_4
       - TW_1
       - TW_2
       - TW_3
-      - TW_4
       - UN_1
       - US_1
       - US_10
       - US_11
       - US_12
       - US_13
+      - US_14
+      - US_15
       - US_2
       - US_3
       - US_4
@@ -650,23 +649,18 @@ proxy-groups:
       - US_7
       - US_8
       - US_9
+      - VN_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - BG_1
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
       - CA_4
-      - DE_1
-      - DE_2
       - FR_1
       - FR_2
-      - FR_3
-      - FR_4
       - GB_1
       - GB_10
       - GB_11
@@ -676,15 +670,7 @@ proxy-groups:
       - GB_15
       - GB_16
       - GB_17
-      - GB_18
-      - GB_19
       - GB_2
-      - GB_20
-      - GB_21
-      - GB_22
-      - GB_23
-      - GB_24
-      - GB_25
       - GB_3
       - GB_4
       - GB_5
@@ -698,6 +684,8 @@ proxy-groups:
       - HK_4
       - HK_5
       - HK_6
+      - HK_7
+      - HK_8
       - IE_1
       - IE_10
       - IE_11
@@ -712,6 +700,11 @@ proxy-groups:
       - IE_2
       - IE_20
       - IE_21
+      - IE_22
+      - IE_23
+      - IE_24
+      - IE_25
+      - IE_26
       - IE_3
       - IE_4
       - IE_5
@@ -720,6 +713,16 @@ proxy-groups:
       - IE_8
       - IE_9
       - JP_1
+      - JP_10
+      - JP_11
+      - JP_12
+      - JP_13
+      - JP_14
+      - JP_15
+      - JP_16
+      - JP_17
+      - JP_18
+      - JP_19
       - JP_2
       - JP_3
       - JP_4
@@ -728,25 +731,21 @@ proxy-groups:
       - JP_7
       - JP_8
       - JP_9
-      - KR_1
-      - KR_2
       - NL_1
-      - NL_2
-      - SE_1
+      - PH_1
       - SG_1
       - SG_2
-      - SG_3
-      - SG_4
       - TW_1
       - TW_2
       - TW_3
-      - TW_4
       - UN_1
       - US_1
       - US_10
       - US_11
       - US_12
       - US_13
+      - US_14
+      - US_15
       - US_2
       - US_3
       - US_4
@@ -755,24 +754,19 @@ proxy-groups:
       - US_7
       - US_8
       - US_9
+      - VN_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - BG_1
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
       - CA_4
-      - DE_1
-      - DE_2
       - FR_1
       - FR_2
-      - FR_3
-      - FR_4
       - GB_1
       - GB_10
       - GB_11
@@ -782,15 +776,7 @@ proxy-groups:
       - GB_15
       - GB_16
       - GB_17
-      - GB_18
-      - GB_19
       - GB_2
-      - GB_20
-      - GB_21
-      - GB_22
-      - GB_23
-      - GB_24
-      - GB_25
       - GB_3
       - GB_4
       - GB_5
@@ -804,6 +790,8 @@ proxy-groups:
       - HK_4
       - HK_5
       - HK_6
+      - HK_7
+      - HK_8
       - IE_1
       - IE_10
       - IE_11
@@ -818,6 +806,11 @@ proxy-groups:
       - IE_2
       - IE_20
       - IE_21
+      - IE_22
+      - IE_23
+      - IE_24
+      - IE_25
+      - IE_26
       - IE_3
       - IE_4
       - IE_5
@@ -826,6 +819,16 @@ proxy-groups:
       - IE_8
       - IE_9
       - JP_1
+      - JP_10
+      - JP_11
+      - JP_12
+      - JP_13
+      - JP_14
+      - JP_15
+      - JP_16
+      - JP_17
+      - JP_18
+      - JP_19
       - JP_2
       - JP_3
       - JP_4
@@ -834,25 +837,21 @@ proxy-groups:
       - JP_7
       - JP_8
       - JP_9
-      - KR_1
-      - KR_2
       - NL_1
-      - NL_2
-      - SE_1
+      - PH_1
       - SG_1
       - SG_2
-      - SG_3
-      - SG_4
       - TW_1
       - TW_2
       - TW_3
-      - TW_4
       - UN_1
       - US_1
       - US_10
       - US_11
       - US_12
       - US_13
+      - US_14
+      - US_15
       - US_2
       - US_3
       - US_4
@@ -861,6 +860,7 @@ proxy-groups:
       - US_7
       - US_8
       - US_9
+      - VN_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -876,18 +876,12 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - BG_1
-      - BR_1
       - CA_1
       - CA_2
       - CA_3
       - CA_4
-      - DE_1
-      - DE_2
       - FR_1
       - FR_2
-      - FR_3
-      - FR_4
       - GB_1
       - GB_10
       - GB_11
@@ -897,15 +891,7 @@ proxy-groups:
       - GB_15
       - GB_16
       - GB_17
-      - GB_18
-      - GB_19
       - GB_2
-      - GB_20
-      - GB_21
-      - GB_22
-      - GB_23
-      - GB_24
-      - GB_25
       - GB_3
       - GB_4
       - GB_5
@@ -919,6 +905,8 @@ proxy-groups:
       - HK_4
       - HK_5
       - HK_6
+      - HK_7
+      - HK_8
       - IE_1
       - IE_10
       - IE_11
@@ -933,6 +921,11 @@ proxy-groups:
       - IE_2
       - IE_20
       - IE_21
+      - IE_22
+      - IE_23
+      - IE_24
+      - IE_25
+      - IE_26
       - IE_3
       - IE_4
       - IE_5
@@ -941,6 +934,16 @@ proxy-groups:
       - IE_8
       - IE_9
       - JP_1
+      - JP_10
+      - JP_11
+      - JP_12
+      - JP_13
+      - JP_14
+      - JP_15
+      - JP_16
+      - JP_17
+      - JP_18
+      - JP_19
       - JP_2
       - JP_3
       - JP_4
@@ -949,25 +952,21 @@ proxy-groups:
       - JP_7
       - JP_8
       - JP_9
-      - KR_1
-      - KR_2
       - NL_1
-      - NL_2
-      - SE_1
+      - PH_1
       - SG_1
       - SG_2
-      - SG_3
-      - SG_4
       - TW_1
       - TW_2
       - TW_3
-      - TW_4
       - UN_1
       - US_1
       - US_10
       - US_11
       - US_12
       - US_13
+      - US_14
+      - US_15
       - US_2
       - US_3
       - US_4
@@ -976,6 +975,7 @@ proxy-groups:
       - US_7
       - US_8
       - US_9
+      - VN_1
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
