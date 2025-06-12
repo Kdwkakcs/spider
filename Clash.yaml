@@ -5,120 +5,115 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: CH_1, server: tr.node1link.xyz, port: 23014, type: trojan, password: 7e2fb41e-70bc-4ae3-acdb-1795b9de338b, sni: 101.yuanul.com}
-  - {name: CN_1, server: s5.cn-db.top, port: 2082, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.17.124.63, headers: {Host: 100-85-65-174.s5.cn-db.top}}}
-  - {name: DE_1, server: 185.204.168.163, port: 35972, type: vless, uuid: e18e656d-39fd-4b80-95e5-72edcacb952c, tls: false, client-fingerprint: chrome, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: DE_2, server: 104.21.80.1, port: 2096, type: vmess, uuid: b3928f8d-ea81-4d75-bcec-4016a072adff, alterId: 0, cipher: auto, tls: true, servername: de01.sh-cloudflare.sbs, network: ws, ws-opts: {path: /, headers: {Host: de01.sh-cloudflare.sbs}}}
-  - {name: DE_3, server: 144.24.187.77, port: 44001, type: hysteria2, password: e6844f7b-ca44-459b-b03c-69448859c61e, auth: e6844f7b-ca44-459b-b03c-69448859c61e, sni: www.bing.com, skip-cert-verify: true}
-  - {name: DE_4, server: 141.147.48.166, port: 44001, type: hysteria2, password: 068f20c7-498c-431a-9bd6-299ee1dc0190, auth: 068f20c7-498c-431a-9bd6-299ee1dc0190, skip-cert-verify: true}
-  - {name: DE_5, server: 77.221.137.52, port: 443, type: vless, uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e, tls: true, servername: 0926.qiang2000.link, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: 0926.qiang2000.link}}}
-  - {name: DE_6, server: 172.67.132.72, port: 80, type: vless, uuid: dc00f1f8-05b2-4bc0-b851-d4dfe5089329, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: workerr.aasihmin.workers.dev}}}
-  - {name: FR_1, server: de.wendingjichang.com, port: 59110, type: hysteria2, password: 73ba154e-f66c-402b-a64c-5f6b8fe08e87, auth: 73ba154e-f66c-402b-a64c-5f6b8fe08e87}
-  - {name: FR_2, server: 35.180.40.29, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
-  - {name: FR_3, server: de.wendingjichang.com, port: 59914, type: hysteria2, password: 0f5d35f8-92f0-4950-a83b-0e7007a64fc7, auth: 0f5d35f8-92f0-4950-a83b-0e7007a64fc7}
-  - {name: FR_4, server: de.wendingjichang.com, port: 55732, type: hysteria2, password: 0f5d35f8-92f0-4950-a83b-0e7007a64fc7, auth: 0f5d35f8-92f0-4950-a83b-0e7007a64fc7}
-  - {name: FR_5, server: 13.39.13.49, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
-  - {name: FR_6, server: 195.154.200.178, port: 46938, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 100, down: 100, protocol: udp, sni: apple.com, skip-cert-verify: true}
-  - {name: FR_7, server: 13.39.20.254, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
-  - {name: FR_8, server: 13.38.90.220, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
-  - {name: FR_9, server: 195.154.200.40, port: 15010, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 11, down: 55, protocol: udp, sni: apple.com, skip-cert-verify: true}
-  - {name: GB_1, server: 18.134.182.200, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
-  - {name: GB_2, server: 3.8.16.211, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
-  - {name: GB_3, server: 13.42.56.85, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
-  - {name: GB_4, server: 194.76.18.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
-  - {name: HK_1, server: 156.238.18.142, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳@WangCai2/?ed", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: HK_2, server: 8.218.244.56, port: 24925, type: vmess, uuid: 59abf2b3-bdb7-450c-e608-f2152da346b5, alterId: 0, cipher: aes-128-gcm, tls: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: HK_3, server: 172.64.152.69, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
-  - {name: HK_4, server: 198.41.220.118, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
-  - {name: HK_5, server: 82.152.162.250, port: 44001, type: hysteria2, password: 068f20c7-498c-431a-9bd6-299ee1dc0190, auth: 068f20c7-498c-431a-9bd6-299ee1dc0190, sni: www.bing.com, skip-cert-verify: true}
-  - {name: HK_6, server: 172.64.152.214, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
-  - {name: HK_7, server: 172.64.152.188, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
-  - {name: HK_8, server: 156.238.18.199, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram@WangCai2/?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: HK_9, server: ::ffff:156.238.18.131, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: sg.laoyoutiao.link}}}
-  - {name: IN_1, server: in.wendingjichang.com, port: 59543, type: hysteria2, password: 42625c76-9493-4794-9921-2feafd4e34ec, auth: 42625c76-9493-4794-9921-2feafd4e34ec}
-  - {name: JP_1, server: jp.wendingjichang.com, port: 57994, type: hysteria2, password: 0f5d35f8-92f0-4950-a83b-0e7007a64fc7, auth: 0f5d35f8-92f0-4950-a83b-0e7007a64fc7}
-  - {name: JP_2, server: jp.wendingjichang.com, port: 52381, type: hysteria2, password: 73ba154e-f66c-402b-a64c-5f6b8fe08e87, auth: 73ba154e-f66c-402b-a64c-5f6b8fe08e87}
-  - {name: JP_3, server: jp.wendingjichang.com, port: 52020, type: hysteria2, password: 73ba154e-f66c-402b-a64c-5f6b8fe08e87, auth: 73ba154e-f66c-402b-a64c-5f6b8fe08e87}
-  - {name: KR_1, server: s2.db-link01.top, port: 2052, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.24.116.186, headers: {Host: 100-235-7-233.s2.db-link01.top}}}
-  - {name: RU_1, server: 185.22.153.68, port: 44001, type: hysteria2, password: afcbb76e-860b-4277-8f5c-5dfc4c91a64c, auth: afcbb76e-860b-4277-8f5c-5dfc4c91a64c, sni: www.bing.com, skip-cert-verify: true}
-  - {name: RU_2, server: 185.22.155.71, port: 10803, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 1000, down: 1000, protocol: udp, sni: www.bing.com, skip-cert-verify: true}
-  - {name: SG_1, server: 140.245.52.21, port: 44111, type: hysteria2, password: e6844f7b-ca44-459b-b03c-69448859c61e, auth: e6844f7b-ca44-459b-b03c-69448859c61e, sni: www.bing.com, skip-cert-verify: true}
-  - {name: SG_2, server: d131cc2e-sukw00-sw1b1x-4550.c.volczijie.com, port: 4137, type: vmess, uuid: 6286105c-fb6d-11ef-be96-f23c93136cb3, alterId: 0, cipher: auto, tls: false}
-  - {name: SG_3, server: 217.142.190.72, port: 44111, type: hysteria2, password: 4a068903-1a04-414e-beb1-d8dffee5ab2b, auth: 4a068903-1a04-414e-beb1-d8dffee5ab2b, sni: www.bing.com, skip-cert-verify: true}
-  - {name: SG_4, server: sg.wendingjichang.com, port: 51900, type: hysteria2, password: 73ba154e-f66c-402b-a64c-5f6b8fe08e87, auth: 73ba154e-f66c-402b-a64c-5f6b8fe08e87}
-  - {name: TW_1, server: 141.193.213.15, port: 80, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560", headers: {Host: cs.laoyoutiao.link}}}
-  - {name: UN_1, server: 140.245.35.137, port: 44111, type: hysteria2, password: e6844f7b-ca44-459b-b03c-69448859c61e, auth: e6844f7b-ca44-459b-b03c-69448859c61e, sni: www.bing.com, skip-cert-verify: true}
-  - {name: US_1, server: 198.41.220.185, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
-  - {name: US_10, server: 91.193.58.85, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560", headers: {Host: us.laoyoutiao.link}}}
-  - {name: US_11, server: 172.67.181.89, port: 443, type: vless, uuid: d77906a1-59fd-4222-ba9e-3de834bb33e2, tls: true, servername: vpn442telegram.wucwej.workers.Dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: vpn442telegram.wucwej.workers.Dev}}}
-  - {name: US_12, server: 104.21.40.155, port: 443, type: vless, uuid: 5d8b1149-8f78-4154-a647-16563ec99c8a, tls: true, servername: hello-world-empty-feather-0943.sitosa5105.workers.Dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: hello-world-empty-feather-0943.sitosa5105.workers.Dev}}}
-  - {name: US_13, server: 45.131.7.7, port: 8080, type: vless, uuid: 91d9b8d8-2aab-4e1a-9573-0d59e9cd7f8e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: falcunargo-channel.be3374a836.workers.Dev}}}
-  - {name: US_14, server: 45.149.12.233, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_15, server: 92.53.189.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
-  - {name: US_16, server: 104.16.21.118, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: icecream.955850.xyz}}}
-  - {name: US_17, server: 104.17.177.176, port: 8880, type: vless, uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: steep.skyfigure.top}}}
-  - {name: US_18, server: 172.67.181.172, port: 443, type: trojan, password: auto, sni: esetsecuritylicense1.cxlrazo.workers.dev, network: ws, ws-opts: {path: /, headers: {Host: esetsecuritylicense1.cxlrazo.workers.dev}}}
-  - {name: US_19, server: 103.160.204.36, port: 2087, type: vless, uuid: d6b8011a-c725-435a-9fec-bf6d3530392c, tls: true, servername: vle.amclubsapp.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560&PROT_TYPE=vless", headers: {Host: vle.amclubsapp.dpdns.org}}}
-  - {name: US_2, server: 7c8eb5c8-sw3ts0-sxlsd4-3z3v.hy2.gotochinatown.net, port: 8443, type: hysteria2, password: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b, auth: 48c1e014-28d6-11ec-a0fc-f23c913c8d2b, sni: 7c8eb5c8-sw3ts0-sxlsd4-3z3v.hy2.gotochinatown.net}
-  - {name: US_20, server: 194.76.18.20, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: us.laoyoutiao.link}}}
-  - {name: US_21, server: 198.202.211.233, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_22, server: 172.64.152.225, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
-  - {name: US_23, server: 198.41.220.32, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
-  - {name: US_24, server: 212.183.88.193, port: 443, type: vless, uuid: 55520747-311e-4015-83ce-be46e2060ce3, tls: true, servername: as.bgm2024.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /ss.vs2024.us.kg, headers: {Host: as.bgm2024.dpdns.org}}}
-  - {name: US_25, server: 156.238.18.100, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram@WangCai2/?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_26, server: 45.67.215.209, port: 443, type: vless, uuid: 55520747-311e-4015-83ce-be46e2060ce3, tls: true, servername: as.bgm2024.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: as.bgm2024.dpdns.org}}}
-  - {name: US_27, server: 195.13.44.233, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_28, server: 185.174.138.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_29, server: 45.159.218.8, port: 80, type: vless, uuid: d26009b6-d347-403f-95ce-1816bb8b8ca4, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048fp=chrome", headers: {Host: v2raylandd.werokac991.workers.Dev}}}
-  - {name: US_3, server: 104.18.20.69, port: 443, type: vless, uuid: 3f204f97-2910-4a18-a1fd-03e9bd4a0d89, tls: true, servername: us5s.pqvip.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /pq/us5, headers: {Host: us5s.pqvip.top}}}
-  - {name: US_30, server: 74.49.214.139, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
-  - {name: US_31, server: tk.hzlt.tkddns.xyz, port: 22641, type: vmess, uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7, alterId: 2, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zxjp-a.tkong.cc}}}
-  - {name: US_32, server: 141.193.213.145, port: 80, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed", headers: {Host: cs.laoyoutiao.link}}}
-  - {name: US_33, server: 91.193.58.24, port: 8880, type: vless, uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: steep.skyfigure.top}}}
-  - {name: US_34, server: 45.205.0.29, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: hk.laoyoutiao.link}}}
-  - {name: US_35, server: yx1.niaoba.top, port: 2052, type: vmess, uuid: 6a56184b-e6bb-4682-93f9-d0771aaee324, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 117658043.vmus7.taobao.yyds.niaoba.top}}}
-  - {name: US_36, server: 205.185.121.160, port: 44001, type: hysteria2, password: 6a56184b-e6bb-4682-93f9-d0771aaee324, auth: 6a56184b-e6bb-4682-93f9-d0771aaee324, sni: www.bing.com, skip-cert-verify: true}
-  - {name: US_37, server: 185.251.81.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
-  - {name: US_38, server: 45.131.209.20, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
-  - {name: US_39, server: 3.238.31.71, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
-  - {name: US_4, server: 188.42.89.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
-  - {name: US_40, server: 45.131.7.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_41, server: 46.254.93.20, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
-  - {name: US_42, server: 216.24.57.130, port: 8880, type: vless, uuid: 1b6ae0f5-01dc-4b96-bca9-31c672dcf0aa, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed", headers: {Host: mohsenfitshr.wibibin259.workers.dev}}}
-  - {name: US_43, server: 192.65.217.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
-  - {name: US_44, server: 140.99.233.25, port: 80, type: vless, uuid: 046da250-d5ef-4867-9095-302477d54d20, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram@WangCai2/?ed=2048", headers: {Host: feng.ipy29c99.workers.dev}}}
-  - {name: US_45, server: 104.21.81.174, port: 80, type: vless, uuid: 23b3cbba-e6ac-485a-9481-342a0415eab9, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /ProxyIP=ProxyIP.US.fxxk.dedyn.io, headers: {Host: DaWn-lAKE-d5E3.WocoYA4320.wOrkERs.DeV}}}
-  - {name: US_46, server: 104.18.34.197, port: 8880, type: vless, uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: steep.skyfigure.top}}}
-  - {name: US_47, server: 209.141.46.103, port: 31565, type: hysteria2, password: a5010b26-6aad-442e-b15d-57d3c25d6080, auth: a5010b26-6aad-442e-b15d-57d3c25d6080, sni: www.bing.com, skip-cert-verify: true}
-  - {name: US_48, server: us.wendingjichang.com, port: 51544, type: hysteria2, password: 42625c76-9493-4794-9921-2feafd4e34ec, auth: 42625c76-9493-4794-9921-2feafd4e34ec}
-  - {name: US_49, server: 104.18.15.19, port: 2082, type: vless, uuid: 95c434e5-c044-4633-a0d9-31548c8d43c8, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: 1222.vx84g0b3.workers.dev}}}
-  - {name: US_5, server: 167.234.213.12, port: 11000, type: hysteria2, password: 45d53131-4c15-4614-8f8e-9cce1684c3fc, auth: 45d53131-4c15-4614-8f8e-9cce1684c3fc, sni: www.bing.com, skip-cert-verify: true}
-  - {name: US_50, server: 154.197.75.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_51, server: 172.64.152.111, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
-  - {name: US_52, server: www.speedtest.net, port: 443, type: vless, uuid: 3058e698-61fd-4d12-95bc-f1fe4c071713, tls: true, servername: hOZori.iR, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram@V2ray_Alpha, headers: {Host: hOZori.iR}}}
-  - {name: US_53, server: 167.68.42.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
-  - {name: US_54, server: 162.159.141.75, port: 80, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: us.laoyoutiao.link}}}
-  - {name: US_55, server: 156.238.18.167, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram@WangCai2/?ed=2048", headers: {Host: sg.laoyoutiao.link}}}
-  - {name: US_56, server: 185.193.29.139, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
-  - {name: US_57, server: 45.131.4.4, port: 8080, type: vless, uuid: dc580147-c87c-4527-bf90-192eb1cf62d1, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: stArt.siTEG52770.WorKeRS.deV}}}
-  - {name: US_6, server: 129.213.38.176, port: 11000, type: hysteria2, password: 45d53131-4c15-4614-8f8e-9cce1684c3fc, auth: 45d53131-4c15-4614-8f8e-9cce1684c3fc, sni: www.bing.com, skip-cert-verify: true}
-  - {name: US_7, server: 162.159.152.205, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: "/proxyip=162.159.152.205:443&proxyIP=null", headers: {Host: icecream.955850.xyz}}}
-  - {name: US_8, server: 130.250.137.73, port: 443, type: vless, uuid: 55520747-311e-4015-83ce-be46e2060ce3, tls: true, servername: as.bgm2024.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: as.bgm2024.dpdns.org}}}
-  - {name: US_9, server: us.wendingjichang.com, port: 55565, type: hysteria2, password: 73ba154e-f66c-402b-a64c-5f6b8fe08e87, auth: 73ba154e-f66c-402b-a64c-5f6b8fe08e87}
+  - {name: BE_1, server: 64.181.207.162, port: 30158, type: vless, uuid: b72ba5d5-2d5e-45b7-93b5-236d343baa7c, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: n7Ptb-3f4pw0D-hG-UP8Dp5Gf8J8Uxn029JMwdTyEFc, short-id: "ee9e2505" }, servername: www.yahoo.com, client-fingerprint: chrome, network: tcp}
+  - {name: DE_1, server: 57.129.41.216, port: 2083, type: vmess, uuid: 3967c059-865d-40af-ba3c-8abc9ba5c7f8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess/}}
+  - {name: DE_2, server: 57.129.89.172, port: 1935, type: trojan, password: pqlnPNu423, sni: x1-germany-ovh-v2.devefun.net, skip-cert-verify: true}
+  - {name: FR_1, server: 13.38.249.113, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
+  - {name: FR_2, server: hsfg.huasuan666.top, port: 22158, type: hysteria2, password: 2721a74d-0803-4c85-983e-a99c197e9e0b, auth: 2721a74d-0803-4c85-983e-a99c197e9e0b, sni: hsfg.huasuan666.top, skip-cert-verify: true}
+  - {name: FR_3, server: de.wendingjichang.com, port: 51458, type: hysteria2, password: 15601fb2-b987-43c3-9f4a-0fd6a9fbf613, auth: 15601fb2-b987-43c3-9f4a-0fd6a9fbf613}
+  - {name: FR_4, server: 13.39.149.251, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
+  - {name: FR_5, server: 51.159.111.32, port: 31180, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: apple.com, skip-cert-verify: true}
+  - {name: FR_6, server: 35.180.26.222, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
+  - {name: FR_7, server: 35.180.190.37, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
+  - {name: GB_1, server: 13.43.121.201, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
+  - {name: GB_2, server: 209.94.90.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
+  - {name: GB_3, server: 3.8.162.34, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
+  - {name: GB_4, server: 51.89.118.190, port: 1370, type: vless, uuid: 4aefa474-aa2c-46d4-aff1-82fa29dd5c25, tls: true, reality-opts: {public-key: _N3KecwB9Ck28IIMxIck00ivkq3_ZEUvU3KXELnfvHw, short-id: "e1afb93bfe75a34b" }, servername: refersion.com, client-fingerprint: chrome, network: tcp}
+  - {name: GB_5, server: 18.133.74.94, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
+  - {name: GB_6, server: 135.84.74.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: HK_1, server: 188.164.248.29, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /TelegramU0001F1E8U0001F1F3, headers: {Host: hk.laoyoutiao.link}}}
+  - {name: HK_10, server: 156.238.18.148, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳@WangCai2/?ed=2048", headers: {Host: sg.laoyoutiao.link}}}
+  - {name: HK_11, server: 172.64.152.159, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
+  - {name: HK_12, server: yx1.niaoba.top, port: 8880, type: vmess, uuid: b7992b58-8408-45bd-8cb5-db26039ddadf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1176586039485.vmhk3.taobao.yyds.niaoba.top}}}
+  - {name: HK_13, server: 198.41.220.144, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
+  - {name: HK_14, server: 156.238.18.70, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: sg.laoyoutiao.link}}}
+  - {name: HK_15, server: 172.64.152.22, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
+  - {name: HK_16, server: 172.64.152.28, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
+  - {name: HK_17, server: 190.93.247.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: HK_2, server: 50.114.153.243, port: 44001, type: hysteria2, password: 068f20c7-498c-431a-9bd6-299ee1dc0190, auth: 068f20c7-498c-431a-9bd6-299ee1dc0190, sni: www.bing.com, skip-cert-verify: true}
+  - {name: HK_3, server: 172.64.152.228, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
+  - {name: HK_4, server: 172.64.152.178, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
+  - {name: HK_5, server: 172.64.152.51, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
+  - {name: HK_6, server: 172.64.152.143, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
+  - {name: HK_7, server: 5.182.85.233, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: hk.laoyoutiao.link}}}
+  - {name: HK_8, server: 156.238.18.179, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: sg.laoyoutiao.link}}}
+  - {name: HK_9, server: 198.41.220.22, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
+  - {name: JP_1, server: 156.238.18.226, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram@WangCai2/?ed=2048", headers: {Host: jp.laoyoutiao.link}}}
+  - {name: JP_2, server: 54.168.239.220, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
+  - {name: JP_3, server: 104.22.16.185, port: 2052, type: vmess, uuid: afcbb76e-860b-4277-8f5c-5dfc4c91a64c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1176566182867.vmjp.taobao.pdd.niaoba.top}}}
+  - {name: JP_4, server: jp.wendingjichang.com, port: 54990, type: hysteria2, password: 15601fb2-b987-43c3-9f4a-0fd6a9fbf613, auth: 15601fb2-b987-43c3-9f4a-0fd6a9fbf613}
+  - {name: RU_1, server: 46.29.163.171, port: 30033, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, skip-cert-verify: true}
+  - {name: SE_1, server: 16.171.58.110, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
+  - {name: SE_2, server: 91.92.40.78, port: 2070, type: vless, uuid: aa654dbf-b129-412a-bc7e-36bc6f4129b5, tls: false, client-fingerprint: chrome, network: tcp}
+  - {name: SE_3, server: 13.49.0.16, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
+  - {name: SG_1, server: sg.wendingjichang.com, port: 50344, type: hysteria2, password: 42625c76-9493-4794-9921-2feafd4e34ec, auth: 42625c76-9493-4794-9921-2feafd4e34ec}
+  - {name: SG_2, server: 46.250.234.32, port: 45317, type: vmess, uuid: b2836369-220b-4840-80c4-8cf904c735ee, alterId: 0, cipher: auto, tls: false}
+  - {name: SG_3, server: 140.245.52.21, port: 44111, type: hysteria2, password: e6844f7b-ca44-459b-b03c-69448859c61e, auth: e6844f7b-ca44-459b-b03c-69448859c61e, sni: www.bing.com, skip-cert-verify: true}
+  - {name: TW_1, server: 195.85.59.161, port: 8880, type: vless, uuid: a3f9d9b6-3ae4-4c47-9dbf-33b0a5c7f1a5, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: 0210.uous1wog.workers.dev}}}
+  - {name: UN_1, server: 217.142.190.72, port: 11100, type: hysteria2, password: 45d53131-4c15-4614-8f8e-9cce1684c3fc, auth: 45d53131-4c15-4614-8f8e-9cce1684c3fc, sni: www.bing.com, skip-cert-verify: true}
+  - {name: UN_2, server: 51.159.226.1, port: 14241, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 100, down: 100, protocol: udp, sni: apple.com, skip-cert-verify: true}
+  - {name: US_1, server: 140.99.233.33, port: 80, type: vless, uuid: 046da250-d5ef-4867-9095-302477d54d20, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram@WangCai2/?ed=2048", headers: {Host: feng.ipy29c99.workers.dev}}}
+  - {name: US_10, server: 104.16.198.126, port: 443, type: vless, uuid: 3df93bd0-ae17-46db-92e5-90bff99762c0, tls: true, servername: cmp.danjun.ddns-ip.net, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: cmp.danjun.ddns-ip.net}}}
+  - {name: US_11, server: 188.114.97.3, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, servername: pPaL03.abDUllAH-MaVERycK.WORKers.deV, client-fingerprint: chrome, network: ws, ws-opts: {path: "/AGDtl0aAx7cHTdB9?ed=2560", headers: {Host: pPaL03.abDUllAH-MaVERycK.WORKers.deV}}}
+  - {name: US_12, server: 140.99.233.22, port: 80, type: vless, uuid: 046da250-d5ef-4867-9095-302477d54d20, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: Telegram@WangCai2/, headers: {Host: feng.ipy29c99.workers.dev}}}
+  - {name: US_13, server: 185.148.105.20, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: US_14, server: 104.16.172.98, port: 443, type: vless, uuid: 49d4b99d-7d99-416a-9778-2c75d79100bb, tls: true, servername: Work-YUU00.pageS.dEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: Work-YUU00.pageS.dEv}}}
+  - {name: US_15, server: 199.34.229.233, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: hk.laoyoutiao.link}}}
+  - {name: US_16, server: 162.159.21.19, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560", headers: {Host: hk.laoyoutiao.link}}}
+  - {name: US_17, server: 45.80.111.20, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: US_18, server: 198.41.220.169, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
+  - {name: US_19, server: 141.11.203.233, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
+  - {name: US_2, server: us.wendingjichang.com, port: 55565, type: hysteria2, password: 73ba154e-f66c-402b-a64c-5f6b8fe08e87, auth: 73ba154e-f66c-402b-a64c-5f6b8fe08e87}
+  - {name: US_20, server: 185.193.29.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: US_21, server: 114.129.43.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: US_22, server: 54.85.186.27, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
+  - {name: US_23, server: 104.25.255.43, port: 8880, type: vless, uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: steep.skyfigure.top}}}
+  - {name: US_24, server: 140.99.233.20, port: 80, type: vless, uuid: 046da250-d5ef-4867-9095-302477d54d20, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram@WangCai2/?ed=2048", headers: {Host: feng.ipy29c99.workers.dev}}}
+  - {name: US_25, server: 156.238.18.169, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
+  - {name: US_26, server: 172.67.181.89, port: 443, type: vless, uuid: d77906a1-59fd-4222-ba9e-3de834bb33e2, tls: true, servername: vpn442telegram.wucwej.workers.Dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: vpn442telegram.wucwej.workers.Dev}}}
+  - {name: US_27, server: 193.124.18.233, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
+  - {name: US_28, server: 141.193.213.229, port: 80, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: cs.laoyoutiao.link}}}
+  - {name: US_29, server: 185.174.138.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
+  - {name: US_3, server: 159.112.235.20, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: US_30, server: 192.0.63.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
+  - {name: US_31, server: 198.41.196.20, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: US_32, server: 69.84.182.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
+  - {name: US_33, server: 104.18.80.243, port: 443, type: vless, uuid: 55520747-311e-4015-83ce-be46e2060ce3, tls: true, servername: as.bgm2024.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: as.bgm2024.dpdns.org}}}
+  - {name: US_34, server: 91.193.58.24, port: 8880, type: vless, uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: steep.skyfigure.top}}}
+  - {name: US_35, server: 141.193.213.106, port: 80, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /TelegramU0001F1E8U0001F1F3, headers: {Host: cs.laoyoutiao.link}}}
+  - {name: US_36, server: 54.90.65.216, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
+  - {name: US_37, server: 104.18.15.19, port: 2082, type: vless, uuid: 46b7dfdb-fc88-4dbc-819e-db3ab8093c90, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: 1230.6xopb2a7.workers.dev}}}
+  - {name: US_38, server: 185.16.110.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
+  - {name: US_39, server: 104.16.27.202, port: 443, type: vless, uuid: 49d4b99d-7d99-416a-9778-2c75d79100bb, tls: true, servername: Work-YUU00.pageS.dEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: Work-YUU00.pageS.dEv}}}
+  - {name: US_4, server: 45.131.4.83, port: 80, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram:@ShadowProxy66/?ed=2560", headers: {Host: uuhUHYygEsdFGH.UYHJHGvgFcjGUJhbUIlbVFDxDxM.xyz}}}
+  - {name: US_40, server: 141.193.213.153, port: 80, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/TelegramU0001F1E8U0001F1F3 @MxlShare @WangCai2 /?ed=2560", headers: {Host: cs.laoyoutiao.link}}}
+  - {name: US_41, server: 88.216.67.139, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: US_42, server: 170.114.46.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: US_43, server: 188.114.96.1, port: 443, type: vless, uuid: 71dce9af-d790-4b38-a1fd-7745e0923bd3, tls: true, servername: uciranir-uciranir-uciranir-uciranir-uciranir-uiranir-uciranir2.marol78205.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR/?ed=2047", headers: {Host: uciranir-uciranir-uciranir-uciranir-uciranir-uiranir-uciranir2.marol78205.workers.dev}}}
+  - {name: US_44, server: 104.19.172.82, port: 443, type: vless, uuid: 49d4b99d-7d99-416a-9778-2c75d79100bb, tls: true, servername: Work-YUU00.pageS.dEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: Work-YUU00.pageS.dEv}}}
+  - {name: US_45, server: 103.245.228.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: US_46, server: 198.41.220.26, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
+  - {name: US_47, server: 45.85.118.87, port: 80, type: vless, uuid: 046da250-d5ef-4867-9095-302477d54d20, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram@WangCai2/?ed=2048", headers: {Host: feng.ipy29c99.workers.dev}}}
+  - {name: US_48, server: 5.10.215.139, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: US_49, server: 212.183.88.194, port: 443, type: trojan, password: 6884d714-d3c4-4b49-aa20-767ea92837d6, sni: icecream.955850.xyz, network: ws, ws-opts: {path: "/proxyip=212.183.88.194:443&proxyIP=null", headers: {Host: icecream.955850.xyz}}}
+  - {name: US_5, server: 3.237.50.243, port: 443, type: vless, uuid: 7f93e196-1b2f-4a42-8051-5815554c05db, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg, short-id: "7a2b" }, servername: zula.ir, client-fingerprint: chrome, network: tcp}
+  - {name: US_50, server: 104.17.92.98, port: 443, type: vless, uuid: 103104c5-a3f5-4c48-8d8f-a72a56959799, tls: true, servername: ZyzZzoAo.pUTaTA.EU.Org, client-fingerprint: chrome, network: ws, ws-opts: {path: flow=-udp443, headers: {Host: ZyzZzoAo.pUTaTA.EU.Org}}}
+  - {name: US_51, server: 146.235.225.95, port: 44123, type: hysteria2, password: e6844f7b-ca44-459b-b03c-69448859c61e, auth: e6844f7b-ca44-459b-b03c-69448859c61e, sni: www.bing.com, skip-cert-verify: true}
+  - {name: US_52, server: 162.159.9.75, port: 80, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: us.laoyoutiao.link}}}
+  - {name: US_6, server: 104.18.15.19, port: 80, type: vless, uuid: 54029e43-0588-418d-b102-dbf30f091788, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: 0120.enmvvniv.workers.dev}}}
+  - {name: US_7, server: 45.131.4.4, port: 8080, type: vless, uuid: dc580147-c87c-4527-bf90-192eb1cf62d1, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: stArt.siTEG52770.WorKeRS.deV}}}
+  - {name: US_8, server: 141.193.213.124, port: 80, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: cs.laoyoutiao.link}}}
+  - {name: US_9, server: 107.174.34.111, port: 44001, type: hysteria2, password: 068f20c7-498c-431a-9bd6-299ee1dc0190, auth: 068f20c7-498c-431a-9bd6-299ee1dc0190, sni: www.bing.com, skip-cert-verify: true}
+  - {name: Unknown_1, server: 89.110.113.74, port: 443, type: vless, uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e, tls: true, servername: 0926.qiang2000.link, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: 0926.qiang2000.link}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CH_1
-      - CN_1
+      - BE_1
       - DE_1
       - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
-      - DE_6
       - FR_1
       - FR_2
       - FR_3
@@ -126,13 +121,21 @@ proxy-groups:
       - FR_5
       - FR_6
       - FR_7
-      - FR_8
-      - FR_9
       - GB_1
       - GB_2
       - GB_3
       - GB_4
+      - GB_5
+      - GB_6
       - HK_1
+      - HK_10
+      - HK_11
+      - HK_12
+      - HK_13
+      - HK_14
+      - HK_15
+      - HK_16
+      - HK_17
       - HK_2
       - HK_3
       - HK_4
@@ -141,19 +144,20 @@ proxy-groups:
       - HK_7
       - HK_8
       - HK_9
-      - IN_1
       - JP_1
       - JP_2
       - JP_3
-      - KR_1
+      - JP_4
       - RU_1
-      - RU_2
+      - SE_1
+      - SE_2
+      - SE_3
       - SG_1
       - SG_2
       - SG_3
-      - SG_4
       - TW_1
       - UN_1
+      - UN_2
       - US_1
       - US_10
       - US_11
@@ -202,28 +206,19 @@ proxy-groups:
       - US_50
       - US_51
       - US_52
-      - US_53
-      - US_54
-      - US_55
-      - US_56
-      - US_57
       - US_6
       - US_7
       - US_8
       - US_9
+      - Unknown_1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CH_1
-      - CN_1
+      - BE_1
       - DE_1
       - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
-      - DE_6
       - FR_1
       - FR_2
       - FR_3
@@ -231,13 +226,21 @@ proxy-groups:
       - FR_5
       - FR_6
       - FR_7
-      - FR_8
-      - FR_9
       - GB_1
       - GB_2
       - GB_3
       - GB_4
+      - GB_5
+      - GB_6
       - HK_1
+      - HK_10
+      - HK_11
+      - HK_12
+      - HK_13
+      - HK_14
+      - HK_15
+      - HK_16
+      - HK_17
       - HK_2
       - HK_3
       - HK_4
@@ -246,19 +249,20 @@ proxy-groups:
       - HK_7
       - HK_8
       - HK_9
-      - IN_1
       - JP_1
       - JP_2
       - JP_3
-      - KR_1
+      - JP_4
       - RU_1
-      - RU_2
+      - SE_1
+      - SE_2
+      - SE_3
       - SG_1
       - SG_2
       - SG_3
-      - SG_4
       - TW_1
       - UN_1
+      - UN_2
       - US_1
       - US_10
       - US_11
@@ -307,29 +311,20 @@ proxy-groups:
       - US_50
       - US_51
       - US_52
-      - US_53
-      - US_54
-      - US_55
-      - US_56
-      - US_57
       - US_6
       - US_7
       - US_8
       - US_9
+      - Unknown_1
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CH_1
-      - CN_1
+      - BE_1
       - DE_1
       - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
-      - DE_6
       - FR_1
       - FR_2
       - FR_3
@@ -337,13 +332,21 @@ proxy-groups:
       - FR_5
       - FR_6
       - FR_7
-      - FR_8
-      - FR_9
       - GB_1
       - GB_2
       - GB_3
       - GB_4
+      - GB_5
+      - GB_6
       - HK_1
+      - HK_10
+      - HK_11
+      - HK_12
+      - HK_13
+      - HK_14
+      - HK_15
+      - HK_16
+      - HK_17
       - HK_2
       - HK_3
       - HK_4
@@ -352,19 +355,20 @@ proxy-groups:
       - HK_7
       - HK_8
       - HK_9
-      - IN_1
       - JP_1
       - JP_2
       - JP_3
-      - KR_1
+      - JP_4
       - RU_1
-      - RU_2
+      - SE_1
+      - SE_2
+      - SE_3
       - SG_1
       - SG_2
       - SG_3
-      - SG_4
       - TW_1
       - UN_1
+      - UN_2
       - US_1
       - US_10
       - US_11
@@ -413,15 +417,11 @@ proxy-groups:
       - US_50
       - US_51
       - US_52
-      - US_53
-      - US_54
-      - US_55
-      - US_56
-      - US_57
       - US_6
       - US_7
       - US_8
       - US_9
+      - Unknown_1
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -440,14 +440,9 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CH_1
-      - CN_1
+      - BE_1
       - DE_1
       - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
-      - DE_6
       - FR_1
       - FR_2
       - FR_3
@@ -455,13 +450,21 @@ proxy-groups:
       - FR_5
       - FR_6
       - FR_7
-      - FR_8
-      - FR_9
       - GB_1
       - GB_2
       - GB_3
       - GB_4
+      - GB_5
+      - GB_6
       - HK_1
+      - HK_10
+      - HK_11
+      - HK_12
+      - HK_13
+      - HK_14
+      - HK_15
+      - HK_16
+      - HK_17
       - HK_2
       - HK_3
       - HK_4
@@ -470,19 +473,20 @@ proxy-groups:
       - HK_7
       - HK_8
       - HK_9
-      - IN_1
       - JP_1
       - JP_2
       - JP_3
-      - KR_1
+      - JP_4
       - RU_1
-      - RU_2
+      - SE_1
+      - SE_2
+      - SE_3
       - SG_1
       - SG_2
       - SG_3
-      - SG_4
       - TW_1
       - UN_1
+      - UN_2
       - US_1
       - US_10
       - US_11
@@ -531,15 +535,11 @@ proxy-groups:
       - US_50
       - US_51
       - US_52
-      - US_53
-      - US_54
-      - US_55
-      - US_56
-      - US_57
       - US_6
       - US_7
       - US_8
       - US_9
+      - Unknown_1
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -550,14 +550,9 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CH_1
-      - CN_1
+      - BE_1
       - DE_1
       - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
-      - DE_6
       - FR_1
       - FR_2
       - FR_3
@@ -565,13 +560,21 @@ proxy-groups:
       - FR_5
       - FR_6
       - FR_7
-      - FR_8
-      - FR_9
       - GB_1
       - GB_2
       - GB_3
       - GB_4
+      - GB_5
+      - GB_6
       - HK_1
+      - HK_10
+      - HK_11
+      - HK_12
+      - HK_13
+      - HK_14
+      - HK_15
+      - HK_16
+      - HK_17
       - HK_2
       - HK_3
       - HK_4
@@ -580,19 +583,20 @@ proxy-groups:
       - HK_7
       - HK_8
       - HK_9
-      - IN_1
       - JP_1
       - JP_2
       - JP_3
-      - KR_1
+      - JP_4
       - RU_1
-      - RU_2
+      - SE_1
+      - SE_2
+      - SE_3
       - SG_1
       - SG_2
       - SG_3
-      - SG_4
       - TW_1
       - UN_1
+      - UN_2
       - US_1
       - US_10
       - US_11
@@ -641,28 +645,19 @@ proxy-groups:
       - US_50
       - US_51
       - US_52
-      - US_53
-      - US_54
-      - US_55
-      - US_56
-      - US_57
       - US_6
       - US_7
       - US_8
       - US_9
+      - Unknown_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CH_1
-      - CN_1
+      - BE_1
       - DE_1
       - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
-      - DE_6
       - FR_1
       - FR_2
       - FR_3
@@ -670,13 +665,21 @@ proxy-groups:
       - FR_5
       - FR_6
       - FR_7
-      - FR_8
-      - FR_9
       - GB_1
       - GB_2
       - GB_3
       - GB_4
+      - GB_5
+      - GB_6
       - HK_1
+      - HK_10
+      - HK_11
+      - HK_12
+      - HK_13
+      - HK_14
+      - HK_15
+      - HK_16
+      - HK_17
       - HK_2
       - HK_3
       - HK_4
@@ -685,19 +688,20 @@ proxy-groups:
       - HK_7
       - HK_8
       - HK_9
-      - IN_1
       - JP_1
       - JP_2
       - JP_3
-      - KR_1
+      - JP_4
       - RU_1
-      - RU_2
+      - SE_1
+      - SE_2
+      - SE_3
       - SG_1
       - SG_2
       - SG_3
-      - SG_4
       - TW_1
       - UN_1
+      - UN_2
       - US_1
       - US_10
       - US_11
@@ -746,29 +750,20 @@ proxy-groups:
       - US_50
       - US_51
       - US_52
-      - US_53
-      - US_54
-      - US_55
-      - US_56
-      - US_57
       - US_6
       - US_7
       - US_8
       - US_9
+      - Unknown_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CH_1
-      - CN_1
+      - BE_1
       - DE_1
       - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
-      - DE_6
       - FR_1
       - FR_2
       - FR_3
@@ -776,13 +771,21 @@ proxy-groups:
       - FR_5
       - FR_6
       - FR_7
-      - FR_8
-      - FR_9
       - GB_1
       - GB_2
       - GB_3
       - GB_4
+      - GB_5
+      - GB_6
       - HK_1
+      - HK_10
+      - HK_11
+      - HK_12
+      - HK_13
+      - HK_14
+      - HK_15
+      - HK_16
+      - HK_17
       - HK_2
       - HK_3
       - HK_4
@@ -791,19 +794,20 @@ proxy-groups:
       - HK_7
       - HK_8
       - HK_9
-      - IN_1
       - JP_1
       - JP_2
       - JP_3
-      - KR_1
+      - JP_4
       - RU_1
-      - RU_2
+      - SE_1
+      - SE_2
+      - SE_3
       - SG_1
       - SG_2
       - SG_3
-      - SG_4
       - TW_1
       - UN_1
+      - UN_2
       - US_1
       - US_10
       - US_11
@@ -852,15 +856,11 @@ proxy-groups:
       - US_50
       - US_51
       - US_52
-      - US_53
-      - US_54
-      - US_55
-      - US_56
-      - US_57
       - US_6
       - US_7
       - US_8
       - US_9
+      - Unknown_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -876,14 +876,9 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CH_1
-      - CN_1
+      - BE_1
       - DE_1
       - DE_2
-      - DE_3
-      - DE_4
-      - DE_5
-      - DE_6
       - FR_1
       - FR_2
       - FR_3
@@ -891,13 +886,21 @@ proxy-groups:
       - FR_5
       - FR_6
       - FR_7
-      - FR_8
-      - FR_9
       - GB_1
       - GB_2
       - GB_3
       - GB_4
+      - GB_5
+      - GB_6
       - HK_1
+      - HK_10
+      - HK_11
+      - HK_12
+      - HK_13
+      - HK_14
+      - HK_15
+      - HK_16
+      - HK_17
       - HK_2
       - HK_3
       - HK_4
@@ -906,19 +909,20 @@ proxy-groups:
       - HK_7
       - HK_8
       - HK_9
-      - IN_1
       - JP_1
       - JP_2
       - JP_3
-      - KR_1
+      - JP_4
       - RU_1
-      - RU_2
+      - SE_1
+      - SE_2
+      - SE_3
       - SG_1
       - SG_2
       - SG_3
-      - SG_4
       - TW_1
       - UN_1
+      - UN_2
       - US_1
       - US_10
       - US_11
@@ -967,15 +971,11 @@ proxy-groups:
       - US_50
       - US_51
       - US_52
-      - US_53
-      - US_54
-      - US_55
-      - US_56
-      - US_57
       - US_6
       - US_7
       - US_8
       - US_9
+      - Unknown_1
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
