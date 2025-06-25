@@ -5,140 +5,133 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: BR_1, server: 95.164.4.140, port: 52937, type: vmess, uuid: 71820e62-7b99-4ed9-a836-1e0f814c33a1, alterId: 0, cipher: auto, tls: false}
-  - {name: CA_1, server: 15.235.83.228, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: kapelleng.com, network: ws, ws-opts: {path: /linkvws}}
-  - {name: CA_2, server: 150.230.24.24, port: 30300, type: hysteria2, password: 2429bee3-e0c1-47dd-b420-75e6512b184b, auth: 2429bee3-e0c1-47dd-b420-75e6512b184b, sni: www.bing.com, skip-cert-verify: true}
-  - {name: CA_3, server: 192.3.233.253, port: 88, type: vless, uuid: dd6154dd-5767-439a-9f4f-734895e06a1e, tls: true, servername: oty.myto.ip-ddns.com, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: oty.myto.ip-ddns.com}}}
-  - {name: DE_1, server: 104.21.64.1, port: 2096, type: vmess, uuid: b3928f8d-ea81-4d75-bcec-4016a072adff, alterId: 0, cipher: auto, tls: true, servername: de01.sh-cloudflare.sbs, network: ws, ws-opts: {path: /, headers: {Host: de01.sh-cloudflare.sbs}}}
-  - {name: DE_2, server: 57.129.28.65, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: kapelleng.com, network: ws, ws-opts: {path: /linkvws}}
-  - {name: DE_3, server: 23.158.56.241, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, network: ws, ws-opts: {path: /linkvws}}
-  - {name: DE_4, server: 104.17.147.22, port: 2053, type: trojan, password: c4f42f64-a7cb-4bcb-874e-5088eac28576, sni: mAHsA.965871a.stORe, skip-cert-verify: true, network: ws, ws-opts: {path: /trm1dElsZUiMH92q8d, headers: {Host: mAHsA.965871a.stORe}}}
-  - {name: FI_1, server: 104.17.223.18, port: 80, type: vmess, uuid: ff2d17c6-0d96-4801-a270-9dba8334f8c6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: q2.19kAla.co}}}
-  - {name: FR_1, server: 5.196.29.123, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: FR_2, server: 51.159.111.32, port: 31180, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: apple.com, skip-cert-verify: true}
-  - {name: GB_1, server: 172.67.92.147, port: 80, type: vless, uuid: b8be6118-0dd7-4402-ae1a-69b2816f3a7f, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: br.presskiwi.dpdns.org}}}
-  - {name: GB_2, server: 51.38.64.209, port: 44023, type: vmess, uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3, alterId: 0, cipher: auto, tls: false}
-  - {name: HK_1, server: 104.17.148.22, port: 2083, type: trojan, password: 91658, sni: mYwEBpaN.114514660.xYz, network: ws, ws-opts: {path: "/trmc3kdwfXwv3LgetS/dHMuaHBjLnR3?ed=2560", headers: {Host: mYwEBpaN.114514660.xYz}}}
-  - {name: HK_2, server: 168.100.6.29, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram🇨🇳, headers: {Host: hk.laoyoutiao.link}}}
-  - {name: HK_3, server: 38.225.101.77, port: 43000, type: vless, uuid: 4d0fd141-d834-4e36-aec6-edcaa871c329, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: fpW2C8i9N9DM6kVILbCOhxxCgRUhZikdM8sGT1Nb8iw, short-id: "9cb783" }, servername: www.hkust.edu.hk, client-fingerprint: chrome, network: tcp}
-  - {name: HK_4, server: 130.250.137.29, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /TelegramU0001F1E8U0001F1F3, headers: {Host: hk.laoyoutiao.link}}}
-  - {name: HK_5, server: diwu34.di5ji.lat, port: 26700, type: hysteria2, password: 21d9b6a9-bd15-4ed6-ae3b-07f45e20b8ff, auth: 21d9b6a9-bd15-4ed6-ae3b-07f45e20b8ff, sni: diwu34.di5ji.lat, skip-cert-verify: true}
-  - {name: HK_6, server: 120.232.153.41, port: 49597, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: IN_1, server: 152.67.8.205, port: 80, type: vmess, uuid: 9db4c708-aef8-4359-821b-38e47990be0d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: KR_1, server: 146.56.102.200, port: 34237, type: hysteria2, password: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5, auth: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5, sni: anycast.us.kg, skip-cert-verify: true}
-  - {name: NL_1, server: hshl.huasuan666.top, port: 22157, type: hysteria2, password: 2721a74d-0803-4c85-983e-a99c197e9e0b, auth: 2721a74d-0803-4c85-983e-a99c197e9e0b, sni: hshl.huasuan666.top, skip-cert-verify: true}
-  - {name: NL_2, server: 51.159.226.1, port: 50066, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true}
-  - {name: PL_1, server: 146.59.55.50, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: o.metuji.com, network: ws, ws-opts: {path: /linkvws}}
-  - {name: RU_1, server: 31.129.105.239, port: 16231, type: vmess, uuid: 793e03cc-2b08-4d1b-bb0b-592567d19043, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: RU_2, server: 45.147.201.231, port: 30076, type: hysteria2, password: 5f4434c6-ed8f-4068-91ea-ddb4cdf21168, auth: 5f4434c6-ed8f-4068-91ea-ddb4cdf21168, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==}
-  - {name: RU_3, server: 45.147.201.231, port: 30076, type: hysteria2, password: 197f6783-64bf-438e-aef2-49062901a671, auth: 197f6783-64bf-438e-aef2-49062901a671, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==}
-  - {name: RU_4, server: 45.147.201.231, port: 30076, type: hysteria2, password: f02f1bab-5a02-4df3-8613-046c6a759356, auth: f02f1bab-5a02-4df3-8613-046c6a759356, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==}
-  - {name: SE_1, server: 149.50.216.6, port: 18000, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false}
-  - {name: SG_1, server: 154.26.129.247, port: 57143, type: vmess, uuid: 28efbf36-079a-4c98-8470-d13458db6ee6, alterId: 0, cipher: auto, tls: false}
-  - {name: SG_2, server: xjp2vl.xiao666666.site, port: 55650, type: vless, uuid: 928a3318-b103-4f5f-ac80-1efd6f05d3d7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: sECJIqBXlQf4NRj6TvgohkfAIPKayRlHGhELj7Pdd2w, short-id: "9e13dd9f" }, servername: main.m.taobao.com, client-fingerprint: chrome, network: tcp}
-  - {name: SG_3, server: asg.pagate.top, port: 10086, type: hysteria2, password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, sni: asg.pagate.top}
-  - {name: SG_4, server: 154.26.137.42, port: 44104, type: vmess, uuid: e9933a4c-e56e-458c-bcf4-9cb3875bba55, alterId: 0, cipher: auto, tls: false}
-  - {name: SG_5, server: ss.hkglink.xyz, port: 12012, type: trojan, password: e68f0468-1674-4890-bbd8-0b5cb262e372, sni: tr.yuanul.com}
-  - {name: SG_6, server: 62.146.232.156, port: 33281, type: vmess, uuid: 24eda0ea-acf0-4538-a001-f746a480237a, alterId: 0, cipher: auto, tls: false}
-  - {name: TW_1, server: 166.0.198.68, port: 443, type: trojan, password: 02926f9e-153a-42c8-8ecd-8fade7009ad1, sni: golinkwuxian.top, skip-cert-verify: true, network: ws, ws-opts: {path: /apple, headers: {Host: golinkwuxian.top}}}
-  - {name: TW_2, server: tw.xiao666666.site, port: 26900, type: hysteria2, password: 37f10aa2-c207-4923-a465-8ec05493ca78, auth: 37f10aa2-c207-4923-a465-8ec05493ca78, sni: tw.xiao666666.site}
-  - {name: UN_1, server: 46.17.41.5, port: 12904, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, skip-cert-verify: true}
-  - {name: UN_2, server: 108.181.5.130, port: 4710, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: apple.com, skip-cert-verify: true}
-  - {name: UN_3, server: 45.147.201.231, port: 30076, type: hysteria2, password: ba69de3f-756a-4056-b88a-b6329a6e94d0, auth: ba69de3f-756a-4056-b88a-b6329a6e94d0, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==}
-  - {name: US_1, server: 104.21.32.1, port: 443, type: vless, uuid: 0836463b-214f-4af6-aa85-85a56a62388e, tls: true, servername: D2127A49-flaT-wOoD-C4b5.mIlIA-aKBaRpOOr.WORkERs.Dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/KDBYvL5fP0YDtED8?ed=2560", headers: {Host: D2127A49-flaT-wOoD-C4b5.mIlIA-aKBaRpOOr.WORkERs.Dev}}}
-  - {name: US_10, server: e12afa64-sxc9s0-syifel-1t8q3.hy2.gotochinatown.net, port: 8443, type: hysteria2, password: 775baa4a-d75b-11ef-a11a-f23c913c8d2b, auth: 775baa4a-d75b-11ef-a11a-f23c913c8d2b, sni: e12afa64-sxc9s0-syifel-1t8q3.hy2.gotochinatown.net}
-  - {name: US_11, server: 172.67.199.104, port: 80, type: vmess, uuid: 03e92910-34b1-4245-ac63-04a865f43cd5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /NjLXrucxVIcvpHPhIJoo2wcE6Q, headers: {Host: eeefr5t6.4444916.xyz}}}
-  - {name: US_12, server: 147.78.140.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560fp=chrome", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_13, server: 154.194.0.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_14, server: 129.146.241.150, port: 10086, type: hysteria2, password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, sni: aus.pagate.top, skip-cert-verify: true}
-  - {name: US_15, server: 89.187.181.172, port: 43118, type: trojan, password: ypDt8RkT7J, sni: egcmi.phooeyunfold.com, skip-cert-verify: true}
-  - {name: US_16, server: 45.85.118.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_17, server: 104.16.87.223, port: 2096, type: vless, uuid: fea99d38-e028-4178-ad4a-ef5540e5c8ba, tls: true, servername: MywebpaN.114514660.XYZ, client-fingerprint: chrome, network: ws, ws-opts: {path: "/lncF4h1yDFOdzhh8/dHMuaHBjLnR3?ed=2560", headers: {Host: MywebpaN.114514660.XYZ}}}
-  - {name: US_18, server: 104.21.30.167, port: 443, type: trojan, password: a7b22c05-27fd-4a76-8896-2aebaf4cf3a1, sni: TttTtTYU.2032.PP.UA, network: ws, ws-opts: {path: /mXG7Hx4Y37nTr2Hdmy903WCeD85F1b, headers: {Host: TttTtTYU.2032.PP.UA}}}
-  - {name: US_19, server: 173.245.59.110, port: 443, type: trojan, password: Aimer, sni: epmf.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmf.ambercc.filegear-sg.me}}}
-  - {name: US_2, server: 104.21.27.146, port: 2087, type: trojan, password: 91658, sni: MYwEBPan.114514660.Xyz, network: ws, ws-opts: {path: "/tr4IdShVW7CA7YIQJv/dHMuaHBjLnR3?ed=2560", headers: {Host: MYwEBPan.114514660.Xyz}}}
-  - {name: US_20, server: 45.131.6.63, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_21, server: c8f11c8d-sxaf40-sybxeq-1ldl3.hy2.gotochinatown.net, port: 8443, type: hysteria2, password: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9, auth: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9, sni: c8f11c8d-sxaf40-sybxeq-1ldl3.hy2.gotochinatown.net}
-  - {name: US_22, server: 154.83.2.247, port: 8880, type: vless, uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram🇨🇳, headers: {Host: ex.sue.x10.mx}}}
-  - {name: US_23, server: 66.94.114.122, port: 53503, type: vmess, uuid: c9b9dea3-5868-477f-e54d-2c8f124f647d, alterId: 0, cipher: auto, tls: false}
-  - {name: US_24, server: 104.26.13.31, port: 8443, type: trojan, password: trojan, sni: fofang.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: fofang.pages.dev}}}
-  - {name: US_25, server: 15.204.151.84, port: 443, type: vless, uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055, tls: true, servername: 147135004002.sec20org.com, client-fingerprint: chrome, network: tcp}
-  - {name: US_26, server: 104.21.89.221, port: 443, type: trojan, password: c7f423b7-ced8-43da-a9ae-e906cb4a222c, sni: DdDdddDDdF.999824.Xyz, network: ws, ws-opts: {path: /dwPcFaK3QxWRQTqot0LE, headers: {Host: DdDdddDDdF.999824.Xyz}}}
-  - {name: US_27, server: 198.41.208.23, port: 443, type: trojan, password: c7cdf323-25d4-4c82-ad35-0aca769041c2, sni: trojans1.114514660.xyz, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: trojans1.114514660.xyz}}}
-  - {name: US_28, server: 168.100.6.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_29, server: uriah.ns.cloudflare.com, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, servername: bv.ylks0033.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: bv.ylks0033.dpdns.org}}}
-  - {name: US_3, server: 104.21.84.242, port: 80, type: vmess, uuid: 03e92910-34b1-4245-ac63-04a865f43cd5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /NjLXrucxVIcvpHPhIJoo2wcE6Q, headers: {Host: eeefr5t6.4444916.xyz}}}
-  - {name: US_30, server: 104.21.26.17, port: 443, type: vless, uuid: 07a3df8f-2a2c-42f8-ad92-65889d90f3bf, tls: true, servername: tTTtTTT67.459.PP.uA, client-fingerprint: chrome, network: ws, ws-opts: {path: /5UW2C42lpZ7Dj4VDwVOkZfoq, headers: {Host: ttttttt67.459.pp.ua}}}
-  - {name: US_31, server: 172.67.220.32, port: 443, type: trojan, password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2, sni: RFgTHYu7.999836.Xyz, network: ws, ws-opts: {path: /mFvK3LJyIAe8ydvnmRKWDa8, headers: {Host: RFgTHYu7.999836.Xyz}}}
-  - {name: US_32, server: 172.67.220.32, port: 443, type: trojan, password: ffcf7ec1-3e09-4821-b3d9-b426a107b73b, sni: xxcVvbNHJ.999836.XYz, network: ws, ws-opts: {path: /XmTzATQPJv9RO3xr1D40NK, headers: {Host: xxcVvbNHJ.999836.XYz}}}
-  - {name: US_33, server: 104.21.22.133, port: 443, type: trojan, password: e4cbe8b8-37db-4aaa-8469-b84f34c51ebc, sni: xsCdfVg.20220420.Pp.UA, network: ws, ws-opts: {path: /dilyfCPEmLvYr5hYXD, headers: {Host: xsCdfVg.20220420.Pp.UA}}}
-  - {name: US_34, server: 172.67.220.140, port: 443, type: trojan, password: 13e26f64-2e0c-4461-92cd-d83294cc18f0, sni: dddDvvbHY7.000890604.XyZ, network: ws, ws-opts: {path: /TDUxZUop9k44oPiit2OdWk0KwirdY, headers: {Host: dddDvvbHY7.000890604.XyZ}}}
-  - {name: US_35, server: 172.67.220.32, port: 443, type: trojan, password: ffcf7ec1-3e09-4821-b3d9-b426a107b73b, sni: XCfVGbHFg.999836.xyZ, network: ws, ws-opts: {path: /XmTzATQPJv9RO3xr1D40NK, headers: {Host: XCfVGbHFg.999836.xyZ}}}
-  - {name: US_36, server: 69.84.182.63, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_37, server: 172.67.53.233, port: 80, type: vless, uuid: 4179c595-08ca-45cd-b555-91b6f1faeadc, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/BaRAyeIran?ed=2560", headers: {Host: di.dibdibini.dpdns.org}}}
-  - {name: US_38, server: diwu351.di5ji.lat, port: 26600, type: hysteria2, password: 6d379500-bf16-452f-b00e-70090809f383, auth: 6d379500-bf16-452f-b00e-70090809f383, sni: diwu351.di5ji.lat, skip-cert-verify: true}
-  - {name: US_39, server: 104.21.14.54, port: 443, type: trojan, password: e4cbe8b8-37db-4aaa-8469-b84f34c51ebc, sni: 6666YHjU.777159.xYz, skip-cert-verify: true, network: ws, ws-opts: {path: /dilyfCPEmLvYr5hYXD, headers: {Host: 6666YHjU.777159.xYz}}}
-  - {name: US_4, server: ed6cdab3-syiv40-szxai8-1ldl3.hy2.gotochinatown.net, port: 8443, type: hysteria2, password: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9, auth: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9}
-  - {name: US_40, server: 104.21.6.179, port: 443, type: trojan, password: 6757b7d6-fa32-4708-b5d1-30e3cf928b51, sni: ZZzzzZZ.890601.XYZ, skip-cert-verify: true, network: ws, ws-opts: {path: /l96MZ8se5Kl2p8BiMhP42l, headers: {Host: ZZzzzZZ.890601.XYZ}}}
-  - {name: US_41, server: 172.67.220.32, port: 443, type: trojan, password: ffcf7ec1-3e09-4821-b3d9-b426a107b73b, sni: eEEfGty6.999836.XYz, network: ws, ws-opts: {path: /XmTzATQPJv9RO3xr1D40NK, headers: {Host: eEEfGty6.999836.XYz}}}
-  - {name: US_42, server: 209.94.90.63, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_43, server: 104.21.24.195, port: 443, type: trojan, password: ffcf7ec1-3e09-4821-b3d9-b426a107b73b, sni: XCfVGbHFg.999836.xyZ, network: ws, ws-opts: {path: /XmTzATQPJv9RO3xr1D40NK, headers: {Host: XCfVGbHFg.999836.xyZ}}}
-  - {name: US_44, server: 135.148.152.103, port: 443, type: vless, uuid: ea286109-d20f-415e-849e-4af20ab04b65, tls: true, servername: 147135001195.sec22org.com, client-fingerprint: chrome, network: tcp}
-  - {name: US_45, server: 194.76.18.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_46, server: 46.254.92.254, port: 8880, type: vless, uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram🇨🇳, headers: {Host: yg.bantony199.top}}}
-  - {name: US_47, server: 104.17.148.22, port: 2053, type: trojan, password: c4f42f64-a7cb-4bcb-874e-5088eac28576, sni: mAHsA.965871a.stORe, skip-cert-verify: true, network: ws, ws-opts: {path: /trm1dElsZUiMH92q8d, headers: {Host: mAHsA.965871a.stORe}}}
-  - {name: US_48, server: 104.21.26.17, port: 443, type: vless, uuid: cf8c791e-9d0b-4e90-aaf6-41ac62468416, tls: true, servername: IiIIIiiIIIiiO.459.pp.uA, client-fingerprint: chrome, network: ws, ws-opts: {path: /dtBdvnoJO8180gomOew3d, headers: {Host: IiIIIiiIIIiiO.459.pp.uA}}}
-  - {name: US_49, server: 104.21.48.1, port: 443, type: trojan, password: 7701ddf5-6a48-401b-a3ec-8af52b6deb48, sni: SsXcDFGty.99890604.XYZ, skip-cert-verify: true, network: ws, ws-opts: {path: /QRNs4ue90AX3hweBopuhWEbIX, headers: {Host: SsXcDFGty.99890604.XYZ}}}
-  - {name: US_5, server: cccvffgty.444752.xyz, port: 443, type: trojan, password: 512d9674-db12-44ca-a1b5-654244549b65, sni: cccvffgty.444752.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /HOi2k5ElZdeML7Ua7dX3JIrYk7zm, headers: {Host: cccvffgty.444752.xyz}}}
-  - {name: US_50, server: 104.21.95.229, port: 8443, type: trojan, password: 13253e6e-a1f7-4090-801f-a8dc2b083bef, sni: INVincIblE.fAfA20.shop, network: ws, ws-opts: {path: "/trYacafkUmerow4kjv/NzguNDcuMTU3LjY=?ed=2560", headers: {Host: INVincIblE.fAfA20.shop}}}
-  - {name: US_51, server: 104.21.30.37, port: 80, type: vmess, uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /9dZlJLjHHrL0VwSolbqFpg, headers: {Host: 333defr.444682.xyz}}}
-  - {name: US_52, server: 209.141.47.127, port: 3234, type: hysteria2, password: 65a43b6e-19c5-4fab-b960-d110a07d66a4, auth: 65a43b6e-19c5-4fab-b960-d110a07d66a4, skip-cert-verify: true}
-  - {name: US_53, server: ztcloudus.ztcloud.xyz, port: 18560, type: hysteria2, password: c8330a7d-140a-4e11-a958-29b9304c6c93, auth: c8330a7d-140a-4e11-a958-29b9304c6c93, sni: ztcloudus.ztcloud.xyz, skip-cert-verify: true}
-  - {name: US_54, server: 104.17.147.22, port: 443, type: vless, uuid: 4d91916f-a7fd-419b-8b90-640bb8d1b9f4, tls: true, servername: TITanTabLOmaNAHaMRaH.IR, client-fingerprint: chrome, network: ws, ws-opts: {path: /Kytglts3cGhwlsZV/MjEzLjE3MC4xNTcuMQ, headers: {Host: TITanTabLOmaNAHaMRaH.IR}}}
-  - {name: US_55, server: 104.21.75.193, port: 443, type: trojan, password: bpb-trojan, sni: mashdt.pages.dev, network: ws, ws-opts: {path: "/tr?ed=2560", headers: {Host: mashdt.pages.dev}}}
-  - {name: US_56, server: 66.81.247.63, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560fp=chrome", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_57, server: 45.81.58.63, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram🇨🇳, headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_58, server: 141.193.213.223, port: 80, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: cs.laoyoutiao.link}}}
-  - {name: US_59, server: 38.99.82.193, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}}
-  - {name: US_6, server: 104.21.22.211, port: 443, type: trojan, password: 5a5d1112-4ae7-431f-bdde-0d008fb473dd, sni: 90.tAIpEI108.dpDnS.orG, network: ws, ws-opts: {path: /685uFbiRrgAsHzTP8d, headers: {Host: 90.tAIpEI108.dpDnS.orG}}}
-  - {name: US_60, server: 172.67.214.21, port: 443, type: trojan, password: 7248e825-887c-48b9-83bc-c26bc6392bf8, sni: XXcdvFgT.191268.xYZ, network: ws, ws-opts: {path: /ctdmgeIg3NII3ibrzzKXJGy3S1, headers: {Host: XXcdvFgT.191268.xYZ}}}
-  - {name: US_7, server: 185.18.250.254, port: 8880, type: vless, uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: yg.bantony199.top}}}
-  - {name: US_8, server: 192.227.152.86, port: 61001, type: hysteria2, password: 5CBqBh6MeDq6GajcilBiDg==, auth: 5CBqBh6MeDq6GajcilBiDg==, sni: 192-227-152-86.nip.io, skip-cert-verify: true}
-  - {name: US_9, server: 104.21.13.36, port: 443, type: trojan, password: a7c9c017-db10-4d15-b01b-0634db498b57, sni: ERt5.0890604.XyZ, network: ws, ws-opts: {path: /OBmXcXufeTh7sLJtI1, headers: {Host: ERt5.0890604.XyZ}}}
+  - {name: AL_1, server: 45.15.170.80, port: 28495, type: vless, uuid: 7e296434-2d17-48d3-928d-19eaa34aecb1, tls: true, reality-opts: {public-key: KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ, short-id: "0ecc2c1392" }, servername: dl.google.com, client-fingerprint: chrome, network: tcp}
+  - {name: CA_1, server: 172.67.200.11, port: 443, type: trojan, password: 288124da-0d68-42f4-9f48-70dc4dcc55a6, sni: rRfGty6.890606.XYz, skip-cert-verify: true, network: ws, ws-opts: {path: /raChT39pjLFYRA5HdHEIupMZeK, headers: {Host: rRfGty6.890606.XYz}}}
+  - {name: CA_2, server: 23.162.200.227, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: nelly.homes, network: ws, ws-opts: {path: /linkvws}}
+  - {name: CA_3, server: 104.21.3.189, port: 2087, type: vmess, uuid: 2fc37713-3017-497e-ff2d-965f826a19a3, alterId: 0, cipher: auto, tls: true, servername: cc2d2.89060004.xyz, network: ws, ws-opts: {path: /, headers: {Host: cc2d2.89060004.xyz}}}
+  - {name: CA_4, server: 150.230.24.24, port: 30300, type: hysteria2, password: 2429bee3-e0c1-47dd-b420-75e6512b184b, auth: 2429bee3-e0c1-47dd-b420-75e6512b184b, sni: www.bing.com, skip-cert-verify: true}
+  - {name: CA_5, server: 172.67.205.157, port: 443, type: trojan, password: 288124da-0d68-42f4-9f48-70dc4dcc55a6, sni: SsXCDfR5.986986.shoP, skip-cert-verify: true, network: ws, ws-opts: {path: /raChT39pjLFYRA5HdHEIupMZeK, headers: {Host: SsXCDfR5.986986.shoP}}}
+  - {name: CH_1, server: 186.190.215.193, port: 22324, type: vmess, uuid: 04621bae-ab36-11ec-b909-0242ac120002, alterId: 0, cipher: auto, tls: false}
+  - {name: DE_1, server: 5.10.214.20, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram@节点狂魔2/?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: FR_1, server: 45.12.133.43, port: 28444, type: vmess, uuid: 1be8eddb-4f8c-45d0-b2a1-e538eb3abd39, alterId: 0, cipher: auto, tls: false}
+  - {name: GB_1, server: 104.16.155.10, port: 443, type: vless, uuid: 753fa8e8-a3e8-442e-abf7-875ed776eacb, tls: true, servername: is.oldcloud.online, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: is.oldcloud.online}}}
+  - {name: HK_1, server: 4c1aed42-syiv40-t03u2l-1t8q3.hgc1.tcpbbr.net, port: 8080, type: vmess, uuid: 775baa4a-d75b-11ef-a11a-f23c913c8d2b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}}
+  - {name: HK_2, server: 38.225.100.135, port: 43000, type: vless, uuid: 5333992c-07eb-474b-af06-e217209bfeb7, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: ORXZoe3pY5Cu4_E_VZ0Uqnb6aVfpqidC30-B8AfUpys, short-id: "eb0325a469" }, servername: www.hkust.edu.hk, client-fingerprint: chrome, network: tcp}
+  - {name: JP_1, server: ztcloudjp.ztcloud.xyz, port: 18530, type: hysteria2, password: ecff3f29-8f7a-45a9-a5fe-ce49210de15d, auth: ecff3f29-8f7a-45a9-a5fe-ce49210de15d, sni: ztcloudjp.ztcloud.xyz, skip-cert-verify: true}
+  - {name: JP_2, server: 138.2.11.148, port: 10086, type: hysteria2, password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, sni: ajp.pagate.top, skip-cert-verify: true}
+  - {name: JP_3, server: b02f8edb-syiv40-t33ubn-1s2ks.cm5.cnkuaishou.com, port: 27233, type: trojan, password: a664d16a-4e47-11ef-9d7e-f23c9164ca5d}
+  - {name: KR_1, server: ztcloudkr.ztcloud.xyz, port: 18540, type: hysteria2, password: 96e55eb7-9a34-468a-af66-1fa6b1c27251, auth: 96e55eb7-9a34-468a-af66-1fa6b1c27251, sni: ztcloudkr.ztcloud.xyz, skip-cert-verify: true}
+  - {name: KR_2, server: 146.56.102.200, port: 34237, type: hysteria2, password: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5, auth: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5, sni: anycast.us.kg, skip-cert-verify: true}
+  - {name: PL_1, server: 146.59.80.70, port: 2083, type: vmess, uuid: 7523339b-fb63-4ecb-b84a-e402045919ef, alterId: 0, cipher: auto, tls: true, servername: pl-v2ray.freevmess.com}
+  - {name: RU_1, server: 46.17.41.5, port: 12904, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, skip-cert-verify: true}
+  - {name: RU_2, server: 45.147.201.231, port: 30076, type: hysteria2, password: 0ca2eb73-cb22-4435-bb08-6438c94f49c6, auth: 0ca2eb73-cb22-4435-bb08-6438c94f49c6, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==}
+  - {name: RU_3, server: 46.17.41.5, port: 12904, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: apple.com, skip-cert-verify: true}
+  - {name: SE_1, server: 169.150.208.83, port: 18000, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false}
+  - {name: SG_1, server: 152.69.220.154, port: 10086, type: hysteria2, password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, sni: asg.pagate.top, skip-cert-verify: true}
+  - {name: SG_2, server: 154.26.129.247, port: 57143, type: vmess, uuid: 28efbf36-079a-4c98-8470-d13458db6ee6, alterId: 0, cipher: auto, tls: false}
+  - {name: SG_3, server: 154.26.137.42, port: 44104, type: vmess, uuid: e9933a4c-e56e-458c-bcf4-9cb3875bba55, alterId: 0, cipher: auto, tls: false}
+  - {name: SG_4, server: 62.146.233.112, port: 36712, type: vmess, uuid: 9266df42-0830-48c2-8509-4c57b30fe29d, alterId: 0, cipher: auto, tls: false}
+  - {name: SG_5, server: 62.146.232.156, port: 33281, type: vmess, uuid: 24eda0ea-acf0-4538-a001-f746a480237a, alterId: 0, cipher: auto, tls: false}
+  - {name: SG_6, server: asg.pagate.top, port: 10086, type: hysteria2, password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, sni: asg.pagate.top}
+  - {name: TW_1, server: tw.xiao666666.site, port: 26900, type: hysteria2, password: cf0feb07-a8c7-4e70-b68b-c1a5a624c252, auth: cf0feb07-a8c7-4e70-b68b-c1a5a624c252, sni: tw.xiao666666.site}
+  - {name: TW_2, server: tw.xiao666666.site, port: 26900, type: hysteria2, password: 492ce977-f4d1-4099-a881-6f20992a1c3c, auth: 492ce977-f4d1-4099-a881-6f20992a1c3c, sni: tw.xiao666666.site}
+  - {name: UN_1, server: 46.17.41.217, port: 30033, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true}
+  - {name: UN_2, server: 45.147.201.231, port: 30076, type: hysteria2, password: ee3e8f28-2ca6-4d1c-a79b-5102d647f2b1, auth: ee3e8f28-2ca6-4d1c-a79b-5102d647f2b1, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==}
+  - {name: UN_3, server: 45.147.201.231, port: 30076, type: hysteria2, password: 98f63fa1-c05f-4381-afc8-eef4792e54ea, auth: 98f63fa1-c05f-4381-afc8-eef4792e54ea, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==}
+  - {name: US_1, server: 104.16.206.78, port: 2083, type: vless, uuid: c2e177d4-e610-4abd-85cd-1a869d158751, tls: true, servername: teslakit1.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: teslakit1.pages.dev}}}
+  - {name: US_10, server: 172.67.140.61, port: 443, type: trojan, password: bpb-trojan, sni: adbt.ir, skip-cert-verify: true, network: ws, ws-opts: {path: "/tr?ed=2560", headers: {Host: adbt.ir}}}
+  - {name: US_11, server: 104.21.84.242, port: 443, type: trojan, password: 03e92910-34b1-4245-ac63-04a865f43cd5, sni: 3ERt.4444916.XyZ, skip-cert-verify: true, network: ws, ws-opts: {path: /bi35bFWoRrnPhIJoo2wcE6Q, headers: {Host: 3ERt.4444916.XyZ}}}
+  - {name: US_12, server: 66.94.114.122, port: 53503, type: vmess, uuid: c9b9dea3-5868-477f-e54d-2c8f124f647d, alterId: 0, cipher: auto, tls: false}
+  - {name: US_13, server: 104.21.88.37, port: 443, type: trojan, password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2, sni: XXcdVFghYUIOp.999165.xyZ, skip-cert-verify: true, network: ws, ws-opts: {path: /mFvK3LJyIAe8ydvnmRKWDa8, headers: {Host: XXcdVFghYUIOp.999165.xyZ}}}
+  - {name: US_14, server: 104.21.32.1, port: 443, type: trojan, password: 7701ddf5-6a48-401b-a3ec-8af52b6deb48, sni: SsXcDFGty.99890604.XYZ, network: ws, ws-opts: {path: /QRNs4ue90AX3hweBopuhWEbIX, headers: {Host: SsXcDFGty.99890604.XYZ}}}
+  - {name: US_15, server: 104.21.30.167, port: 443, type: trojan, password: a7b22c05-27fd-4a76-8896-2aebaf4cf3a1, sni: TttTtTYU.2032.PP.UA, network: ws, ws-opts: {path: /mXG7Hx4Y37nTr2Hdmy903WCeD85F1b, headers: {Host: TttTtTYU.2032.PP.UA}}}
+  - {name: US_16, server: 8ba34a3d-syiv40-t33ubn-1s2ks.hy2.gotochinatown.net, port: 8443, type: hysteria2, password: a664d16a-4e47-11ef-9d7e-f23c9164ca5d, auth: a664d16a-4e47-11ef-9d7e-f23c9164ca5d}
+  - {name: US_17, server: 104.18.182.185, port: 80, type: vless, uuid: 941d092e-8313-452a-ba21-c9995dcba79d, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: havvas.shohreh.dpdns.org}}}
+  - {name: US_18, server: 135.148.152.105, port: 443, type: vless, uuid: ea286109-d20f-415e-849e-4af20ab04b65, tls: true, servername: 147135001195.sec22org.com, client-fingerprint: chrome, network: tcp}
+  - {name: US_19, server: 204.93.210.63, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
+  - {name: US_2, server: SSxxxzaw.444752.xYz, port: 80, type: vmess, uuid: 512d9674-db12-44ca-a1b5-654244549b65, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm, headers: {Host: ssxxxzaw.444752.xyz}}}
+  - {name: US_20, server: 172.64.33.144, port: 443, type: trojan, password: Aimer, sni: epmf.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmf.ambercc.filegear-sg.me}}}
+  - {name: US_21, server: 103.245.229.19, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/telegram🇨🇳 @pgkj666 /?ed=2560", headers: {Host: hk.laoyoutiao.link}}}
+  - {name: US_22, server: 25.25.25.254, port: 8880, type: vless, uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram🇨🇳, headers: {Host: yg.bantony199.top}}}
+  - {name: US_23, server: 172.64.147.215, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
+  - {name: US_24, server: 45.12.31.63, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
+  - {name: US_25, server: 172.67.150.132, port: 443, type: trojan, password: 0f7070cd-c91d-4532-a51f-56da4f0e94be, sni: wwwsder.444682.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /ctHoQlqeZn8pbEUSLppj7jCmY, headers: {Host: wwwsder.444682.xyz}}}
+  - {name: US_26, server: 104.18.12.229, port: 8443, type: trojan, password: trojan, sni: pangpi.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: pangpi.pages.dev}}}
+  - {name: US_27, server: 104.17.71.31, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, servername: bv.ylks0033.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: bv.ylks0033.dpdns.org}}}
+  - {name: US_28, server: 104.18.27.94, port: 443, type: vless, uuid: c4929932-34f8-46dd-8cd6-7b1539dc4416, tls: true, servername: esetsecuritylicense.inhkvez.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: esetsecuritylicense.inhkvez.workers.dev}}}
+  - {name: US_29, server: 5ee5b44d-sxe4g0-syfj90-1r9dt.hy2.gotochinatown.net, port: 8443, type: hysteria2, password: de003c72-0157-11ef-86da-f23c91cfbbc9, auth: de003c72-0157-11ef-86da-f23c91cfbbc9, sni: 5ee5b44d-sxe4g0-syfj90-1r9dt.hy2.gotochinatown.net}
+  - {name: US_3, server: "[2606:4700::34:f167:35d7:369c]", port: 443, type: trojan, password: Aimer, sni: epmf.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmf.ambercc.filegear-sg.me}}}
+  - {name: US_30, server: 172.64.152.82, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
+  - {name: US_31, server: 172.67.197.165, port: 443, type: trojan, password: a7c9c017-db10-4d15-b01b-0634db498b57, sni: ERt5.0890604.XyZ, network: ws, ws-opts: {path: /OBmXcXufeTh7sLJtI1, headers: {Host: ERt5.0890604.XyZ}}}
+  - {name: US_32, server: 190.93.247.254, port: 8880, type: vless, uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram🇨🇳 @WangCai2, headers: {Host: yg.bantony199.top}}}
+  - {name: US_33, server: 45.131.4.4, port: 8080, type: vless, uuid: 76b3cbba-e6ac-485a-9481-336a0415eab9, tls: false, packet-encoding: xudp, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: OlD-disk-EFCd.JojAhoF109.WorKerS.DEv}}}
+  - {name: US_34, server: 104.21.78.243, port: 443, type: trojan, password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391, sni: U19.7282728.Xyz, network: ws, ws-opts: {path: /ptGwaGzcA4KNAXX, headers: {Host: U19.7282728.Xyz}}}
+  - {name: US_35, server: 104.21.22.211, port: 443, type: trojan, password: 5a5d1112-4ae7-431f-bdde-0d008fb473dd, sni: 90.tAIpEI108.dpDnS.orG, network: ws, ws-opts: {path: /685uFbiRrgAsHzTP8d, headers: {Host: 90.tAIpEI108.dpDnS.orG}}}
+  - {name: US_36, server: 188.244.122.247, port: 8880, type: vless, uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram🇨🇳, headers: {Host: ex.sue.x10.mx}}}
+  - {name: US_37, server: 172.67.162.74, port: 443, type: trojan, password: e9b4bdbd-cc5b-4a90-9616-ea0f1092ec7c, sni: p09.IrAN.pP.Ua, skip-cert-verify: true, network: ws, ws-opts: {path: /s1XRkMWuneQkqtp5KKSues, headers: {Host: p09.IrAN.pP.Ua}}}
+  - {name: US_38, server: 89.187.181.179, port: 43118, type: trojan, password: ypDt8RkT7J, sni: wrmelmwxlf.gktevlrqznw, skip-cert-verify: true}
+  - {name: US_39, server: 104.21.3.189, port: 2087, type: vmess, uuid: 105e6bf5-8ff4-4713-b6c3-7de371b4e9cd, alterId: 0, cipher: auto, tls: true, servername: rak1d3.89060004.xyz, network: ws, ws-opts: {path: /, headers: {Host: rak1d3.89060004.xyz}}}
+  - {name: US_4, server: c8f11c8d-sxaf40-sybxeq-1ldl3.hy2.gotochinatown.net, port: 8443, type: hysteria2, password: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9, auth: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9, sni: c8f11c8d-sxaf40-sybxeq-1ldl3.hy2.gotochinatown.net}
+  - {name: US_40, server: 209.141.47.127, port: 3234, type: hysteria2, password: 65a43b6e-19c5-4fab-b960-d110a07d66a4, auth: 65a43b6e-19c5-4fab-b960-d110a07d66a4, skip-cert-verify: true}
+  - {name: US_41, server: 172.67.138.187, port: 443, type: trojan, password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391, sni: U19.7282728.Xyz, network: ws, ws-opts: {path: /ptGwaGzcA4KNAXX, headers: {Host: U19.7282728.Xyz}}}
+  - {name: US_42, server: 45.131.5.5, port: 8080, type: vless, uuid: 046da250-d5ef-4867-9095-302477d54d20, tls: false, packet-encoding: xudp, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: feng.ipy29c99.workers.dev}}}
+  - {name: US_43, server: 104.21.48.1, port: 443, type: trojan, password: e9b4bdbd-cc5b-4a90-9616-ea0f1092ec7c, sni: ttYUi.7777198.xYZ, skip-cert-verify: true, network: ws, ws-opts: {path: /s1XRkMWuneQkqtp5KKSues, headers: {Host: ttYUi.7777198.xYZ}}}
+  - {name: US_44, server: 108.181.5.130, port: 4710, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: apple.com, skip-cert-verify: true}
+  - {name: US_45, server: 104.21.29.205, port: 443, type: trojan, password: 662e38ba-8427-4955-94aa-76f5347a0ce8, sni: 0000000000.222560.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /hCbtKwyNTRDjtF5UvWyyVQu, headers: {Host: 0000000000.222560.xyz}}}
+  - {name: US_46, server: ed6cdab3-syiv40-szxai8-1ldl3.hy2.gotochinatown.net, port: 8443, type: hysteria2, password: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9, auth: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9}
+  - {name: US_47, server: 92.53.188.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed", headers: {Host: jp.laoyoutiao.link}}}
+  - {name: US_48, server: 156.238.18.172, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram@WangCai2/?ed=2048", headers: {Host: sg.laoyoutiao.link}}}
+  - {name: US_49, server: 172.64.152.127, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: tw.laoyoutiao.link}}}
+  - {name: US_5, server: 141.11.203.191, port: 8443, type: trojan, password: Aimer, sni: epmf.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmf.ambercc.filegear-sg.me}}}
+  - {name: US_50, server: 108.165.152.29, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: hk.laoyoutiao.link}}}
+  - {name: US_51, server: 45.131.5.5, port: 8080, type: vless, uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466, tls: false, packet-encoding: xudp, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: feng4.l1ut8bi9.workers.dev}}}
+  - {name: US_52, server: 104.21.77.149, port: 443, type: trojan, password: 30602b6d-5d5c-4f56-9b65-9ae2fd9348cb, sni: wsxxzxsd.999834.xyz, network: ws, ws-opts: {path: /MwXI8nfdPkSDsYEGVHqPd73hl, headers: {Host: wsxxzxsd.999834.xyz}}}
+  - {name: US_53, server: 129.146.241.150, port: 10086, type: hysteria2, password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, sni: aus.pagate.top, skip-cert-verify: true}
+  - {name: US_54, server: 172.67.131.27, port: 2087, type: vmess, uuid: 350e2b01-d410-44a6-90ba-6483f1062972, alterId: 0, cipher: auto, tls: true, servername: rak2d3.89060004.xyz, network: ws, ws-opts: {path: /, headers: {Host: rak2d3.89060004.xyz}}}
+  - {name: US_55, server: 91.193.58.164, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram🇨🇳, headers: {Host: us.laoyoutiao.link}}}
+  - {name: US_56, server: 92.243.74.180, port: 8443, type: trojan, password: Aimer, sni: tyep.esslh.filegear-sg.me, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: tyep.esslh.filegear-sg.me}}}
+  - {name: US_57, server: 104.21.78.243, port: 443, type: trojan, password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391, sni: U19.7282728.Xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /ptGwaGzcA4KNAXX, headers: {Host: U19.7282728.Xyz}}}
+  - {name: US_58, server: 108.162.193.144, port: 443, type: trojan, password: Aimer, sni: epmf.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmf.ambercc.filegear-sg.me}}}
+  - {name: US_59, server: 104.21.30.37, port: 443, type: trojan, password: cdec9d57-661d-456a-bbf2-b4c38e9c6711, sni: DDdcVfbGHy7.444682.xyz, network: ws, ws-opts: {path: /UgBAUEI9Y18NcpHHrL0VwSolbqFpg, headers: {Host: DDdcVfbGHy7.444682.xyz}}}
+  - {name: US_6, server: 104.21.68.76, port: 443, type: trojan, password: a96cb093-b164-4bc6-bd27-deb0e385de07, sni: pppPPpPppPpPu.222769.XYZ, skip-cert-verify: true, network: ws, ws-opts: {path: /CNLtVWdiKPpIlRig3qizHXb, headers: {Host: pppPPpPppPpPu.222769.XYZ}}}
+  - {name: US_60, server: 156.238.18.134, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560", headers: {Host: us.laoyoutiao.link}}}
+  - {name: US_61, server: 104.21.24.195, port: 443, type: trojan, password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2, sni: RFgTHYu7.999836.Xyz, network: ws, ws-opts: {path: /mFvK3LJyIAe8ydvnmRKWDa8, headers: {Host: RFgTHYu7.999836.Xyz}}}
+  - {name: US_62, server: 185.133.35.63, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram🇨🇳, headers: {Host: jp.laoyoutiao.link}}}
+  - {name: US_63, server: 185.148.107.254, port: 8880, type: vless, uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: yg.bantony199.top}}}
+  - {name: US_64, server: 38.99.82.193, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, network: ws, ws-opts: {path: /linkvws}}
+  - {name: US_65, server: 172.67.199.104, port: 80, type: vmess, uuid: 03e92910-34b1-4245-ac63-04a865f43cd5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /NjLXrucxVIcvpHPhIJoo2wcE6Q, headers: {Host: eeefr5t6.4444916.xyz}}}
+  - {name: US_66, server: 160.79.104.251, port: 8880, type: vless, uuid: 0132166f-e702-48ed-a9e7-b07af768faf8, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: cf.d3z.net}}}
+  - {name: US_7, server: 108.162.195.127, port: 443, type: trojan, password: Aimer, sni: epmf.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmf.ambercc.filegear-sg.me}}}
+  - {name: US_8, server: 172.67.149.202, port: 443, type: trojan, password: 19a78eeb-d83a-4364-b095-b7dd93436320, sni: CVFgTrE4.222560.XyZ, network: ws, ws-opts: {path: /Hq0I4JMuzO0WLijID, headers: {Host: CVFgTrE4.222560.XyZ}}}
+  - {name: US_9, server: 103.245.229.254, port: 8880, type: vless, uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: yg.bantony199.top}}}
+  - {name: 🇲🇾 MY_1, server: 120.233.44.201, port: 21031, type: trojan, password: 2b1ed981-6547-4094-998b-06a3323d6f6c, skip-cert-verify: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - BR_1
+      - AL_1
       - CA_1
       - CA_2
       - CA_3
+      - CA_4
+      - CA_5
+      - CH_1
       - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - FI_1
       - FR_1
-      - FR_2
       - GB_1
-      - GB_2
       - HK_1
       - HK_2
-      - HK_3
-      - HK_4
-      - HK_5
-      - HK_6
-      - IN_1
+      - JP_1
+      - JP_2
+      - JP_3
       - KR_1
-      - NL_1
-      - NL_2
+      - KR_2
       - PL_1
       - RU_1
       - RU_2
       - RU_3
-      - RU_4
       - SE_1
       - SG_1
       - SG_2
@@ -208,42 +201,42 @@ proxy-groups:
       - US_59
       - US_6
       - US_60
+      - US_61
+      - US_62
+      - US_63
+      - US_64
+      - US_65
+      - US_66
       - US_7
       - US_8
       - US_9
+      - 🇲🇾 MY_1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - BR_1
+      - AL_1
       - CA_1
       - CA_2
       - CA_3
+      - CA_4
+      - CA_5
+      - CH_1
       - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - FI_1
       - FR_1
-      - FR_2
       - GB_1
-      - GB_2
       - HK_1
       - HK_2
-      - HK_3
-      - HK_4
-      - HK_5
-      - HK_6
-      - IN_1
+      - JP_1
+      - JP_2
+      - JP_3
       - KR_1
-      - NL_1
-      - NL_2
+      - KR_2
       - PL_1
       - RU_1
       - RU_2
       - RU_3
-      - RU_4
       - SE_1
       - SG_1
       - SG_2
@@ -313,43 +306,43 @@ proxy-groups:
       - US_59
       - US_6
       - US_60
+      - US_61
+      - US_62
+      - US_63
+      - US_64
+      - US_65
+      - US_66
       - US_7
       - US_8
       - US_9
+      - 🇲🇾 MY_1
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - BR_1
+      - AL_1
       - CA_1
       - CA_2
       - CA_3
+      - CA_4
+      - CA_5
+      - CH_1
       - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - FI_1
       - FR_1
-      - FR_2
       - GB_1
-      - GB_2
       - HK_1
       - HK_2
-      - HK_3
-      - HK_4
-      - HK_5
-      - HK_6
-      - IN_1
+      - JP_1
+      - JP_2
+      - JP_3
       - KR_1
-      - NL_1
-      - NL_2
+      - KR_2
       - PL_1
       - RU_1
       - RU_2
       - RU_3
-      - RU_4
       - SE_1
       - SG_1
       - SG_2
@@ -419,9 +412,16 @@ proxy-groups:
       - US_59
       - US_6
       - US_60
+      - US_61
+      - US_62
+      - US_63
+      - US_64
+      - US_65
+      - US_66
       - US_7
       - US_8
       - US_9
+      - 🇲🇾 MY_1
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -440,34 +440,27 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - BR_1
+      - AL_1
       - CA_1
       - CA_2
       - CA_3
+      - CA_4
+      - CA_5
+      - CH_1
       - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - FI_1
       - FR_1
-      - FR_2
       - GB_1
-      - GB_2
       - HK_1
       - HK_2
-      - HK_3
-      - HK_4
-      - HK_5
-      - HK_6
-      - IN_1
+      - JP_1
+      - JP_2
+      - JP_3
       - KR_1
-      - NL_1
-      - NL_2
+      - KR_2
       - PL_1
       - RU_1
       - RU_2
       - RU_3
-      - RU_4
       - SE_1
       - SG_1
       - SG_2
@@ -537,9 +530,16 @@ proxy-groups:
       - US_59
       - US_6
       - US_60
+      - US_61
+      - US_62
+      - US_63
+      - US_64
+      - US_65
+      - US_66
       - US_7
       - US_8
       - US_9
+      - 🇲🇾 MY_1
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -550,34 +550,27 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - BR_1
+      - AL_1
       - CA_1
       - CA_2
       - CA_3
+      - CA_4
+      - CA_5
+      - CH_1
       - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - FI_1
       - FR_1
-      - FR_2
       - GB_1
-      - GB_2
       - HK_1
       - HK_2
-      - HK_3
-      - HK_4
-      - HK_5
-      - HK_6
-      - IN_1
+      - JP_1
+      - JP_2
+      - JP_3
       - KR_1
-      - NL_1
-      - NL_2
+      - KR_2
       - PL_1
       - RU_1
       - RU_2
       - RU_3
-      - RU_4
       - SE_1
       - SG_1
       - SG_2
@@ -647,42 +640,42 @@ proxy-groups:
       - US_59
       - US_6
       - US_60
+      - US_61
+      - US_62
+      - US_63
+      - US_64
+      - US_65
+      - US_66
       - US_7
       - US_8
       - US_9
+      - 🇲🇾 MY_1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - BR_1
+      - AL_1
       - CA_1
       - CA_2
       - CA_3
+      - CA_4
+      - CA_5
+      - CH_1
       - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - FI_1
       - FR_1
-      - FR_2
       - GB_1
-      - GB_2
       - HK_1
       - HK_2
-      - HK_3
-      - HK_4
-      - HK_5
-      - HK_6
-      - IN_1
+      - JP_1
+      - JP_2
+      - JP_3
       - KR_1
-      - NL_1
-      - NL_2
+      - KR_2
       - PL_1
       - RU_1
       - RU_2
       - RU_3
-      - RU_4
       - SE_1
       - SG_1
       - SG_2
@@ -752,43 +745,43 @@ proxy-groups:
       - US_59
       - US_6
       - US_60
+      - US_61
+      - US_62
+      - US_63
+      - US_64
+      - US_65
+      - US_66
       - US_7
       - US_8
       - US_9
+      - 🇲🇾 MY_1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - BR_1
+      - AL_1
       - CA_1
       - CA_2
       - CA_3
+      - CA_4
+      - CA_5
+      - CH_1
       - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - FI_1
       - FR_1
-      - FR_2
       - GB_1
-      - GB_2
       - HK_1
       - HK_2
-      - HK_3
-      - HK_4
-      - HK_5
-      - HK_6
-      - IN_1
+      - JP_1
+      - JP_2
+      - JP_3
       - KR_1
-      - NL_1
-      - NL_2
+      - KR_2
       - PL_1
       - RU_1
       - RU_2
       - RU_3
-      - RU_4
       - SE_1
       - SG_1
       - SG_2
@@ -858,9 +851,16 @@ proxy-groups:
       - US_59
       - US_6
       - US_60
+      - US_61
+      - US_62
+      - US_63
+      - US_64
+      - US_65
+      - US_66
       - US_7
       - US_8
       - US_9
+      - 🇲🇾 MY_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -876,34 +876,27 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - BR_1
+      - AL_1
       - CA_1
       - CA_2
       - CA_3
+      - CA_4
+      - CA_5
+      - CH_1
       - DE_1
-      - DE_2
-      - DE_3
-      - DE_4
-      - FI_1
       - FR_1
-      - FR_2
       - GB_1
-      - GB_2
       - HK_1
       - HK_2
-      - HK_3
-      - HK_4
-      - HK_5
-      - HK_6
-      - IN_1
+      - JP_1
+      - JP_2
+      - JP_3
       - KR_1
-      - NL_1
-      - NL_2
+      - KR_2
       - PL_1
       - RU_1
       - RU_2
       - RU_3
-      - RU_4
       - SE_1
       - SG_1
       - SG_2
@@ -973,9 +966,16 @@ proxy-groups:
       - US_59
       - US_6
       - US_60
+      - US_61
+      - US_62
+      - US_63
+      - US_64
+      - US_65
+      - US_66
       - US_7
       - US_8
       - US_9
+      - 🇲🇾 MY_1
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
