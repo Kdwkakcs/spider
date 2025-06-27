@@ -5,141 +5,138 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: AE_1, server: 93.115.172.175, port: 12540, type: vmess, uuid: 056d3d35-a729-4ab4-bbae-d71d8458af19, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
   - {name: CA_1, server: 150.230.24.24, port: 30300, type: hysteria2, password: 2429bee3-e0c1-47dd-b420-75e6512b184b, auth: 2429bee3-e0c1-47dd-b420-75e6512b184b, sni: www.bing.com, skip-cert-verify: true}
-  - {name: CN_1, server: 120.232.153.63, port: 37775, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: DE_1, server: 35.158.252.0, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
-  - {name: DE_2, server: 35.158.252.0, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk}
-  - {name: DE_3, server: 91.99.202.155, port: 443, type: vless, uuid: 2eaef053-5fd6-4def-b234-d760690355ff, tls: false, client-fingerprint: chrome, network: http, http-opts: {method: GET, path: [/], headers: {Host: [zula.ir]}}}
+  - {name: CN_1, server: 120.198.71.218, port: 32915, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: CZ_1, server: x1-czech-aruba-v2.devefun.org, port: 1935, type: trojan, password: mZMgM1vKw5, sni: x1-czech-aruba-v2.devefun.org, skip-cert-verify: true}
+  - {name: DE_1, server: 91.99.193.96, port: 443, type: vless, uuid: 153ee04c-dcc1-4ef8-a146-8fb31cec1f48, tls: false, client-fingerprint: chrome, network: http, http-opts: {method: GET, path: [/], headers: {Host: [zula.ir]}}}
+  - {name: DE_2, server: 91.99.205.88, port: 3184, type: vless, uuid: ecfa8e99-f3b2-47e0-9920-06c667f21e73, tls: true, reality-opts: {public-key: hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I}, servername: chess.com, client-fingerprint: chrome, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: chessgame}}
   - {name: FR_1, server: 51.159.111.32, port: 31180, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: apple.com, skip-cert-verify: true}
-  - {name: FR_2, server: 13.39.66.186, port: 22223, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk}
-  - {name: GB_1, server: ztcloudgb.ztcloud.xyz, port: 18580, type: hysteria2, password: ecff3f29-8f7a-45a9-a5fe-ce49210de15d, auth: ecff3f29-8f7a-45a9-a5fe-ce49210de15d, sni: ztcloudgb.ztcloud.xyz, skip-cert-verify: true}
-  - {name: GB_2, server: diwu3464426.di5ji.lat, port: 27000, type: hysteria2, password: 21d9b6a9-bd15-4ed6-ae3b-07f45e20b8ff, auth: 21d9b6a9-bd15-4ed6-ae3b-07f45e20b8ff, sni: diwu3464426.di5ji.lat, skip-cert-verify: true}
-  - {name: GB_3, server: ztcloudgb.ztcloud.xyz, port: 18580, type: hysteria2, password: 7788d84f-a530-4393-8ce4-a05ab4ef537d, auth: 7788d84f-a530-4393-8ce4-a05ab4ef537d, sni: ztcloudgb.ztcloud.xyz, skip-cert-verify: true}
-  - {name: JP_1, server: ztcloudjp.ztcloud.xyz, port: 18530, type: hysteria2, password: dbfab2f2-cdce-4e57-ab8a-98a2a59bb4d9, auth: dbfab2f2-cdce-4e57-ab8a-98a2a59bb4d9, sni: ztcloudjp.ztcloud.xyz, skip-cert-verify: true}
-  - {name: JP_2, server: 5.253.41.94, port: 443, type: vless, uuid: 948f6596-66f9-4707-aa92-3107a214ce53, tls: true, servername: oops.shalamshorba.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: oops.shalamshorba.dpdns.org}}}
-  - {name: JP_3, server: 131.186.33.175, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, servername: dt.vs2024.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: dt.vs2024.dpdns.org}}}
-  - {name: JP_4, server: 120.198.71.213, port: 31180, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
-  - {name: JP_5, server: ztcloudjp.ztcloud.xyz, port: 18530, type: hysteria2, password: 3c572c6e-d32e-4d28-b10f-7f752dd14c7c, auth: 3c572c6e-d32e-4d28-b10f-7f752dd14c7c, sni: ztcloudjp.ztcloud.xyz, skip-cert-verify: true}
-  - {name: JP_6, server: 45.153.7.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560fp=chrome", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: KR_1, server: ztcloudkr.ztcloud.xyz, port: 18540, type: hysteria2, password: 5ef4951b-5e99-4a7a-8dee-2316e31677e8, auth: 5ef4951b-5e99-4a7a-8dee-2316e31677e8, sni: ztcloudkr.ztcloud.xyz, skip-cert-verify: true}
-  - {name: KR_2, server: 130.162.147.187, port: 443, type: vless, uuid: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, tls: true, flow: xtls-rprx-vision, servername: ako.pagate.top, client-fingerprint: chrome, network: tcp}
-  - {name: KR_3, server: 106.255.89.151, port: 50000, type: vless, uuid: 948f6596-66f9-4707-aa92-3107a214ce53, tls: true, servername: oops.shalamshorba.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "telegram@wangcai2/?ed=2560", headers: {Host: oops.shalamshorba.dpdns.org}}}
-  - {name: NL_1, server: 24.144.77.41, port: 1003, type: vless, uuid: 39baadce-3e0b-4322-8de1-797bf7f25b8a, tls: false, client-fingerprint: chrome, network: http, http-opts: {method: GET, path: [/], headers: {Host: [fast.com]}}}
+  - {name: FR_2, server: 141.145.205.115, port: 8443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, servername: tx.vs2024.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: tx.vs2024.dpdns.org}}}
+  - {name: GB_1, server: 51.38.64.209, port: 44023, type: vmess, uuid: 7da457da-ed0f-437d-c81d-6c35885bbea3, alterId: 0, cipher: auto, tls: false}
+  - {name: HK_1, server: 120.232.153.40, port: 43392, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: HK_2, server: 120.198.71.217, port: 46759, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: IR_1, server: 37.152.181.119, port: 56104, type: vmess, uuid: efd57bc3-8086-48bd-9b1a-6fd8ab8cee6d, alterId: 0, cipher: auto, tls: false}
+  - {name: JP_1, server: ztcloudjp.ztcloud.xyz, port: 18530, type: hysteria2, password: 3c572c6e-d32e-4d28-b10f-7f752dd14c7c, auth: 3c572c6e-d32e-4d28-b10f-7f752dd14c7c, sni: ztcloudjp.ztcloud.xyz, skip-cert-verify: true}
+  - {name: JP_2, server: 120.198.71.213, port: 31180, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: KR_1, server: 14.52.132.109, port: 30057, type: vless, uuid: 948f6596-66f9-4707-aa92-3107a214ce53, tls: true, servername: oops.shalamshorba.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: oops.shalamshorba.dpdns.org}}}
+  - {name: KR_2, server: 125.139.138.180, port: 23105, type: vless, uuid: 948f6596-66f9-4707-aa92-3107a214ce53, tls: true, servername: oops.shalamshorba.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "telegram@wangcai2/?ed=2560", headers: {Host: oops.shalamshorba.dpdns.org}}}
+  - {name: LV_1, server: 172.67.56.112, port: 80, type: vless, uuid: 148709e4-402b-48dd-8892-ed39b55ea45c, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/BaRAyeIran?ed=2560", headers: {Host: entezar.loseyourself.dpdns.org}}}
   - {name: PL_1, server: 146.59.80.70, port: 2083, type: vmess, uuid: 7523339b-fb63-4ecb-b84a-e402045919ef, alterId: 0, cipher: auto, tls: true, servername: pl-v2ray.freevmess.com}
-  - {name: RU_1, server: 45.147.201.231, port: 33079, type: hysteria2, password: 04588435-05c1-4edd-b3d5-cf6e79be8f75, auth: 04588435-05c1-4edd-b3d5-cf6e79be8f75, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==}
-  - {name: RU_2, server: 46.17.41.5, port: 12904, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: apple.com, skip-cert-verify: true}
-  - {name: RU_3, server: 45.129.2.248, port: 23579, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true}
-  - {name: RU_4, server: 46.17.41.217, port: 30033, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true}
-  - {name: SG_1, server: 129.150.50.21, port: 44009, type: trojan, password: ttfang, sni: ttfang.fange.me, network: ws, ws-opts: {path: /, headers: {Host: ttfang.fange.me}}}
-  - {name: UN_1, server: 45.129.2.108, port: 50850, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true}
-  - {name: UN_2, server: 107.175.32.153, port: 41276, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
-  - {name: US_1, server: 66.81.247.230, port: 2096, type: trojan, password: Aimer, sni: epmg.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmg.ambercc.filegear-sg.me}}}
-  - {name: US_10, server: 104.24.196.20, port: 443, type: vless, uuid: 21cf57f2-391f-4e7b-91ac-8b650e0a2f4c, tls: true, servername: rayan-fg-6.parmis.filegear-sg.me, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: rayan-fg-6.parmis.filegear-sg.me}}}
-  - {name: US_11, server: 172.67.220.32, port: 443, type: trojan, password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2, sni: RFgTHYu7.999836.Xyz, network: ws, ws-opts: {path: /mFvK3LJyIAe8ydvnmRKWDa8, headers: {Host: RFgTHYu7.999836.Xyz}}}
-  - {name: US_12, server: 162.159.152.81, port: 443, type: vless, uuid: 55520747-311e-4015-83ce-be46e2060ce3, tls: true, servername: nv.bgm2024.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: nv.bgm2024.dpdns.org}}}
-  - {name: US_13, server: 172.67.219.196, port: 443, type: trojan, password: f108e0e2-5f12-42b6-9e67-1b2f073ffb2b, sni: CCcvfgt6.852224.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: /CA5bMmr2JMum8sDKRwvFCJq, headers: {Host: CCcvfgt6.852224.dpdns.org}}}
-  - {name: US_14, server: 139.64.235.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
-  - {name: US_15, server: 61.37.230.26, port: 31173, type: vless, uuid: 948f6596-66f9-4707-aa92-3107a214ce53, tls: true, servername: oops.shalamshorba.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "telegram@wangcai2/?ed=2560", headers: {Host: oops.shalamshorba.dpdns.org}}}
-  - {name: US_16, server: 172.64.33.110, port: 443, type: trojan, password: Aimer, sni: epmg.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmg.ambercc.filegear-sg.me}}}
-  - {name: US_17, server: 86.38.214.3, port: 8880, type: vless, uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: bitget1.asdasd.click}}}
-  - {name: US_18, server: 104.129.164.254, port: 8880, type: vless, uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: yg.bantony199.top}}}
-  - {name: US_19, server: 193.9.49.254, port: 8880, type: vless, uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: yg.bantony199.top}}}
-  - {name: US_2, server: 188.244.122.254, port: 8880, type: vless, uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: yg.bantony199.top}}}
-  - {name: US_20, server: 138.197.5.103, port: 443, type: trojan, password: xxoo, sni: telewebion.com, skip-cert-verify: true}
-  - {name: US_21, server: 167.68.4.3, port: 8880, type: vless, uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: bitget1.asdasd.click}}}
-  - {name: US_22, server: 129.146.241.150, port: 10086, type: hysteria2, password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, sni: aus.pagate.top, skip-cert-verify: true}
-  - {name: US_23, server: 193.124.224.3, port: 8880, type: vless, uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: bitget1.asdasd.click}}}
-  - {name: US_24, server: 172.67.219.196, port: 443, type: trojan, password: f108e0e2-5f12-42b6-9e67-1b2f073ffb2b, sni: CCcvfgt6.852224.dpdns.org, network: ws, ws-opts: {path: /CA5bMmr2JMum8sDKRwvFCJq, headers: {Host: CCcvfgt6.852224.dpdns.org}}}
-  - {name: US_25, server: 38.99.82.193, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}}
-  - {name: US_26, server: 104.18.2.26, port: 2083, type: vless, uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc, tls: true, servername: ex.sue.x10.mx, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ex.sue.x10.mx}}}
-  - {name: US_27, server: 108.162.195.236, port: 443, type: trojan, password: Aimer, sni: epmg.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmg.ambercc.filegear-sg.me}}}
-  - {name: US_28, server: 107.175.145.72, port: 45035, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
-  - {name: US_29, server: 172.67.209.79, port: 80, type: vmess, uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /9dZlJLjHHrL0VwSolbqFpg, headers: {Host: wwsxcdfr5.999834.xyz}}}
-  - {name: US_3, server: 172.67.161.129, port: 80, type: vmess, uuid: 662e38ba-8427-4955-94aa-76f5347a0ce8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /LtSb51wp8mWtF5UvWyyVQu, headers: {Host: cdvfgt.666470.xyz}}}
-  - {name: US_30, server: 31.43.179.254, port: 8880, type: vless, uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: yg.bantony199.top}}}
-  - {name: US_31, server: 172.67.214.21, port: 443, type: trojan, password: 7248e825-887c-48b9-83bc-c26bc6392bf8, sni: XXcdvFgT.191268.xYZ, skip-cert-verify: true, network: ws, ws-opts: {path: /ctdmgeIg3NII3ibrzzKXJGy3S1, headers: {Host: XXcdvFgT.191268.xYZ}}}
-  - {name: US_32, server: 188.164.158.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
-  - {name: US_33, server: 104.21.57.88, port: 443, type: trojan, password: e9b4bdbd-cc5b-4a90-9616-ea0f1092ec7c, sni: p09.IrAN.pP.Ua, skip-cert-verify: true, network: ws, ws-opts: {path: /s1XRkMWuneQkqtp5KKSues, headers: {Host: p09.IrAN.pP.Ua}}}
-  - {name: US_34, server: 5.10.245.174, port: 443, type: vless, uuid: 6337837a-2b47-4e0d-a695-75c5a4a8ad51, tls: true, servername: hax-us2.lzjnb.shop, client-fingerprint: chrome, network: ws, ws-opts: {path: /lzjjjjjjjjj666666666, headers: {Host: hax-us2.lzjnb.shop}}}
-  - {name: US_35, server: 74.49.214.3, port: 8880, type: vless, uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: bitget1.asdasd.click}}}
-  - {name: US_36, server: 107.175.145.72, port: 30833, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
-  - {name: US_37, server: 172.64.35.236, port: 443, type: trojan, password: Aimer, sni: epmg.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmg.ambercc.filegear-sg.me}}}
-  - {name: US_38, server: diwu694426.di5ji.lat, port: 27300, type: hysteria2, password: cf919c23-3a79-4f1f-896a-5ee39bd2f1e0, auth: cf919c23-3a79-4f1f-896a-5ee39bd2f1e0, sni: diwu694426.di5ji.lat, skip-cert-verify: true}
-  - {name: US_39, server: 172.67.177.109, port: 443, type: trojan, password: 357b1bba-6400-4944-baff-1b933311ff28, sni: EeEEeEEeeeeeeE.666461.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /HbjLgzKC7MBYIsgt, headers: {Host: EeEEeEEeeeeeeE.666461.xyz}}}
-  - {name: US_4, server: 107.175.32.153, port: 28992, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
-  - {name: US_40, server: 104.21.91.180, port: 443, type: trojan, password: bce0c7cb-08d1-46a7-b77b-7bff8b46252f, sni: XXXXxxXxXc.666461.xyZ, network: ws, ws-opts: {path: /x9F83IcyjcEyBXZBROjL3Q5vTymr, headers: {Host: XXXXxxXxXc.666461.xyZ}}}
-  - {name: US_41, server: 104.18.9.132, port: 2087, type: vless, uuid: 25c5cbda-39e5-47ed-b36c-b87ffef2378d, tls: true, servername: worker-fancy-base-7d08.yajici1215.workers.DEV, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: worker-fancy-base-7d08.yajici1215.workers.DEV}}}
-  - {name: US_42, server: 107.175.145.72, port: 39610, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
-  - {name: US_43, server: 104.21.94.69, port: 443, type: trojan, password: 13e26f64-2e0c-4461-92cd-d83294cc18f0, sni: dddDvvbHY7.000890604.XyZ, skip-cert-verify: true, network: ws, ws-opts: {path: /TDUxZUop9k44oPiit2OdWk0KwirdY, headers: {Host: dddDvvbHY7.000890604.XyZ}}}
-  - {name: US_44, server: 185.170.166.251, port: 8880, type: vless, uuid: 0132166f-e702-48ed-a9e7-b07af768faf8, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: cf.d3z.net}}}
-  - {name: US_45, server: 94.140.0.3, port: 8880, type: vless, uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: bitget1.asdasd.click}}}
-  - {name: US_46, server: 135.84.75.3, port: 8880, type: vless, uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: bitget1.asdasd.click}}}
-  - {name: US_47, server: 162.159.44.127, port: 443, type: trojan, password: Aimer, sni: epmf.ambercc.filegear-sg.me, network: ws, ws-opts: {path: /, headers: {Host: epmf.ambercc.filegear-sg.me}}}
-  - {name: US_48, server: 45.159.219.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
-  - {name: US_49, server: 173.245.59.110, port: 443, type: trojan, password: Aimer, sni: epmg.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmg.ambercc.filegear-sg.me}}}
-  - {name: US_5, server: 104.21.16.1, port: 443, type: trojan, password: e9b4bdbd-cc5b-4a90-9616-ea0f1092ec7c, sni: ttYUi.7777198.xYZ, skip-cert-verify: true, network: ws, ws-opts: {path: /s1XRkMWuneQkqtp5KKSues, headers: {Host: ttYUi.7777198.xYZ}}}
-  - {name: US_50, server: 154.206.12.247, port: 8880, type: vless, uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram🇨🇳, headers: {Host: ex.sue.x10.mx}}}
-  - {name: US_51, server: 5.182.85.254, port: 8880, type: vless, uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: yg.bantony199.top}}}
-  - {name: US_52, server: 172.67.214.21, port: 443, type: trojan, password: 7248e825-887c-48b9-83bc-c26bc6392bf8, sni: XXcdvFgT.191268.xYZ, network: ws, ws-opts: {path: /ctdmgeIg3NII3ibrzzKXJGy3S1, headers: {Host: XXcdvFgT.191268.xYZ}}}
-  - {name: US_53, server: 107.175.145.72, port: 25505, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
-  - {name: US_54, server: 129.146.241.150, port: 10086, type: hysteria2, password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, sni: aus.pagate.top, skip-cert-verify: true}
-  - {name: US_55, server: 107.175.145.72, port: 47647, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
-  - {name: US_56, server: 172.67.201.36, port: 443, type: trojan, password: 6757b7d6-fa32-4708-b5d1-30e3cf928b51, sni: ggGGGGgggGGgGggy.FReevPN2026.DpDNS.Org, network: ws, ws-opts: {path: /l96MZ8se5Kl2p8BiMhP42l, headers: {Host: ggGGGGgggGGgGggy.FReevPN2026.DpDNS.Org}}}
-  - {name: US_57, server: 107.175.145.72, port: 49126, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
-  - {name: US_58, server: 172.67.177.109, port: 443, type: trojan, password: bce0c7cb-08d1-46a7-b77b-7bff8b46252f, sni: UUUUuUuuU.666461.xYz, network: ws, ws-opts: {path: /x9F83IcyjcEyBXZBROjL3Q5vTymr, headers: {Host: UUUUuUuuU.666461.xYz}}}
-  - {name: US_59, server: 172.67.191.140, port: 443, type: trojan, password: c7f423b7-ced8-43da-a9ae-e906cb4a222c, sni: DdDdddDDdF.999824.Xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /dwPcFaK3QxWRQTqot0LE, headers: {Host: DdDdddDDdF.999824.Xyz}}}
-  - {name: US_6, server: 193.33.87.3, port: 8880, type: vless, uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: bitget1.asdasd.click}}}
-  - {name: US_60, server: 188.42.88.254, port: 8880, type: vless, uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: yg.bantony199.top}}}
-  - {name: US_61, server: 108.162.193.110, port: 443, type: trojan, password: Aimer, sni: epmg.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmg.ambercc.filegear-sg.me}}}
-  - {name: US_62, server: 172.67.214.21, port: 443, type: trojan, password: 7248e825-887c-48b9-83bc-c26bc6392bf8, sni: XXcdvFgT.191268.xYZ, network: ws, ws-opts: {path: /ctdmgeIg3NII3ibrzzKXJGy3S1, headers: {Host: XXcdvFgT.191268.xYZ}}}
-  - {name: US_63, server: 104.21.88.37, port: 443, type: trojan, password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2, sni: XXcdVFghYUIOp.999165.xyZ, network: ws, ws-opts: {path: /mFvK3LJyIAe8ydvnmRKWDa8, headers: {Host: XXcdVFghYUIOp.999165.xyZ}}}
-  - {name: US_64, server: 198.62.62.3, port: 8880, type: vless, uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: bitget1.asdasd.click}}}
-  - {name: US_65, server: 172.67.214.21, port: 443, type: trojan, password: 7248e825-887c-48b9-83bc-c26bc6392bf8, sni: xXcdvFgt.191268.XYz, network: ws, ws-opts: {path: /ctdmgeIg3NII3ibrzzKXJGy3S1, headers: {Host: xXcdvFgt.191268.XYz}}}
-  - {name: US_66, server: 107.175.145.72, port: 36601, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
-  - {name: US_67, server: 104.25.235.112, port: 443, type: vless, uuid: be799afe-762c-4ac9-8332-599545b109f6, tls: true, servername: xxx.66500-280b-471c-b2b8-d68b7f9960006.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: xxx.66500-280b-471c-b2b8-d68b7f9960006.workers.dev}}}
-  - {name: US_68, server: 103.245.229.3, port: 8880, type: vless, uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: bitget1.asdasd.click}}}
-  - {name: US_69, server: 91.193.58.234, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram🇨🇳 @MxlShare @WangCai2 /, headers: {Host: sk.laoyoutiao.link}}}
-  - {name: US_7, server: 107.175.145.72, port: 40433, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
-  - {name: US_70, server: 104.21.84.242, port: 443, type: vless, uuid: 03e92910-34b1-4245-ac63-04a865f43cd5, tls: true, servername: 3Er4.4444916.xYz, client-fingerprint: chrome, network: ws, ws-opts: {path: /f7vKDX2UecxmlPhIJoo2wcE6Q, headers: {Host: 3Er4.4444916.xYz}}}
-  - {name: US_71, server: 64.181.193.89, port: 47262, type: hysteria2, password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c, auth: b72ba5d5-2d5e-45b7-93b5-236d343baa7c, sni: www.bing.com, skip-cert-verify: true}
-  - {name: US_8, server: 192.0.54.233, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: hk.laoyoutiao.link}}}
-  - {name: US_9, server: 107.175.145.72, port: 26632, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
+  - {name: RU_1, server: 45.147.201.231, port: 33079, type: hysteria2, password: 53ae3d6b-5556-406b-86fb-8a60fb09163f, auth: 53ae3d6b-5556-406b-86fb-8a60fb09163f, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==}
+  - {name: RU_2, server: 45.129.2.248, port: 23579, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true}
+  - {name: RU_3, server: 46.17.41.5, port: 12904, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: apple.com, skip-cert-verify: true}
+  - {name: RU_4, server: 45.147.201.231, port: 31007, type: hysteria2, password: 53ae3d6b-5556-406b-86fb-8a60fb09163f, auth: 53ae3d6b-5556-406b-86fb-8a60fb09163f, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==}
+  - {name: RU_5, server: 45.147.201.231, port: 33079, type: hysteria2, password: 72613690-6e69-4245-909f-cef023dbb35c, auth: 72613690-6e69-4245-909f-cef023dbb35c, skip-cert-verify: true, obfs: salamander, obfs-password: NDhhNmY5YTY0MGYzOTgxYQ==}
+  - {name: SG_1, server: 183.236.51.37, port: 55112, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: UN_1, server: 107.175.32.153, port: 41802, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
+  - {name: UN_2, server: 46.17.41.5, port: 12904, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: apple.com, skip-cert-verify: true}
+  - {name: UN_3, server: 107.175.145.72, port: 27711, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
+  - {name: US_1, server: 45.131.5.13, port: 8880, type: vless, uuid: 9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: c.82313369.xyz}}}
+  - {name: US_10, server: 104.21.75.120, port: 2083, type: vless, uuid: ec7a6b6d-94b6-45df-9d62-491f53a508be, tls: true, servername: FreEdOm.pANotosU.stOre, client-fingerprint: chrome, network: ws, ws-opts: {path: "/KSHty81CFjDnvIxR/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560", headers: {Host: FreEdOm.pANotosU.stOre}}}
+  - {name: US_11, server: 107.175.145.72, port: 24910, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
+  - {name: US_12, server: 104.21.57.88, port: 443, type: trojan, password: e9b4bdbd-cc5b-4a90-9616-ea0f1092ec7c, sni: KKiuuyTr.iran.PP.uA, network: ws, ws-opts: {path: /s1XRkMWuneQkqtp5KKSues, headers: {Host: KKiuuyTr.iran.PP.uA}}}
+  - {name: US_13, server: diwu694426.di5ji.lat, port: 27300, type: hysteria2, password: cf919c23-3a79-4f1f-896a-5ee39bd2f1e0, auth: cf919c23-3a79-4f1f-896a-5ee39bd2f1e0, sni: diwu694426.di5ji.lat, skip-cert-verify: true}
+  - {name: US_14, server: 104.21.57.88, port: 443, type: trojan, password: e9b4bdbd-cc5b-4a90-9616-ea0f1092ec7c, sni: p09.IrAN.pP.Ua, network: ws, ws-opts: {path: /s1XRkMWuneQkqtp5KKSues, headers: {Host: p09.IrAN.pP.Ua}}}
+  - {name: US_15, server: 185.18.184.13, port: 8880, type: vless, uuid: 9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: c.82313369.xyz}}}
+  - {name: US_16, server: 104.21.57.206, port: 80, type: vmess, uuid: 3d9741da-c0e4-47cc-a5e0-f1af3d337dae, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /U2Z0FoBkgtZqfwAwY2SNm, headers: {Host: sssssssssssdddfgt.4444926.xyz}}}
+  - {name: US_17, server: 107.175.32.153, port: 41276, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
+  - {name: US_18, server: 135.84.76.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: US_19, server: 104.21.88.37, port: 443, type: trojan, password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2, sni: XXcdVFghYUIOp.999165.xyZ, network: ws, ws-opts: {path: /mFvK3LJyIAe8ydvnmRKWDa8, headers: {Host: XXcdVFghYUIOp.999165.xyZ}}}
+  - {name: US_2, server: 91.193.58.119, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram🇨🇳 @MxlShare @WangCai2, headers: {Host: sk.laoyoutiao.link}}}
+  - {name: US_20, server: 154.92.9.3, port: 8880, type: vless, uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: bitget1.asdasd.click}}}
+  - {name: US_21, server: 185.162.228.213, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: jp.laoyoutiao.link}}}
+  - {name: US_22, server: 104.21.227.134, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, servername: 1749023174552.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: 1749023174552.wk.by.ktff.ssl.com.kokk.cn.cdnktff.pp.ua}}}
+  - {name: US_23, server: 104.24.135.83, port: 80, type: vless, uuid: f78ce1bb-0fa6-4ef4-b4c9-b91014a7055d, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram@Filter_breaker/?ed=2560", headers: {Host: delam.ahaysiahzangi.dpdns.org}}}
+  - {name: US_24, server: 172.67.162.74, port: 443, type: trojan, password: e9b4bdbd-cc5b-4a90-9616-ea0f1092ec7c, sni: p09.IrAN.pP.Ua, network: ws, ws-opts: {path: /s1XRkMWuneQkqtp5KKSues, headers: {Host: p09.IrAN.pP.Ua}}}
+  - {name: US_25, server: 109.176.239.3, port: 8880, type: vless, uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: bitget1.asdasd.click}}}
+  - {name: US_26, server: 212.183.88.13, port: 8880, type: vless, uuid: 9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: c.82313369.xyz}}}
+  - {name: US_27, server: 172.67.149.239, port: 80, type: vmess, uuid: 3d9741da-c0e4-47cc-a5e0-f1af3d337dae, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /U2Z0FoBkgtZqfwAwY2SNm, headers: {Host: sssssssssssdddfgt.4444926.xyz}}}
+  - {name: US_28, server: 172.67.177.109, port: 443, type: trojan, password: 357b1bba-6400-4944-baff-1b933311ff28, sni: EeEEeEEeeeeeeE.666461.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /HbjLgzKC7MBYIsgt, headers: {Host: EeEEeEEeeeeeeE.666461.xyz}}}
+  - {name: US_29, server: 188.42.88.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: US_3, server: 45.150.115.63, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram🇨🇳, headers: {Host: jp.laoyoutiao.link}}}
+  - {name: US_30, server: 172.67.177.109, port: 443, type: trojan, password: bce0c7cb-08d1-46a7-b77b-7bff8b46252f, sni: UUUUuUuuU.666461.xYz, network: ws, ws-opts: {path: /x9F83IcyjcEyBXZBROjL3Q5vTymr, headers: {Host: UUUUuUuuU.666461.xYz}}}
+  - {name: US_31, server: 162.159.153.144, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, servername: tx.vs2024.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: tx.vs2024.dpdns.org}}}
+  - {name: US_32, server: 172.67.214.21, port: 443, type: trojan, password: 7248e825-887c-48b9-83bc-c26bc6392bf8, sni: XXcdvFgT.191268.xYZ, skip-cert-verify: true, network: ws, ws-opts: {path: /ctdmgeIg3NII3ibrzzKXJGy3S1, headers: {Host: XXcdvFgT.191268.xYZ}}}
+  - {name: US_33, server: 103.21.244.13, port: 8880, type: vless, uuid: 9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: c.82313369.xyz}}}
+  - {name: US_34, server: 172.67.201.36, port: 443, type: trojan, password: 6757b7d6-fa32-4708-b5d1-30e3cf928b51, sni: ggGGGGgggGGgGggy.FReevPN2026.DpDNS.Org, network: ws, ws-opts: {path: /l96MZ8se5Kl2p8BiMhP42l, headers: {Host: ggGGGGgggGGgGggy.FReevPN2026.DpDNS.Org}}}
+  - {name: US_35, server: 193.233.21.13, port: 8880, type: vless, uuid: 9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: c.82313369.xyz}}}
+  - {name: US_36, server: 104.17.147.22, port: 8443, type: vless, uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40, tls: true, servername: JJANGEsN.sbs, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: JJANGEsN.sbs}}}
+  - {name: US_37, server: 190.93.246.251, port: 8880, type: vless, uuid: 0132166f-e702-48ed-a9e7-b07af768faf8, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: cf.d3z.net}}}
+  - {name: US_38, server: 107.175.32.153, port: 28992, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
+  - {name: US_39, server: 104.21.14.54, port: 443, type: vless, uuid: ffcf7ec1-3e09-4821-b3d9-b426a107b73b, tls: true, servername: XXCsDERT6.777159.XyZ, client-fingerprint: chrome, network: ws, ws-opts: {path: /O9jlBCbIm3xr1D40NK, headers: {Host: XXCsDERT6.777159.XyZ}}}
+  - {name: US_4, server: 104.17.101.175, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, servername: dt.vs2024.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: dt.vs2024.dpdns.org}}}
+  - {name: US_40, server: 69.84.182.13, port: 8880, type: vless, uuid: 9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: c.82313369.xyz}}}
+  - {name: US_41, server: duke.ns.cloudflare.com, port: 443, type: trojan, password: Aimer, sni: epmg.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmg.ambercc.filegear-sg.me}}}
+  - {name: US_42, server: 108.162.195.168, port: 443, type: trojan, password: Aimer, sni: epmg.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmg.ambercc.filegear-sg.me}}}
+  - {name: US_43, server: 195.13.54.13, port: 8880, type: vless, uuid: 9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: c.82313369.xyz}}}
+  - {name: US_44, server: 107.175.145.72, port: 36601, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
+  - {name: US_45, server: 107.175.145.72, port: 39610, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
+  - {name: US_46, server: 195.13.44.13, port: 8880, type: vless, uuid: 9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: c.82313369.xyz}}}
+  - {name: US_47, server: 92.53.191.251, port: 8880, type: vless, uuid: 0132166f-e702-48ed-a9e7-b07af768faf8, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: cf.d3z.net}}}
+  - {name: US_48, server: 198.62.62.13, port: 8880, type: vless, uuid: 9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: c.82313369.xyz}}}
+  - {name: US_49, server: 104.21.89.221, port: 443, type: trojan, password: c7f423b7-ced8-43da-a9ae-e906cb4a222c, sni: DdDdddDDdF.999824.Xyz, network: ws, ws-opts: {path: /dwPcFaK3QxWRQTqot0LE, headers: {Host: DdDdddDDdF.999824.Xyz}}}
+  - {name: US_5, server: 162.159.44.236, port: 443, type: trojan, password: Aimer, sni: epmg.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmg.ambercc.filegear-sg.me}}}
+  - {name: US_50, server: 172.67.191.140, port: 443, type: trojan, password: c7f423b7-ced8-43da-a9ae-e906cb4a222c, sni: DdDdddDDdF.999824.Xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /dwPcFaK3QxWRQTqot0LE, headers: {Host: DdDdddDDdF.999824.Xyz}}}
+  - {name: US_51, server: 45.131.211.254, port: 8880, type: vless, uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: yg.bantony199.top}}}
+  - {name: US_52, server: 91.209.253.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: US_53, server: 107.175.145.72, port: 26632, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
+  - {name: US_54, server: 104.21.66.157, port: 80, type: vmess, uuid: 662e38ba-8427-4955-94aa-76f5347a0ce8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /LtSb51wp8mWtF5UvWyyVQu, headers: {Host: cdvfgt.666470.xyz}}}
+  - {name: US_55, server: 193.233.132.3, port: 8880, type: vless, uuid: b5441b0d-2147-4898-8a6a-9b2c87f58382, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: bitget1.asdasd.click}}}
+  - {name: US_56, server: 162.159.44.168, port: 443, type: trojan, password: Aimer, sni: epmg.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmg.ambercc.filegear-sg.me}}}
+  - {name: US_57, server: 188.164.159.63, port: 8880, type: vless, uuid: fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram, headers: {Host: jp.laoyoutiao.link}}}
+  - {name: US_58, server: 172.67.162.74, port: 443, type: trojan, password: e9b4bdbd-cc5b-4a90-9616-ea0f1092ec7c, sni: p09.IrAN.pP.Ua, skip-cert-verify: true, network: ws, ws-opts: {path: /s1XRkMWuneQkqtp5KKSues, headers: {Host: p09.IrAN.pP.Ua}}}
+  - {name: US_59, server: 172.67.177.109, port: 443, type: trojan, password: bce0c7cb-08d1-46a7-b77b-7bff8b46252f, sni: UUUUuUuuU.666461.xYz, network: ws, ws-opts: {path: /x9F83IcyjcEyBXZBROjL3Q5vTymr, headers: {Host: UUUUuUuuU.666461.xYz}}}
+  - {name: US_6, server: 89.116.161.19, port: 8880, type: vless, uuid: 583ceab3-4022-4553-9158-9bedc625ad4e, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: ip.langmanshanxi.top}}}
+  - {name: US_60, server: 107.175.145.72, port: 40433, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
+  - {name: US_61, server: 104.16.249.115, port: 443, type: vless, uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9, tls: true, servername: dt.vs2024.dpdns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: dt.vs2024.dpdns.org}}}
+  - {name: US_62, server: 102.177.176.251, port: 8880, type: vless, uuid: 0132166f-e702-48ed-a9e7-b07af768faf8, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: cf.d3z.net}}}
+  - {name: US_63, server: 129.146.241.150, port: 10086, type: hysteria2, password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, sni: aus.pagate.top, skip-cert-verify: true}
+  - {name: US_64, server: 92.243.75.13, port: 8880, type: vless, uuid: 9f3c4ab7-ea26-4d96-91a9-c85ff64ad9a0, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: c.82313369.xyz}}}
+  - {name: US_65, server: 120.198.71.217, port: 58882, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false}
+  - {name: US_66, server: 129.146.241.150, port: 10086, type: hysteria2, password: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, auth: e6d8d743-a9bc-48c9-be99-8f3cc94d16e1, sni: aus.pagate.top, skip-cert-verify: true}
+  - {name: US_67, server: 25.25.25.254, port: 8880, type: vless, uuid: 34c01e61-f4f3-4afb-a83b-406caf8caa33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: yg.bantony199.top}}}
+  - {name: US_68, server: 172.67.145.200, port: 443, type: trojan, password: fa050497-fc2a-45ee-89c0-96670c4ecb65, sni: Rrr4.8906004.xYZ, network: ws, ws-opts: {path: /DZxb5QZyWgQPuXTwt, headers: {Host: Rrr4.8906004.xYZ}}}
+  - {name: US_69, server: 172.67.214.21, port: 443, type: trojan, password: 7248e825-887c-48b9-83bc-c26bc6392bf8, sni: XXcdvFgT.191268.xYZ, network: ws, ws-opts: {path: /ctdmgeIg3NII3ibrzzKXJGy3S1, headers: {Host: XXcdvFgT.191268.xYZ}}}
+  - {name: US_7, server: 104.21.94.69, port: 443, type: trojan, password: 13e26f64-2e0c-4461-92cd-d83294cc18f0, sni: dddDvvbHY7.000890604.XyZ, skip-cert-verify: true, network: ws, ws-opts: {path: /TDUxZUop9k44oPiit2OdWk0KwirdY, headers: {Host: dddDvvbHY7.000890604.XyZ}}}
+  - {name: US_70, server: 172.64.33.110, port: 443, type: trojan, password: Aimer, sni: epmg.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmg.ambercc.filegear-sg.me}}}
+  - {name: US_71, server: 108.162.195.227, port: 443, type: trojan, password: Aimer, sni: epmg.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmg.ambercc.filegear-sg.me}}}
+  - {name: US_72, server: 172.67.209.79, port: 80, type: vmess, uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /9dZlJLjHHrL0VwSolbqFpg, headers: {Host: wwsxcdfr5.999834.xyz}}}
+  - {name: US_73, server: 104.21.66.86, port: 443, type: trojan, password: 0f7070cd-c91d-4532-a51f-56da4f0e94be, sni: uuujjnmm.444752.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /ctHoQlqeZn8pbEUSLppj7jCmY, headers: {Host: uuujjnmm.444752.xyz}}}
+  - {name: US_74, server: 107.175.145.72, port: 30833, type: hysteria2, password: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, auth: ee393141-d1a0-4cdd-ae18-57fd8dbdcaf0, sni: www.apple.com, skip-cert-verify: true, obfs: salamander, obfs-password: fWQ4LCfAYiKaEVRe}
+  - {name: US_8, server: 167.68.5.251, port: 8880, type: vless, uuid: 0132166f-e702-48ed-a9e7-b07af768faf8, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram🇨🇳 @WangCai2 /?ed=2560", headers: {Host: cf.d3z.net}}}
+  - {name: US_9, server: 172.64.35.168, port: 443, type: trojan, password: Aimer, sni: epmg.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epmg.ambercc.filegear-sg.me}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AE_1
       - CA_1
       - CN_1
+      - CZ_1
       - DE_1
       - DE_2
-      - DE_3
       - FR_1
       - FR_2
       - GB_1
-      - GB_2
-      - GB_3
+      - HK_1
+      - HK_2
+      - IR_1
       - JP_1
       - JP_2
-      - JP_3
-      - JP_4
-      - JP_5
-      - JP_6
       - KR_1
       - KR_2
-      - KR_3
-      - NL_1
+      - LV_1
       - PL_1
       - RU_1
       - RU_2
       - RU_3
       - RU_4
+      - RU_5
       - SG_1
       - UN_1
       - UN_2
+      - UN_3
       - US_1
       - US_10
       - US_11
@@ -209,6 +206,9 @@ proxy-groups:
       - US_7
       - US_70
       - US_71
+      - US_72
+      - US_73
+      - US_74
       - US_8
       - US_9
   - name: ♻️ 自动选择
@@ -216,35 +216,32 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AE_1
       - CA_1
       - CN_1
+      - CZ_1
       - DE_1
       - DE_2
-      - DE_3
       - FR_1
       - FR_2
       - GB_1
-      - GB_2
-      - GB_3
+      - HK_1
+      - HK_2
+      - IR_1
       - JP_1
       - JP_2
-      - JP_3
-      - JP_4
-      - JP_5
-      - JP_6
       - KR_1
       - KR_2
-      - KR_3
-      - NL_1
+      - LV_1
       - PL_1
       - RU_1
       - RU_2
       - RU_3
       - RU_4
+      - RU_5
       - SG_1
       - UN_1
       - UN_2
+      - UN_3
       - US_1
       - US_10
       - US_11
@@ -314,6 +311,9 @@ proxy-groups:
       - US_7
       - US_70
       - US_71
+      - US_72
+      - US_73
+      - US_74
       - US_8
       - US_9
   - name: 🎥 NETFLIX
@@ -322,35 +322,32 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AE_1
       - CA_1
       - CN_1
+      - CZ_1
       - DE_1
       - DE_2
-      - DE_3
       - FR_1
       - FR_2
       - GB_1
-      - GB_2
-      - GB_3
+      - HK_1
+      - HK_2
+      - IR_1
       - JP_1
       - JP_2
-      - JP_3
-      - JP_4
-      - JP_5
-      - JP_6
       - KR_1
       - KR_2
-      - KR_3
-      - NL_1
+      - LV_1
       - PL_1
       - RU_1
       - RU_2
       - RU_3
       - RU_4
+      - RU_5
       - SG_1
       - UN_1
       - UN_2
+      - UN_3
       - US_1
       - US_10
       - US_11
@@ -420,6 +417,9 @@ proxy-groups:
       - US_7
       - US_70
       - US_71
+      - US_72
+      - US_73
+      - US_74
       - US_8
       - US_9
   - name: ⛔️ 广告拦截
@@ -440,35 +440,32 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AE_1
       - CA_1
       - CN_1
+      - CZ_1
       - DE_1
       - DE_2
-      - DE_3
       - FR_1
       - FR_2
       - GB_1
-      - GB_2
-      - GB_3
+      - HK_1
+      - HK_2
+      - IR_1
       - JP_1
       - JP_2
-      - JP_3
-      - JP_4
-      - JP_5
-      - JP_6
       - KR_1
       - KR_2
-      - KR_3
-      - NL_1
+      - LV_1
       - PL_1
       - RU_1
       - RU_2
       - RU_3
       - RU_4
+      - RU_5
       - SG_1
       - UN_1
       - UN_2
+      - UN_3
       - US_1
       - US_10
       - US_11
@@ -538,6 +535,9 @@ proxy-groups:
       - US_7
       - US_70
       - US_71
+      - US_72
+      - US_73
+      - US_74
       - US_8
       - US_9
   - name: 🌏 国内媒体
@@ -550,35 +550,32 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - AE_1
       - CA_1
       - CN_1
+      - CZ_1
       - DE_1
       - DE_2
-      - DE_3
       - FR_1
       - FR_2
       - GB_1
-      - GB_2
-      - GB_3
+      - HK_1
+      - HK_2
+      - IR_1
       - JP_1
       - JP_2
-      - JP_3
-      - JP_4
-      - JP_5
-      - JP_6
       - KR_1
       - KR_2
-      - KR_3
-      - NL_1
+      - LV_1
       - PL_1
       - RU_1
       - RU_2
       - RU_3
       - RU_4
+      - RU_5
       - SG_1
       - UN_1
       - UN_2
+      - UN_3
       - US_1
       - US_10
       - US_11
@@ -648,6 +645,9 @@ proxy-groups:
       - US_7
       - US_70
       - US_71
+      - US_72
+      - US_73
+      - US_74
       - US_8
       - US_9
   - name: 📲 电报信息
@@ -655,35 +655,32 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - AE_1
       - CA_1
       - CN_1
+      - CZ_1
       - DE_1
       - DE_2
-      - DE_3
       - FR_1
       - FR_2
       - GB_1
-      - GB_2
-      - GB_3
+      - HK_1
+      - HK_2
+      - IR_1
       - JP_1
       - JP_2
-      - JP_3
-      - JP_4
-      - JP_5
-      - JP_6
       - KR_1
       - KR_2
-      - KR_3
-      - NL_1
+      - LV_1
       - PL_1
       - RU_1
       - RU_2
       - RU_3
       - RU_4
+      - RU_5
       - SG_1
       - UN_1
       - UN_2
+      - UN_3
       - US_1
       - US_10
       - US_11
@@ -753,6 +750,9 @@ proxy-groups:
       - US_7
       - US_70
       - US_71
+      - US_72
+      - US_73
+      - US_74
       - US_8
       - US_9
   - name: 🍎 苹果服务
@@ -761,35 +761,32 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AE_1
       - CA_1
       - CN_1
+      - CZ_1
       - DE_1
       - DE_2
-      - DE_3
       - FR_1
       - FR_2
       - GB_1
-      - GB_2
-      - GB_3
+      - HK_1
+      - HK_2
+      - IR_1
       - JP_1
       - JP_2
-      - JP_3
-      - JP_4
-      - JP_5
-      - JP_6
       - KR_1
       - KR_2
-      - KR_3
-      - NL_1
+      - LV_1
       - PL_1
       - RU_1
       - RU_2
       - RU_3
       - RU_4
+      - RU_5
       - SG_1
       - UN_1
       - UN_2
+      - UN_3
       - US_1
       - US_10
       - US_11
@@ -859,6 +856,9 @@ proxy-groups:
       - US_7
       - US_70
       - US_71
+      - US_72
+      - US_73
+      - US_74
       - US_8
       - US_9
   - name: 🎯 全球直连
@@ -876,35 +876,32 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AE_1
       - CA_1
       - CN_1
+      - CZ_1
       - DE_1
       - DE_2
-      - DE_3
       - FR_1
       - FR_2
       - GB_1
-      - GB_2
-      - GB_3
+      - HK_1
+      - HK_2
+      - IR_1
       - JP_1
       - JP_2
-      - JP_3
-      - JP_4
-      - JP_5
-      - JP_6
       - KR_1
       - KR_2
-      - KR_3
-      - NL_1
+      - LV_1
       - PL_1
       - RU_1
       - RU_2
       - RU_3
       - RU_4
+      - RU_5
       - SG_1
       - UN_1
       - UN_2
+      - UN_3
       - US_1
       - US_10
       - US_11
@@ -974,6 +971,9 @@ proxy-groups:
       - US_7
       - US_70
       - US_71
+      - US_72
+      - US_73
+      - US_74
       - US_8
       - US_9
 rules:
