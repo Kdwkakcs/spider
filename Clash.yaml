@@ -5,62 +5,129 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
+  - {name: AE_1, server: 89.31.120.192, port: 443, type: vmess, uuid: 44537595-9ccc-4b83-8936-5f9ad3229019, alterId: 0, cipher: "", tls: false}
   - {name: AM_1, server: 77.91.68.70, port: 55983, type: vless, uuid: f667a096-5231-4cfb-8759-92bb32473139, tls: true, packet-encoding: xudp, reality-opts: {public-key: nWQ7b9l9X6N3PrXLgIzOvMM8iSYrqjVHEb9ikWxqYSg, short-id: "0e" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp}
   - {name: BG_1, server: 95.164.44.237, port: 49790, type: vless, uuid: 99210efd-1a49-4085-add3-d1d2e4fdd6c2, tls: true, reality-opts: {public-key: Xj6-HabAfXfu2dIz1orkRH5rAlbGMs0YMc7Zo4aARlU, short-id: "9d90d7ada8" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp}
-  - {name: DE_1, server: 91.186.217.158, port: 445, type: trojan, password: trojan, sni: doufeng.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: doufeng.pages.dev}}}
-  - {name: DE_2, server: 84.200.81.229, port: 443, type: vless, uuid: 1a539db6-d162-42f4-9b56-687bd57bfbc2, tls: true, reality-opts: {public-key: eKglVNr1vCmVZxLeGS6_-sZWXEJLWckuzkpmox1-jQ8, short-id: "b05bc387" }, servername: ozon.ru, client-fingerprint: chrome, network: tcp}
+  - {name: BR_1, server: 95.164.4.88, port: 80, type: vmess, uuid: 24b6bbfb-9b27-4f17-bd32-67523bf487d9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess/}}
+  - {name: DE_1, server: 87.120.187.17, port: 8443, type: vless, uuid: 1110a364-4c94-42b7-84d9-085a34eabee4, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: mfBIs4jfBLzL_gqBO0QmbzwhSqamg2heEb_uNpGu3Rc, short-id: "ffb82d9a35846463" }, servername: tradingview.com, client-fingerprint: chrome, network: tcp}
+  - {name: DE_2, server: 91.186.217.158, port: 445, type: trojan, password: trojan, sni: doufeng.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: doufeng.pages.dev}}}
+  - {name: DE_3, server: 37.120.184.180, port: 80, type: vless, uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /news}}
+  - {name: DE_4, server: 104.21.96.1, port: 2096, type: vless, uuid: 7bcb7241-33f9-48e0-8660-b33aed2bff7a, tls: true, servername: 8j3f7HD37h.PaGES.dEV, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: 8j3f7HD37h.PaGES.dEV}}}
+  - {name: DE_5, server: 84.200.81.229, port: 443, type: vless, uuid: 1a539db6-d162-42f4-9b56-687bd57bfbc2, tls: true, reality-opts: {public-key: eKglVNr1vCmVZxLeGS6_-sZWXEJLWckuzkpmox1-jQ8, short-id: "b05bc387" }, servername: ozon.ru, client-fingerprint: chrome, network: tcp}
   - {name: ES_1, server: 45.12.150.145, port: 15470, type: vless, uuid: ecc97810-557a-44ef-9957-ba078d0ac414, tls: true, reality-opts: {public-key: Io59wtB0RP01ty3SWv8Hn-z84vrckaEPVJi6SRBqFXY, short-id: "e08a28" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp}
   - {name: FI_1, server: 135.181.155.97, port: 443, type: vless, uuid: 309fa273-6579-4cb2-9143-7cad50401eba, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY, short-id: "7cad5040" }, servername: www.cloudflare.com, client-fingerprint: chrome, network: tcp}
   - {name: FI_2, server: 212.193.18.144, port: 36158, type: trojan, password: ZblhWr0mqMakCPg.N, sni: ya.ru, skip-cert-verify: true}
+  - {name: FI_3, server: 64.188.74.220, port: 8443, type: vless, uuid: e6e6d7b7-778c-42cb-b704-553126743195, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc, short-id: "6ba85179e30d4fc2" }, servername: ign.com, client-fingerprint: chrome, network: tcp}
+  - {name: GB_1, server: 142.93.37.152, port: 8880, type: trojan, password: trojan, sni: doufeng.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: doufeng.pages.dev}}}
   - {name: HK_1, server: 43.99.250.221, port: 443, type: vless, uuid: 3e7f67de-648e-4871-b51a-a225214d41ee, tls: true, reality-opts: {public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw}, servername: www.primevideo.com, client-fingerprint: chrome, network: tcp}
   - {name: IE_1, server: 193.57.138.53, port: 40921, type: vless, uuid: b042a503-3cb9-461f-994d-28a642133b5e, tls: true, packet-encoding: xudp, reality-opts: {public-key: heCmtLzcbUCR7Y1ZSomzRZpc45p9Qie9p_2W6Xw333A, short-id: "c42db93ba6c62c" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp}
   - {name: JP_1, server: 138.2.39.24, port: 443, type: trojan, password: trojan, sni: store.timimi.dpdns.org, network: ws, ws-opts: {path: Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2+%2F%3Fed%3D2560, headers: {Host: store.timimi.dpdns.org}}}
+  - {name: JP_2, server: 139.162.83.82, port: 32225, type: vless, uuid: aa7f42cc-616f-4550-9a87-4b85bb409121, tls: true, servername: vless3.datatestvless.click, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560&Telegram@freecodes", headers: {Host: vless3.datatestvless.click}}}
+  - {name: KR_1, server: 140.238.2.250, port: 443, type: vmess, uuid: 41a7089a-040b-4538-8b8d-010902405bde, alterId: 0, cipher: auto, tls: false}
+  - {name: KR_2, server: 220.124.31.251, port: 20156, type: vmess, uuid: 6424696b-48e6-4c59-f8c5-5d79a7e8258b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
   - {name: NL_1, server: 146.190.236.144, port: 443, type: trojan, password: trojan, sni: tianjiu.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tianjiu.pages.dev}}}
-  - {name: NL_2, server: 141.11.37.136, port: 8443, type: trojan, password: trojan, sni: tianjiu.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tianjiu.pages.dev}}}
-  - {name: NL_3, server: 51.158.206.87, port: 23576, type: vless, uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s, short-id: "01" }, servername: fuck.rkn, client-fingerprint: chrome, network: tcp}
-  - {name: SG_1, server: 185.36.192.228, port: 35488, type: vmess, uuid: fb5a4283-dbfb-458b-8619-c4a53739f781, alterId: 0, cipher: auto, tls: false}
-  - {name: TW_1, server: 188.114.96.11, port: 2087, type: vless, uuid: b9b8cf4c-29a3-4288-9c6c-8811dc37beec, tls: true, servername: xLZ767v2Ray.PAgEs.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /5z5wdmesbon0p3kk, headers: {Host: xLZ767v2Ray.PAgEs.dev}}}
-  - {name: TW_10, server: 185.156.19.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, servername: vless.hubp.de, client-fingerprint: chrome, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
-  - {name: TW_2, server: 172.67.174.89, port: 443, type: vless, uuid: 8cb143d6-ba4e-4217-987f-38abbf2ff4f2, tls: true, servername: pPaL03.liana-guTKowSKi.wOrKErs.dEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/PKeMRhnvWGG62q25?ed=2560", headers: {Host: pPaL03.liana-guTKowSKi.wOrKErs.dEv}}}
-  - {name: TW_3, server: 45.131.6.6, port: 8080, type: vless, uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466, tls: false, packet-encoding: xudp, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: feng4.l1ut8bi9.workers.dev}}}
-  - {name: TW_4, server: 172.67.174.89, port: 443, type: vless, uuid: 8cb143d6-ba4e-4217-987f-38abbf2ff4f2, tls: true, servername: pPaL03.liana-guTKowSKi.wOrKErs.dEv, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: pPaL03.liana-guTKowSKi.wOrKErs.dEv}}}
-  - {name: TW_5, server: 104.18.36.0, port: 2083, type: vless, uuid: 29187857-4a1f-4d1e-88eb-0016771e0dbb, tls: true, servername: vless.hubp.de, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: vless.hubp.de}}}
-  - {name: TW_6, server: 104.18.15.19, port: 80, type: vless, uuid: 252d7c6c-3f50-44fb-9a51-13963fc727e0, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram@V2ray_Alpha/?ed=2560", headers: {Host: 0105.f5s8fbc2.workers.dev}}}
+  - {name: NL_2, server: 188.114.97.11, port: 443, type: vless, uuid: b9b8cf4c-29a3-4288-9c6c-8811dc37beec, tls: true, servername: XLz767v2raY.pAgEs.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/wxmRruZytUBAT8ND?ed=2560", headers: {Host: XLz767v2raY.pAgEs.dev}}}
+  - {name: NL_3, server: 51.158.206.96, port: 23576, type: vless, uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s, short-id: "01" }, servername: fuck.rkn, client-fingerprint: chrome, network: tcp}
+  - {name: NL_4, server: 51.158.206.87, port: 23576, type: vless, uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s, short-id: "01" }, servername: fuck.rkn, client-fingerprint: chrome, network: tcp}
+  - {name: NL_5, server: 141.11.37.136, port: 8443, type: trojan, password: trojan, sni: tianjiu.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tianjiu.pages.dev}}}
+  - {name: PL_1, server: 146.59.55.50, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, network: ws, ws-opts: {path: /linkvws, headers: {Host: o.metuji.com}}}
+  - {name: RU_1, server: 176.108.242.76, port: 443, type: vless, uuid: f2309653-bfe7-43ff-83fc-784b06210bfa, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg, short-id: "43df3983229a1c73" }, servername: www.rutube.ru, client-fingerprint: chrome, network: tcp}
+  - {name: SG_1, server: 160.16.81.84, port: 2760, type: trojan, password: 44e660b0ee21cf3ac66aee2c08af85d2, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: SG_2, server: 208.103.161.33, port: 2053, type: vless, uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a, tls: true, servername: sni.111000.dynv6.net, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560fp=chrome", headers: {Host: sni.111000.dynv6.net}}}
+  - {name: SG_3, server: 185.36.192.228, port: 35488, type: vmess, uuid: fb5a4283-dbfb-458b-8619-c4a53739f781, alterId: 0, cipher: auto, tls: false}
+  - {name: TW_1, server: 172.67.174.89, port: 443, type: vless, uuid: 8cb143d6-ba4e-4217-987f-38abbf2ff4f2, tls: true, servername: pPaL03.liana-guTKowSKi.wOrKErs.dEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/PKeMRhnvWGG62q25?ed=2560", headers: {Host: pPaL03.liana-guTKowSKi.wOrKErs.dEv}}}
+  - {name: TW_10, server: 162.159.152.53, port: 443, type: vless, uuid: 29187857-4a1f-4d1e-88eb-0016771e0dbb, tls: true, servername: vless.hubp.de, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed", headers: {Host: vless.hubp.de}}}
+  - {name: TW_11, server: 164.38.155.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, servername: vless.hubp.de, client-fingerprint: chrome, network: ws, ws-opts: {path: /snippetsfp=chrome, headers: {Host: vless.hubp.de}}}
+  - {name: TW_12, server: 104.18.15.19, port: 80, type: vless, uuid: 252d7c6c-3f50-44fb-9a51-13963fc727e0, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram@V2ray_Alpha/?ed=2560", headers: {Host: 0105.f5s8fbc2.workers.dev}}}
+  - {name: TW_13, server: 172.64.229.83, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, network: ws, ws-opts: {path: "%252F", headers: {Host: snippets.kkii.eu.org}}}
+  - {name: TW_14, server: 104.18.15.19, port: 2052, type: vless, uuid: 252d7c6c-3f50-44fb-9a51-13963fc727e0, tls: false, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: 0105.f5s8fbc2.workers.dev}}}
+  - {name: TW_15, server: 104.19.174.68, port: 443, type: trojan, password: trojan, sni: azadnet-9ya.pages.dev, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: azadnet-9ya.pages.dev}}}
+  - {name: TW_16, server: 172.67.174.89, port: 443, type: vless, uuid: 8cb143d6-ba4e-4217-987f-38abbf2ff4f2, tls: true, servername: pPaL03.liana-guTKowSKi.wOrKErs.dEv, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: pPaL03.liana-guTKowSKi.wOrKErs.dEv}}}
+  - {name: TW_17, server: 104.16.125.234, port: 443, type: vless, uuid: e258977b-e413-4718-a3af-02d75492c349, tls: true, servername: qqq-3t8.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: qqq-3t8.pages.dev}}}
+  - {name: TW_18, server: 104.17.162.3, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
+  - {name: TW_19, server: 104.16.33.150, port: 2083, type: vless, uuid: 29187857-4a1f-4d1e-88eb-0016771e0dbb, tls: true, servername: vless.hubp.de, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: vless.hubp.de}}}
+  - {name: TW_2, server: 188.114.97.11, port: 443, type: vless, uuid: b9b8cf4c-29a3-4288-9c6c-8811dc37beec, tls: true, servername: XLZ767V2RAy.PAGES.dEv, client-fingerprint: chrome, network: ws, ws-opts: {path: /t3fgslbvys9sp8zt, headers: {Host: XLZ767V2RAy.PAGES.dEv}}}
+  - {name: TW_20, server: 195.245.221.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, servername: vless.hubp.de, client-fingerprint: chrome, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
+  - {name: TW_21, server: 104.19.49.192, port: 443, type: vless, uuid: 5a2c16f9-e365-4080-8d38-6924c3835586, tls: true, servername: snippets.kkii.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
+  - {name: TW_22, server: 162.159.24.131, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
+  - {name: TW_23, server: 45.131.6.6, port: 8080, type: vless, uuid: d6ff33a6-03bf-4338-8a63-62ab284a9466, tls: false, packet-encoding: xudp, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: feng4.l1ut8bi9.workers.dev}}}
+  - {name: TW_24, server: 104.19.55.205, port: 443, type: trojan, password: 5a2c16f9, sni: snippets.kkii.eu.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
+  - {name: TW_25, server: 185.156.19.61, port: 2096, type: vless, uuid: 12345678-1234-1234-1234-123456789123, tls: true, servername: vless.hubp.de, client-fingerprint: chrome, network: ws, ws-opts: {path: /snippets, headers: {Host: vless.hubp.de}}}
+  - {name: TW_3, server: 188.114.96.11, port: 2087, type: vless, uuid: b9b8cf4c-29a3-4288-9c6c-8811dc37beec, tls: true, servername: xLZ767v2Ray.PAgEs.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /5z5wdmesbon0p3kk, headers: {Host: xLZ767v2Ray.PAgEs.dev}}}
+  - {name: TW_4, server: 172.67.180.227, port: 443, type: trojan, password: bpb-trojan, sni: mashdt.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: "/tr?ed=2560", headers: {Host: mashdt.pages.dev}}}
+  - {name: TW_5, server: 104.19.212.207, port: 443, type: vless, uuid: 5a2c16f9-e365-4080-8d38-6924c3835586, tls: true, servername: snippets.kkii.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
+  - {name: TW_6, server: 104.18.36.0, port: 2083, type: vless, uuid: 29187857-4a1f-4d1e-88eb-0016771e0dbb, tls: true, servername: vless.hubp.de, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: vless.hubp.de}}}
   - {name: TW_7, server: 104.17.255.120, port: 443, type: vless, uuid: e258977b-e413-4718-a3af-02d75492c349, tls: true, servername: qqq-3t8.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: qqq-3t8.pages.dev}}}
-  - {name: TW_8, server: 104.16.33.150, port: 2083, type: vless, uuid: 29187857-4a1f-4d1e-88eb-0016771e0dbb, tls: true, servername: vless.hubp.de, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1", headers: {Host: vless.hubp.de}}}
-  - {name: TW_9, server: 104.19.212.207, port: 443, type: vless, uuid: 5a2c16f9-e365-4080-8d38-6924c3835586, tls: true, servername: snippets.kkii.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: snippets.kkii.eu.org}}}
-  - {name: UN_1, server: 208.87.243.187, port: 22222, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, skip-cert-verify: true}
-  - {name: UN_2, server: 129.151.169.64, port: 65535, type: hysteria2, password: e22d2366-ac58-47e0-8362-89df9aa6349f, auth: e22d2366-ac58-47e0-8362-89df9aa6349f, sni: www.microsoft.com, skip-cert-verify: true}
-  - {name: UN_3, server: 208.69.79.250, port: 443, type: vless, uuid: 89bb09d7-5a4b-4f6a-b73f-0ea67cb6f3a6, tls: true, reality-opts: {public-key: ZnHyH5mL_cimo8JOfiosIRp-_IqvRVCzinNClSmsbVk, short-id: "9b4be2de2162366d" }, servername: www.microsoft.com, client-fingerprint: chrome, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: dec6e47307154ae6e0d07503}}
-  - {name: UN_4, server: 103.62.49.76, port: 35000, type: hysteria2, password: bb780ec8-8c7b-4830-9902-880bdbbd4704, auth: bb780ec8-8c7b-4830-9902-880bdbbd4704, sni: www.apple.com, skip-cert-verify: true}
-  - {name: US_1, server: 15.204.97.155, port: 23576, type: vless, uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s, short-id: "01" }, servername: fuck.rkn, client-fingerprint: chrome, network: tcp}
-  - {name: US_2, server: 15.204.97.167, port: 23576, type: vless, uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s, short-id: "01" }, servername: fuck.rkn, client-fingerprint: chrome, network: tcp}
-  - {name: US_3, server: 15.204.97.177, port: 23576, type: vless, uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s, short-id: "01" }, servername: fuck.rkn, client-fingerprint: chrome, network: tcp}
-  - {name: US_4, server: 172.67.234.68, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, servername: foxpol.fovi.tk, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}}
-  - {name: US_5, server: 160.16.63.16, port: 2890, type: trojan, password: 44e660b0ee21cf3ac66aee2c08af85d2, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: TW_8, server: 188.114.96.11, port: 2087, type: vless, uuid: b9b8cf4c-29a3-4288-9c6c-8811dc37beec, tls: true, servername: BPbV2Ray.XlZ767.ip-DDNS.cOm, client-fingerprint: chrome, network: ws, ws-opts: {path: "/gRfMHFvBcJiJ81Rk?ed=2560", headers: {Host: BPbV2Ray.XlZ767.ip-DDNS.cOm}}}
+  - {name: TW_9, server: 208.103.161.32, port: 2053, type: vless, uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a, tls: true, servername: sni.111000.dynv6.net, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: sni.111000.dynv6.net}}}
+  - {name: UN_1, server: 208.69.79.250, port: 443, type: vless, uuid: 89bb09d7-5a4b-4f6a-b73f-0ea67cb6f3a6, tls: true, reality-opts: {public-key: ZnHyH5mL_cimo8JOfiosIRp-_IqvRVCzinNClSmsbVk, short-id: "9b4be2de2162366d" }, servername: www.microsoft.com, client-fingerprint: chrome, network: grpc, grpc-opts: {grpc-mode: gun, grpc-service-name: dec6e47307154ae6e0d07503}}
+  - {name: UN_2, server: 62.210.127.217, port: 35511, type: hysteria, auth_str: dongtaiwang.com, auth-str: dongtaiwang.com, up: 100, down: 100, protocol: udp, sni: apple.com, skip-cert-verify: true}
+  - {name: UN_3, server: 103.62.49.76, port: 35000, type: hysteria2, password: bb780ec8-8c7b-4830-9902-880bdbbd4704, auth: bb780ec8-8c7b-4830-9902-880bdbbd4704, sni: www.apple.com, skip-cert-verify: true}
+  - {name: UN_4, server: 208.87.243.187, port: 22222, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, skip-cert-verify: true}
+  - {name: UN_5, server: 129.151.169.64, port: 65535, type: hysteria2, password: e22d2366-ac58-47e0-8362-89df9aa6349f, auth: e22d2366-ac58-47e0-8362-89df9aa6349f, sni: www.microsoft.com, skip-cert-verify: true}
+  - {name: US_1, server: 104.21.48.1, port: 443, type: trojan, password: er668, sni: kfjdi.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: kfjdi.pages.dev}}}
+  - {name: US_2, server: 172.67.234.68, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, servername: foxpol.fovi.tk, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}}
+  - {name: US_3, server: 15.204.97.167, port: 23576, type: vless, uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s, short-id: "01" }, servername: fuck.rkn, client-fingerprint: chrome, network: tcp}
+  - {name: US_4, server: 45.131.209.130, port: 8443, type: vless, uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8, tls: true, servername: ovhwuxian.pai50288.uk, client-fingerprint: chrome, network: ws, ws-opts: {path: /57ba2ab1, headers: {Host: ovhwuxian.pai50288.uk}}}
+  - {name: US_5, server: 38.33.55.89, port: 37002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: www.68584158.xyz, network: ws, ws-opts: {path: /path/191019072927}}
+  - {name: US_6, server: 15.204.97.155, port: 23576, type: vless, uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s, short-id: "01" }, servername: fuck.rkn, client-fingerprint: chrome, network: tcp}
+  - {name: US_7, server: 15.204.97.177, port: 23576, type: vless, uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5, tls: true, flow: xtls-rprx-vision, reality-opts: {public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s, short-id: "01" }, servername: fuck.rkn, client-fingerprint: chrome, network: tcp}
+  - {name: US_8, server: 160.16.63.16, port: 2890, type: trojan, password: 44e660b0ee21cf3ac66aee2c08af85d2, sni: www.nintendogames.net, skip-cert-verify: true}
+  - {name: US_9, server: 172.234.130.82, port: 10001, type: vless, uuid: 53cd8178-2ee6-43d9-a2a7-881f287fd408, tls: true, reality-opts: {public-key: kKX1o7FhJLyDaVE6sqXUcYpUIuFUgij_ueRYc_E4JhM, short-id: "1a24af87" }, servername: yahoo.com, client-fingerprint: chrome, network: tcp}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - AE_1
       - AM_1
       - BG_1
+      - BR_1
       - DE_1
       - DE_2
+      - DE_3
+      - DE_4
+      - DE_5
       - ES_1
       - FI_1
       - FI_2
+      - FI_3
+      - GB_1
       - HK_1
       - IE_1
       - JP_1
+      - JP_2
+      - KR_1
+      - KR_2
       - NL_1
       - NL_2
       - NL_3
+      - NL_4
+      - NL_5
+      - PL_1
+      - RU_1
       - SG_1
+      - SG_2
+      - SG_3
       - TW_1
       - TW_10
+      - TW_11
+      - TW_12
+      - TW_13
+      - TW_14
+      - TW_15
+      - TW_16
+      - TW_17
+      - TW_18
+      - TW_19
       - TW_2
+      - TW_20
+      - TW_21
+      - TW_22
+      - TW_23
+      - TW_24
+      - TW_25
       - TW_3
       - TW_4
       - TW_5
@@ -72,33 +139,69 @@ proxy-groups:
       - UN_2
       - UN_3
       - UN_4
+      - UN_5
       - US_1
       - US_2
       - US_3
       - US_4
       - US_5
+      - US_6
+      - US_7
+      - US_8
+      - US_9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - AE_1
       - AM_1
       - BG_1
+      - BR_1
       - DE_1
       - DE_2
+      - DE_3
+      - DE_4
+      - DE_5
       - ES_1
       - FI_1
       - FI_2
+      - FI_3
+      - GB_1
       - HK_1
       - IE_1
       - JP_1
+      - JP_2
+      - KR_1
+      - KR_2
       - NL_1
       - NL_2
       - NL_3
+      - NL_4
+      - NL_5
+      - PL_1
+      - RU_1
       - SG_1
+      - SG_2
+      - SG_3
       - TW_1
       - TW_10
+      - TW_11
+      - TW_12
+      - TW_13
+      - TW_14
+      - TW_15
+      - TW_16
+      - TW_17
+      - TW_18
+      - TW_19
       - TW_2
+      - TW_20
+      - TW_21
+      - TW_22
+      - TW_23
+      - TW_24
+      - TW_25
       - TW_3
       - TW_4
       - TW_5
@@ -110,34 +213,70 @@ proxy-groups:
       - UN_2
       - UN_3
       - UN_4
+      - UN_5
       - US_1
       - US_2
       - US_3
       - US_4
       - US_5
+      - US_6
+      - US_7
+      - US_8
+      - US_9
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - AE_1
       - AM_1
       - BG_1
+      - BR_1
       - DE_1
       - DE_2
+      - DE_3
+      - DE_4
+      - DE_5
       - ES_1
       - FI_1
       - FI_2
+      - FI_3
+      - GB_1
       - HK_1
       - IE_1
       - JP_1
+      - JP_2
+      - KR_1
+      - KR_2
       - NL_1
       - NL_2
       - NL_3
+      - NL_4
+      - NL_5
+      - PL_1
+      - RU_1
       - SG_1
+      - SG_2
+      - SG_3
       - TW_1
       - TW_10
+      - TW_11
+      - TW_12
+      - TW_13
+      - TW_14
+      - TW_15
+      - TW_16
+      - TW_17
+      - TW_18
+      - TW_19
       - TW_2
+      - TW_20
+      - TW_21
+      - TW_22
+      - TW_23
+      - TW_24
+      - TW_25
       - TW_3
       - TW_4
       - TW_5
@@ -149,11 +288,16 @@ proxy-groups:
       - UN_2
       - UN_3
       - UN_4
+      - UN_5
       - US_1
       - US_2
       - US_3
       - US_4
       - US_5
+      - US_6
+      - US_7
+      - US_8
+      - US_9
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -172,23 +316,54 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - AE_1
       - AM_1
       - BG_1
+      - BR_1
       - DE_1
       - DE_2
+      - DE_3
+      - DE_4
+      - DE_5
       - ES_1
       - FI_1
       - FI_2
+      - FI_3
+      - GB_1
       - HK_1
       - IE_1
       - JP_1
+      - JP_2
+      - KR_1
+      - KR_2
       - NL_1
       - NL_2
       - NL_3
+      - NL_4
+      - NL_5
+      - PL_1
+      - RU_1
       - SG_1
+      - SG_2
+      - SG_3
       - TW_1
       - TW_10
+      - TW_11
+      - TW_12
+      - TW_13
+      - TW_14
+      - TW_15
+      - TW_16
+      - TW_17
+      - TW_18
+      - TW_19
       - TW_2
+      - TW_20
+      - TW_21
+      - TW_22
+      - TW_23
+      - TW_24
+      - TW_25
       - TW_3
       - TW_4
       - TW_5
@@ -200,11 +375,16 @@ proxy-groups:
       - UN_2
       - UN_3
       - UN_4
+      - UN_5
       - US_1
       - US_2
       - US_3
       - US_4
       - US_5
+      - US_6
+      - US_7
+      - US_8
+      - US_9
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -215,23 +395,54 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - AE_1
       - AM_1
       - BG_1
+      - BR_1
       - DE_1
       - DE_2
+      - DE_3
+      - DE_4
+      - DE_5
       - ES_1
       - FI_1
       - FI_2
+      - FI_3
+      - GB_1
       - HK_1
       - IE_1
       - JP_1
+      - JP_2
+      - KR_1
+      - KR_2
       - NL_1
       - NL_2
       - NL_3
+      - NL_4
+      - NL_5
+      - PL_1
+      - RU_1
       - SG_1
+      - SG_2
+      - SG_3
       - TW_1
       - TW_10
+      - TW_11
+      - TW_12
+      - TW_13
+      - TW_14
+      - TW_15
+      - TW_16
+      - TW_17
+      - TW_18
+      - TW_19
       - TW_2
+      - TW_20
+      - TW_21
+      - TW_22
+      - TW_23
+      - TW_24
+      - TW_25
       - TW_3
       - TW_4
       - TW_5
@@ -243,33 +454,69 @@ proxy-groups:
       - UN_2
       - UN_3
       - UN_4
+      - UN_5
       - US_1
       - US_2
       - US_3
       - US_4
       - US_5
+      - US_6
+      - US_7
+      - US_8
+      - US_9
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - AE_1
       - AM_1
       - BG_1
+      - BR_1
       - DE_1
       - DE_2
+      - DE_3
+      - DE_4
+      - DE_5
       - ES_1
       - FI_1
       - FI_2
+      - FI_3
+      - GB_1
       - HK_1
       - IE_1
       - JP_1
+      - JP_2
+      - KR_1
+      - KR_2
       - NL_1
       - NL_2
       - NL_3
+      - NL_4
+      - NL_5
+      - PL_1
+      - RU_1
       - SG_1
+      - SG_2
+      - SG_3
       - TW_1
       - TW_10
+      - TW_11
+      - TW_12
+      - TW_13
+      - TW_14
+      - TW_15
+      - TW_16
+      - TW_17
+      - TW_18
+      - TW_19
       - TW_2
+      - TW_20
+      - TW_21
+      - TW_22
+      - TW_23
+      - TW_24
+      - TW_25
       - TW_3
       - TW_4
       - TW_5
@@ -281,34 +528,70 @@ proxy-groups:
       - UN_2
       - UN_3
       - UN_4
+      - UN_5
       - US_1
       - US_2
       - US_3
       - US_4
       - US_5
+      - US_6
+      - US_7
+      - US_8
+      - US_9
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - AE_1
       - AM_1
       - BG_1
+      - BR_1
       - DE_1
       - DE_2
+      - DE_3
+      - DE_4
+      - DE_5
       - ES_1
       - FI_1
       - FI_2
+      - FI_3
+      - GB_1
       - HK_1
       - IE_1
       - JP_1
+      - JP_2
+      - KR_1
+      - KR_2
       - NL_1
       - NL_2
       - NL_3
+      - NL_4
+      - NL_5
+      - PL_1
+      - RU_1
       - SG_1
+      - SG_2
+      - SG_3
       - TW_1
       - TW_10
+      - TW_11
+      - TW_12
+      - TW_13
+      - TW_14
+      - TW_15
+      - TW_16
+      - TW_17
+      - TW_18
+      - TW_19
       - TW_2
+      - TW_20
+      - TW_21
+      - TW_22
+      - TW_23
+      - TW_24
+      - TW_25
       - TW_3
       - TW_4
       - TW_5
@@ -320,11 +603,16 @@ proxy-groups:
       - UN_2
       - UN_3
       - UN_4
+      - UN_5
       - US_1
       - US_2
       - US_3
       - US_4
       - US_5
+      - US_6
+      - US_7
+      - US_8
+      - US_9
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -340,23 +628,54 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - AE_1
       - AM_1
       - BG_1
+      - BR_1
       - DE_1
       - DE_2
+      - DE_3
+      - DE_4
+      - DE_5
       - ES_1
       - FI_1
       - FI_2
+      - FI_3
+      - GB_1
       - HK_1
       - IE_1
       - JP_1
+      - JP_2
+      - KR_1
+      - KR_2
       - NL_1
       - NL_2
       - NL_3
+      - NL_4
+      - NL_5
+      - PL_1
+      - RU_1
       - SG_1
+      - SG_2
+      - SG_3
       - TW_1
       - TW_10
+      - TW_11
+      - TW_12
+      - TW_13
+      - TW_14
+      - TW_15
+      - TW_16
+      - TW_17
+      - TW_18
+      - TW_19
       - TW_2
+      - TW_20
+      - TW_21
+      - TW_22
+      - TW_23
+      - TW_24
+      - TW_25
       - TW_3
       - TW_4
       - TW_5
@@ -368,11 +687,16 @@ proxy-groups:
       - UN_2
       - UN_3
       - UN_4
+      - UN_5
       - US_1
       - US_2
       - US_3
       - US_4
       - US_5
+      - US_6
+      - US_7
+      - US_8
+      - US_9
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
